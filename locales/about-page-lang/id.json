@@ -1,0 +1,46 @@
+{
+    "aboutPage": {
+        "story": {
+            "title1": "Cerita ",
+            "title2": "Kami",
+            "description1": "Didirikan lebih dari 25 tahun yang lalu, PT. Wang Sarimulti Utama telah berkembang dari operasi manufaktur yang berdedikasi menjadi pemimpin industri terpercaya. Kami menyediakan solusi manufaktur yang berfokus pada presisi mulai dari perkakas canggih dan injeksi plastik hingga beragam proses sekunder, termasuk pengecatan, pencetakan, penandaan laser, hot stamping, dan sub-perakitan.",
+            "description2": "Komitmen kami yang tak tergoyahkan terhadap kualitas, inovasi, dan kepuasan pelanggan telah memberi kami reputasi sebagai mitra yang dapat diandalkan bagi perusahaan yang mencari hasil manufaktur standar tinggi yang konsisten. Didukung oleh fasilitas modern dan tim terampil dengan keahlian puluhan tahun, kami terus menyempurnakan kemampuan kami dan memberikan solusi yang mendobrak batasan dari apa yang mungkin dalam manufaktur plastik.",
+            "visionTitle": "Visi Kami",
+            "visionDesc": "Menjadi \"One Stop Solution Provider\" yang paling terpercaya dan inovatif dengan layanan sempurna bagi pelanggan.",
+            "missionTitle": "Misi Kami",
+            "missionDesc": "Mencapai keunggulan operasional dan pertumbuhan yang menguntungkan secara berkelanjutan oleh tenaga kerja yang penuh semangat yang berjuang untuk kesempurnaan."
+        },
+        "whyUs": {
+            "title1": "Mengapa ",
+            "title2": "Memilih ",
+            "title3": "Kami",
+            "subtitle": "Inilah mengapa kami menonjol dari kompetitor",
+            "cards": {
+                "quality": {
+                    "title": "Kualitas Tak Tertandingi",
+                    "desc": "Proses bersertifikat ISO 9001 memastikan keunggulan konsisten di setiap produk yang kami buat."
+                },
+                "precision": {
+                    "title": "Rekayasa Presisi",
+                    "desc": "Peralatan canggih dan teknisi terampil memberikan toleransi hingga ±0.001mm dengan akurasi 99.8%."
+                },
+                "delivery": {
+                    "title": "Pengiriman Tepat Waktu",
+                    "desc": "98% tingkat pengiriman tepat waktu didukung oleh perencanaan produksi dan manajemen logistik yang efisien."
+                },
+                "certified": {
+                    "title": "Keunggulan Bersertifikat",
+                    "desc": "Berbagai sertifikasi industri termasuk kepatuhan ISO 9001 dan IATF 16949."
+                },
+                "support": {
+                    "title": "Dukungan Ahli",
+                    "desc": "Manajer proyek khusus dan dukungan teknis di seluruh siklus hidup produksi Anda."
+                },
+                "scalable": {
+                    "title": "Solusi Skalabel",
+                    "desc": "Dari prototipe hingga produksi volume tinggi, kami berskala mulus untuk memenuhi permintaan Anda."
+                }
+            }
+        }
+    }
+}

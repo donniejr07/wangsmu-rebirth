@@ -1,0 +1,46 @@
+{
+    "aboutPage": {
+        "story": {
+            "title1": "Our ",
+            "title2": "Story",
+            "description1": "Established over 25 years ago, PT. Wang Sarimulti Utama has grown from a dedicated manufacturing operation into a trusted industry leader. We provide precision-focused manufacturing solutions ranging from advanced tooling and plastic injection to a wide range of secondary processes, including painting, printing, laser marking, hot stamping, and sub assembly.",
+            "description2": "Our unwavering commitment to quality, innovation, and customer satisfaction has earned us a reputation as a reliable partner for companies seeking consistent, high-standard manufacturing results. Supported by modern facilities and a skilled team with decades of expertise, we continue to refine our capabilities and deliver solutions that push the boundaries of what's possible in plastic manufacturing.",
+            "visionTitle": "Our Vision",
+            "visionDesc": "To be the most trusted and innovative \"One Stop Solution Provider\" with impeccable services to customers.",
+            "missionTitle": "Our Mission",
+            "missionDesc": "To achieve operational excellence and sustainable profitable growth by a workforce filled with a vibrant spirit that strives for perfection."
+        },
+        "whyUs": {
+            "title1": "Why ",
+            "title2": "Choose ",
+            "title3": "Us",
+            "subtitle": "Here's why we stand out from the competition",
+            "cards": {
+                "quality": {
+                    "title": "Unmatched Quality",
+                    "desc": "ISO 9001 certified processes ensure consistent excellence in every product we manufacture."
+                },
+                "precision": {
+                    "title": "Precision Engineering",
+                    "desc": "Advanced equipment and skilled technicians deliver tolerances to ±0.001mm with 99.8% accuracy."
+                },
+                "delivery": {
+                    "title": "On-Time Delivery",
+                    "desc": "98% on-time delivery rate backed by efficient production planning and logistics management."
+                },
+                "certified": {
+                    "title": "Certified Excellence",
+                    "desc": "Multiple industry certifications including ISO 9001 and IATF 16949 compliance."
+                },
+                "support": {
+                    "title": "Expert Support",
+                    "desc": "Dedicated project managers and engineering support throughout your entire production lifecycle."
+                },
+                "scalable": {
+                    "title": "Scalable Solutions",
+                    "desc": "From prototype to high-volume production, we scale seamlessly to meet your demands."
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "products": "Products",
+        "services": "Services",
+        "news": "News",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "One Stop Solution Provider",
+        "subtitle": "Manufacturing Excellence Since 1995"
+    },
+    "about": {
+        "heroTitle": "Wang SMU Story",
+        "heroDescription": "Let's take a look of our History, Vision, and Mission",
+        "whyChooseUs": "Why Choose Us",
+        "whyChooseUsDesc": "Here's why we stand out from the competition"
+    },
+    "aboutSingkat": {
+        "title": "About WSMU",
+        "descriptionMobile": "PT. Wang Sarimulti Utama provides the best manufacturing solutions, from manufacturing tooling, plastic injection, to secondary process services such as painting, printing, laser marking, hot stamping, and sub-assembly.",
+        "descriptionDesktop": "PT. Wang Sarimulti Utama provides the best manufacturing solutions, from manufacturing tooling, plastic injection, to secondary process services such as painting, printing, laser marking, hot stamping, and sub-assembly. With more than 25 years of experience in the plastic industry, we produce creative designs and high-quality products.",
+        "readMore": "Read More"
+    },
+    "ourAdvantages": {
+        "titleOur": "Our",
+        "titleAdvantages": "Advantages",
+        "quality": "Quality Guarantee",
+        "qualityDesc": "We are committed to providing the highest quality products.",
+        "team": "Experienced Team",
+        "teamDesc": "Professional team with years of industry expertise.",
+        "innovation": "Innovation",
+        "innovationDesc": "Continuous innovation to meet industry demands.",
+        "service": "Integrated Service",
+        "serviceDesc": "Complete end-to-end manufacturing solutions."
+    },
+    "servicesSingkat": {
+        "descMobile": "Our services span across end-to-end manufacturing solutions, including Manufacturing Tooling, Plastic Injection, and Secondary Processes.",
+        "descDesktop": "Our services span across end-to-end manufacturing solutions, including Manufacturing Tooling, Plastic Injection Manufacturing, and a full range of Secondary Processes such as Painting, Printing, Laser Marking, Hotstamp, and Sub-Assembling.",
+        "design": "Design",
+        "printing": "Printing",
+        "cardDesc": "With cutting-edge technology and a skilled team, we create high-quality molds and tooling that are essential for efficient and precise manufacturing.",
+        "moreDetails": "More Details",
+        "anotherService": "Another Service",
+        "moreServices": "More Services"
+    },
+    "ourUpdates": {
+        "titleOur": "Our Latest",
+        "titleUpdate": "Update",
+        "detail": "Detail"
+    },
+    "products": {
+        "heroTitle": "Wang SMU Products",
+        "heroDescription": "Advanced industrial components engineered for reliability, durability, and exceptional performance across diverse applications.",
+        "ourProducts": "Our Products",
+        "ourProductsDesc": "Comprehensive range of precision-engineered components designed to meet the highest industry standards.",
+        "automotive": "Automotive Components",
+        "electronics": "Electronics Part",
+        "industrial": "Industrial Components"
+    },
+    "benefits": {
+        "title": "Why Our Products Stand Out",
+        "subtitle": "Discover the advantages that set our products apart",
+        "durability": "Exceptional Durability",
+        "durabilityDesc": "Built to last with premium materials and rigorous quality control.",
+        "precision": "Precision Tooling",
+        "precisionDesc": "Exact specifications with tolerances as tight as ±0.001mm.",
+        "quality": "Stable Quality",
+        "qualityDesc": "Consistent excellence backed by ISO 9001 certification.",
+        "customization": "Full Customization",
+        "customizationDesc": "Tailored solutions to meet your specific requirements."
+    },
+    "footer": {
+        "rights": "All Rights Reserved",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+    },
+    "common": {
+        "learnMore": "Learn More",
+        "contactUs": "Contact Us",
+        "getQuote": "Get Quote",
+        "viewAll": "View All"
+    }
+}

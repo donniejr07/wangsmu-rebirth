@@ -1,0 +1,85 @@
+{
+    "nav": {
+        "home": "Beranda",
+        "about": "Tentang",
+        "products": "Produk",
+        "services": "Layanan",
+        "news": "Berita",
+        "contact": "Kontak"
+    },
+    "hero": {
+        "title": "Solusi Lengkap Dalam Satu Tempat",
+        "subtitle": "Keunggulan Manufaktur Sejak 1995"
+    },
+    "about": {
+        "heroTitle": "Cerita Wang SMU",
+        "heroDescription": "Mari lihat Sejarah, Visi, dan Misi kami",
+        "whyChooseUs": "Mengapa Memilih Kami",
+        "whyChooseUsDesc": "Inilah mengapa kami unggul dari pesaing"
+    },
+    "aboutSingkat": {
+        "title": "Singkat WSMU",
+        "descriptionMobile": "PT. Wang Sarimulti Utama menyediakan solusi manufaktur terbaik, mulai dari pembuatan manufacturing tooling, plastic injection, hingga layanan proses sekunder seperti pengecatan, pencetakan, laser marking, hot stamping, dan sub-assembly.",
+        "descriptionDesktop": "PT. Wang Sarimulti Utama menyediakan solusi manufaktur terbaik, mulai dari pembuatan manufacturing tooling, plastic injection, hingga layanan proses sekunder seperti pengecatan, pencetakan, laser marking, hot stamping, dan sub-assembly. Dengan pengalaman lebih dari 25 tahun di industri plastik, kami menghasilkan desain kreatif dan produk berkualitas tinggi.",
+        "readMore": "Selengkapnya"
+    },
+    "ourAdvantages": {
+        "titleOur": "Keunggulan",
+        "titleAdvantages": "Kami",
+        "quality": "Jaminan Kualitas",
+        "qualityDesc": "Kami berkomitmen memberikan produk dengan kualitas tertinggi.",
+        "team": "Tim Berpengalaman",
+        "teamDesc": "Tim profesional dengan pengalaman bertahun-tahun di industri.",
+        "innovation": "Inovasi",
+        "innovationDesc": "Inovasi berkelanjutan untuk memenuhi kebutuhan industri.",
+        "service": "Layanan Terintegrasi",
+        "serviceDesc": "Solusi manufaktur lengkap dari awal hingga akhir."
+    },
+    "servicesSingkat": {
+        "descMobile": "Layanan kami mencakup solusi manufaktur menyeluruh, termasuk Manufacturing Tooling, Injeksi Plastik, dan Proses Sekunder.",
+        "descDesktop": "Layanan kami mencakup solusi manufaktur menyeluruh, mulai dari Manufacturing Tooling, Manufaktur Injeksi Plastik, hingga berbagai Proses Sekunder seperti Pengecatan, Pencetakan, Laser Marking, Hotstamp, dan Sub-Assembling.",
+        "design": "Desain",
+        "printing": "Pencetakan",
+        "cardDesc": "Dengan teknologi canggih dan tim yang terampil, kami menciptakan cetakan dan peralatan berkualitas tinggi yang penting untuk manufaktur yang efisien dan presisi.",
+        "moreDetails": "Selengkapnya",
+        "anotherService": "Layanan Lainnya",
+        "moreServices": "Layanan Lainnya"
+    },
+    "ourUpdates": {
+        "titleOur": "Update",
+        "titleUpdate": "Terbaru",
+        "detail": "Detail"
+    },
+    "products": {
+        "heroTitle": "Produk Wang SMU",
+        "heroDescription": "Komponen industri canggih yang dirancang untuk keandalan, ketahanan, dan performa luar biasa di berbagai aplikasi.",
+        "ourProducts": "Produk Kami",
+        "ourProductsDesc": "Rangkaian lengkap komponen presisi yang dirancang untuk memenuhi standar industri tertinggi.",
+        "automotive": "Komponen Otomotif",
+        "electronics": "Komponen Elektronik",
+        "industrial": "Komponen Industri"
+    },
+    "benefits": {
+        "title": "Mengapa Produk Kami Unggul",
+        "subtitle": "Temukan keunggulan yang membedakan produk kami",
+        "durability": "Ketahanan Luar Biasa",
+        "durabilityDesc": "Dibuat untuk bertahan dengan material premium dan kontrol kualitas ketat.",
+        "precision": "Perkakas Presisi",
+        "precisionDesc": "Spesifikasi tepat dengan toleransi hingga ±0.001mm.",
+        "quality": "Kualitas Stabil",
+        "qualityDesc": "Keunggulan konsisten dengan sertifikasi ISO 9001.",
+        "customization": "Kustomisasi Penuh",
+        "customizationDesc": "Solusi yang disesuaikan untuk memenuhi kebutuhan spesifik Anda."
+    },
+    "footer": {
+        "rights": "Hak Cipta Dilindungi",
+        "privacy": "Kebijakan Privasi",
+        "terms": "Syarat dan Ketentuan"
+    },
+    "common": {
+        "learnMore": "Pelajari Lebih Lanjut",
+        "contactUs": "Hubungi Kami",
+        "getQuote": "Minta Penawaran",
+        "viewAll": "Lihat Semua"
+    }
+}
