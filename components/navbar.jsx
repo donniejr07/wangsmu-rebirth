@@ -12,15 +12,35 @@ export default function Navbar() {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    // Menu items data
+    // Menu items data (path)
     const menuItems = [
         { href: '/', label: 'Home', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg> },
+
         { href: '/about', label: 'About', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><line x1="12" y1="16" x2="12" y2="12" /><line x1="12" y1="8" x2="12.01" y2="8" /></svg> },
+
         { href: '/services', label: 'Services', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg> },
+
         { href: '/product', label: 'Product', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg> },
-        { href: '/career', label: 'Career', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2" /><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /></svg> },
-        { href: '/contact', label: 'Contact', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg> },
+
+        { href: '/soon', label: 'Career', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2" /><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /></svg> },
+
+        { href: '/soon', label: 'Gallery', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2" /><path d="M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3zM13 13h8v8h-8z" /></svg> },
+
+        { href: '/soon', label: 'Contact', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg> },
     ];
+
+    /**
+    * Navbar
+    * 
+    * Responsive navigation dengan hamburger menu.
+    * - Mobile: Slide-in menu dari kiri
+    * - Desktop: Panel besar dengan menu items + video preview
+    * 
+    * Fitur:
+    * - Toggle menu open/close
+    * - Language switcher (ID/EN)
+    * - Animated hamburger icon
+    */
 
     return (
         <>
@@ -123,12 +143,12 @@ export default function Navbar() {
                     onClick={(e) => e.stopPropagation()}
                     className={`fixed z-[1400] transition-all duration-500 ease-out ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}
                     style={{
-                        top: '12px',
-                        left: '12px',
-                        right: '12px',
+                        top: '0px',
+                        left: '0px',
+                        right: '0px',
                         maxWidth: '350px',
                         backgroundColor: '#0055A4',
-                        borderRadius: '24px',
+                        borderRadius: '0px 24px 24px 24px',
                         overflow: 'hidden',
                         padding: '20px',
                     }}
@@ -144,7 +164,9 @@ export default function Navbar() {
                         ))}
                     </nav>
 
-                    <p className="text-white/50 text-[12px] font-poppins text-center mt-8 pt-4 border-t border-white/20">
+                    <p className="text-white/50 text-[12px] font-poppins text-center border-t border-white/20"
+                        style={{ marginTop: '10px' }}
+                    >
                         © 2025 Wang Sarimulti Utama
                     </p>
                 </div>
@@ -192,6 +214,7 @@ export default function Navbar() {
                     }} />
                 </div>
 
+                {/* language button */}
                 <div
                     className="fixed z-[1400]"
                     style={{
@@ -245,16 +268,17 @@ export default function Navbar() {
                     className={`fixed inset-0 bg-black/50 z-[1300] transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
                     onClick={toggleMenu}
                 />
+
+                {/* background card */}
                 <div
                     onClick={(e) => e.stopPropagation()}
                     className={`fixed z-[1400] transition-all duration-500 ease-out ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}
                     style={{
-                        top: '16px',
-                        left: '16px',
+                        top: '0px',
                         width: '956px',
                         height: '564px',
                         backgroundColor: '#0055A4',
-                        borderRadius: '40px',
+                        borderRadius: '0px 40px 40px 40px',
                         overflow: 'hidden',
                     }}
                 >
@@ -262,7 +286,7 @@ export default function Navbar() {
                         <Link key={item.href} href={item.href} onClick={toggleMenu}>
                             <div
                                 className="absolute flex items-center cursor-pointer hover:opacity-80 transition-opacity"
-                                style={{ top: `${90 + index * 65}px`, left: '17px' }}
+                                style={{ top: `${80 + index * 60}px`, left: '17px' }}
                             >
                                 <span className="w-7 h-7 text-white">{item.icon}</span>
                                 <span
@@ -294,35 +318,24 @@ export default function Navbar() {
                     <div
                         className="absolute overflow-hidden"
                         style={{
-                            left: '525px',
-                            top: '195px',
+                            left: '455px',
+                            top: '175px',
                             width: '350px',
-                            height: '175px',
+                            height: '205px',
                             borderRadius: '30px',
                             backgroundColor: '#333',
                         }}
                     >
                         <div className="w-full h-full bg-gray-700 flex items-center justify-center">
-                            <span className="text-white/50 text-sm">YouTube Thumbnail</span>
-                        </div>
-                    </div>
-
-                    <div
-                        className="absolute cursor-pointer hover:scale-110 transition-transform"
-                        style={{
-                            left: '675px',
-                            top: '257px',
-                            width: '50px',
-                            height: '50px',
-                        }}
-                    >
-                        <div
-                            className="w-full h-full rounded-full flex items-center justify-center"
-                            style={{ backgroundColor: 'rgba(255,255,255,0.9)' }}
-                        >
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#0055A4">
-                                <path d="M8 5v14l11-7z" />
-                            </svg>
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src="https://www.youtube.com/embed/lxTQZNfn3EQ?si=pzaosG0N020vO33b"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
                         </div>
                     </div>
 
@@ -340,7 +353,7 @@ export default function Navbar() {
                             textAlign: 'center',
                         }}
                     >
-                        © 2025 Wang Sarimulti Utama. All rights reserved.
+                        © 2026 Wang Sarimulti Utama. All rights reserved.
                     </span>
                 </div>
             </div>

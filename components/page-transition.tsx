@@ -53,7 +53,7 @@ export default function PageTransition({ children }: { children: React.ReactNode
                 }}
             >
                 <div className="flex flex-col items-center gap-8">
-                    <div className="relative w-[180px] h-[100px] animate-pulse">
+                    <div className="relative w-[260px] h-[160px] animate-pulse">
                         <Image
                             src="/images/logo-pt-puteh.png"
                             alt="Wait a Sec..."

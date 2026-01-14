@@ -80,7 +80,7 @@ export default function AboutSingkat() {
                     {/* Deskripsi */}
                     <AnimateOnScroll animation="fadeUp" delay={200} duration={800}>
                         <p
-                            className="text-white font-poppins font-normal text-[28px] leading-[42px] max-w-[900px]"
+                            className="text-white font-poppins font-normal text-[28px] leading-[42px] max-w-[800px]"
                             style={{ paddingLeft: '107px', marginBottom: '27px' }}
                         >
                             {t('aboutSingkat.descriptionDesktop')}

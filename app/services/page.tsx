@@ -10,7 +10,9 @@ export default function Services() {
             <div style={{ marginBottom: '40px' }}>
                 <ServiceHero />
             </div>
-            <ServicesSection />
+            <div style={{ marginBottom: '40px' }}>
+                <ServicesSection />
+            </div>
             <Footer />
         </>
     );
