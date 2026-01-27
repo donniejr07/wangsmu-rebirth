@@ -62,35 +62,35 @@ export default function OurLatestUpdate() {
         <section className="relative w-full bg-white px-4 lg:px-0 overflow-hidden">
 
             {/* mobile header */}
-            <AnimateOnScroll animation="fadeIn">
-                <div className="lg:hidden flex flex-col items-center">
-                    <h2 className="font-poppins font-semibold text-[32px] leading-[48px] text-center">
-                        <span className="text-black">{t('ourUpdates.titleOur')} </span>
-                        <span className="text-[#0055A4]">{t('ourUpdates.titleUpdate')}</span>
-                    </h2>
-                    <div
-                        className="bg-[#0055A4] mt-2"
-                        style={{ width: '200px', height: '8px' }}
-                    />
-                </div>
-            </AnimateOnScroll>
+            <div className="lg:hidden flex flex-col items-center">
+                <h2 className="font-poppins font-semibold text-[32px] leading-[48px] text-center">
+                    <span className="text-black">{t('ourUpdates.titleOur')} </span>
+                    <span className="text-[#0055A4]">{t('ourUpdates.titleUpdate')}</span>
+                </h2>
+                <div
+                    className="bg-[#0055A4] mt-2"
+                    style={{ width: '200px', height: '8px' }}
+                />
+            </div>
+            {/* <AnimateOnScroll animation="fadeIn">
+            </AnimateOnScroll> */}
 
             {/* desktop header */}
-            <AnimateOnScroll animation="fadeLeft" duration={800}>
+            <div
+                className="hidden lg:flex items-center"
+                style={{ paddingLeft: '34px', gap: '19px' }}
+            >
+                <h2 className="font-poppins font-semibold text-[48px] leading-[96px] whitespace-nowrap">
+                    <span className="text-black">{t('ourUpdates.titleOur')} </span>
+                    <span className="text-[#0055A4]">{t('ourUpdates.titleUpdate')}</span>
+                </h2>
                 <div
-                    className="hidden lg:flex items-center"
-                    style={{ paddingLeft: '34px', gap: '19px' }}
-                >
-                    <h2 className="font-poppins font-semibold text-[48px] leading-[96px] whitespace-nowrap">
-                        <span className="text-black">{t('ourUpdates.titleOur')} </span>
-                        <span className="text-[#0055A4]">{t('ourUpdates.titleUpdate')}</span>
-                    </h2>
-                    <div
-                        className="bg-[#0055A4]"
-                        style={{ width: '713px', height: '12px' }}
-                    />
-                </div>
-            </AnimateOnScroll>
+                    className="bg-[#0055A4]"
+                    style={{ width: '713px', height: '12px' }}
+                />
+            </div>
+            {/* <AnimateOnScroll animation="fadeLeft" duration={800}>
+            </AnimateOnScroll> */}
 
             {/* mobile cards - vertical */}
             <div

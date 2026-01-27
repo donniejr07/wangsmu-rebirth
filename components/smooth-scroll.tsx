@@ -3,7 +3,6 @@
 import { createContext, useContext, useEffect, useRef, useState } from 'react'
 import Lenis from 'lenis'
 
-// Create context for Lenis instance
 const LenisContext = createContext<Lenis | null>(null)
 
 export function useLenis() {

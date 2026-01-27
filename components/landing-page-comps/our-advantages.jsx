@@ -52,26 +52,26 @@ export default function OurAdvantages() {
                 </div>
             </section>
 
-            {/* ===== DESKTOP LAYOUT ===== */}
+            {/* DESKTOP LAYOUT  */}
             <section className="hidden lg:block relative w-full bg-white overflow-hidden">
-                {/* header dgn garis dekoratif */}
-                <AnimateOnScroll animation="fadeLeft" duration={800}>
+                <div
+                    className="flex items-center gap-5"
+                    style={{ paddingLeft: '34px' }}
+                >
+                    <h2 className="font-poppins font-semibold text-[48px] leading-[72px] whitespace-nowrap">
+                        <span className="text-black">{t('ourAdvantages.titleOur')} </span>
+                        <span className="text-[#0055A4]">{t('ourAdvantages.titleAdvantages')}</span>
+                    </h2>
                     <div
-                        className="flex items-center gap-5"
-                        style={{ paddingLeft: '34px' }}
-                    >
-                        <h2 className="font-poppins font-semibold text-[48px] leading-[72px] whitespace-nowrap">
-                            <span className="text-black">{t('ourAdvantages.titleOur')} </span>
-                            <span className="text-[#0055A4]">{t('ourAdvantages.titleAdvantages')}</span>
-                        </h2>
-                        <div
-                            className="bg-[#0055A4]"
-                            style={{ width: '713px', height: '12px' }}
-                        />
-                    </div>
-                </AnimateOnScroll>
+                        className="bg-[#0055A4]"
+                        style={{ width: '713px', height: '12px' }}
+                    />
+                </div>
+                {/* <AnimateOnScroll animation="fadeLeft" duration={800}>
 
-                {/* 2 kolom cards */}
+                </AnimateOnScroll> */}
+
+                {/* kolom cards */}
                 <div
                     className="flex flex-row justify-center items-start"
                     style={{ paddingBottom: '49px', marginTop: '60px', gap: '80px' }}
@@ -79,28 +79,29 @@ export default function OurAdvantages() {
                     {/* kolom kiri */}
                     <div className="flex flex-col" style={{ gap: '32px' }}>
                         {/* Quality Guarantee Card */}
-                        <AnimateOnScroll animation="fadeUp" delay={0}>
-                            <div className="group relative w-[420px] h-[200px] bg-[#0055A4] rounded-[16px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                                <div className="absolute inset-0 w-full h-full">
-                                    <img
-                                        src="/images/bg advantages.jpg"
-                                        alt="Quality Background"
-                                        className="w-full h-full object-cover opacity-15 transition-transform duration-500 group-hover:scale-110"
-                                    />
-                                </div>
-                                <div className="relative z-10" style={{ paddingTop: '20px', paddingLeft: '30px', paddingRight: '30px' }}>
-                                    <h3 className="text-white font-poppins font-semibold text-[32px] leading-[42px] max-w-[350px]">
-                                        {t('ourAdvantages.quality')}
-                                    </h3>
-                                    <p
-                                        className="text-white font-poppins font-normal text-[18px] leading-[28px] max-w-[350px]"
-                                        style={{ marginTop: '6px' }}
-                                    >
-                                        {t('ourAdvantages.qualityDesc')}
-                                    </p>
-                                </div>
+                        <div className="group relative w-[420px] h-[200px] bg-[#0055A4] rounded-[16px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                            <div className="absolute inset-0 w-full h-full">
+                                <img
+                                    src="/images/bg advantages.jpg"
+                                    alt="Quality Background"
+                                    className="w-full h-full object-cover opacity-15 transition-transform duration-500 group-hover:scale-110"
+                                />
                             </div>
-                        </AnimateOnScroll>
+                            <div className="relative z-10" style={{ paddingTop: '20px', paddingLeft: '30px', paddingRight: '30px' }}>
+                                <h3 className="text-white font-poppins font-semibold text-[32px] leading-[42px] max-w-[350px]">
+                                    {t('ourAdvantages.quality')}
+                                </h3>
+                                <p
+                                    className="text-white font-poppins font-normal text-[18px] leading-[28px] max-w-[350px]"
+                                    style={{ marginTop: '6px' }}
+                                >
+                                    {t('ourAdvantages.qualityDesc')}
+                                </p>
+                            </div>
+                        </div>
+                        {/* <AnimateOnScroll animation="fadeUp" delay={150}>
+                            
+                        </AnimateOnScroll> */}
 
                         {/* Experienced Team Card */}
                         <AnimateOnScroll animation="fadeUp" delay={150}>
@@ -130,28 +131,29 @@ export default function OurAdvantages() {
                     {/* kolom kanan */}
                     <div className="flex flex-col" style={{ gap: '32px' }}>
                         {/* Innovation Card */}
-                        <AnimateOnScroll animation="fadeUp" delay={100}>
-                            <div className="group relative w-[420px] h-[200px] bg-[#0055A4] rounded-[16px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                                <div className="absolute inset-0 w-full h-full">
-                                    <img
-                                        src="/images/bg advantages.jpg"
-                                        alt="Innovation Background"
-                                        className="w-full h-full object-cover opacity-15 transition-transform duration-500 group-hover:scale-110"
-                                    />
-                                </div>
-                                <div className="relative z-10" style={{ paddingTop: '20px', paddingLeft: '30px', paddingRight: '30px' }}>
-                                    <h3 className="text-white font-poppins font-semibold text-[32px] leading-[42px] max-w-[350px]">
-                                        {t('ourAdvantages.innovation')}
-                                    </h3>
-                                    <p
-                                        className="text-white font-poppins font-normal text-[18px] leading-[28px] max-w-[350px]"
-                                        style={{ marginTop: '6px' }}
-                                    >
-                                        {t('ourAdvantages.innovationDesc')}
-                                    </p>
-                                </div>
+                        <div className="group relative w-[420px] h-[200px] bg-[#0055A4] rounded-[16px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                            <div className="absolute inset-0 w-full h-full">
+                                <img
+                                    src="/images/bg advantages.jpg"
+                                    alt="Innovation Background"
+                                    className="w-full h-full object-cover opacity-15 transition-transform duration-500 group-hover:scale-110"
+                                />
                             </div>
-                        </AnimateOnScroll>
+                            <div className="relative z-10" style={{ paddingTop: '20px', paddingLeft: '30px', paddingRight: '30px' }}>
+                                <h3 className="text-white font-poppins font-semibold text-[32px] leading-[42px] max-w-[350px]">
+                                    {t('ourAdvantages.innovation')}
+                                </h3>
+                                <p
+                                    className="text-white font-poppins font-normal text-[18px] leading-[28px] max-w-[350px]"
+                                    style={{ marginTop: '6px' }}
+                                >
+                                    {t('ourAdvantages.innovationDesc')}
+                                </p>
+                            </div>
+                        </div>
+                        {/* <AnimateOnScroll animation="fadeUp" delay={100}>
+                            
+                        </AnimateOnScroll> */}
 
                         {/* Integrated Service Card */}
                         <AnimateOnScroll animation="fadeUp" delay={250}>

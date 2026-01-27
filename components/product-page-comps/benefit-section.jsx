@@ -256,37 +256,37 @@ export default function BenefitSection() {
                 {/* Content Wrapper */}
                 <div className="relative z-10">
                     {/* Title */}
-                    <AnimateOnScroll animation="fadeUp" delay={0}>
-                        <h2
-                            className="font-poppins font-semibold text-[56px] leading-[84px] text-center"
-                            style={{
-                                marginLeft: 'auto',
-                                marginRight: 'auto',
-                                width: '818px',
-                                height: '84px',
-                            }}
-                        >
-                            <span className="text-black">Why Our </span>
-                            <span className="text-[#0055A4]">Products</span>
-                            <span className="text-black"> Stand Out</span>
-                        </h2>
-                    </AnimateOnScroll>
+                    <h2
+                        className="font-poppins font-semibold text-[56px] leading-[84px] text-center"
+                        style={{
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            width: '818px',
+                            height: '84px',
+                        }}
+                    >
+                        <span className="text-black">Why Our </span>
+                        <span className="text-[#0055A4]">Products</span>
+                        <span className="text-black"> Stand Out</span>
+                    </h2>
+                    {/* <AnimateOnScroll animation="fadeUp" delay={0}>
+                    </AnimateOnScroll> */}
 
                     {/* Subtitle */}
-                    <AnimateOnScroll animation="fadeUp" delay={100}>
-                        <p
-                            className="font-poppins font-normal text-[32px] leading-[48px] text-black text-center"
-                            style={{
-                                marginLeft: 'auto',
-                                marginRight: 'auto',
-                                marginTop: '7px',
-                                width: '1133px',
-                                height: '87px',
-                            }}
-                        >
-                            Decades of manufacturing excellence delivering superior quality and performance.
-                        </p>
-                    </AnimateOnScroll>
+                    <p
+                        className="font-poppins font-normal text-[32px] leading-[48px] text-black text-center"
+                        style={{
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginTop: '7px',
+                            width: '1133px',
+                            height: '87px',
+                        }}
+                    >
+                        Decades of manufacturing excellence delivering superior quality and performance.
+                    </p>
+                    {/* <AnimateOnScroll animation="fadeUp" delay={100}>
+                    </AnimateOnScroll> */}
 
                     {/* Benefits Container */}
                     <div

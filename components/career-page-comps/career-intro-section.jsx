@@ -51,7 +51,7 @@ export default function CareerIntroSection() {
                             className="absolute font-poppins font-semibold text-[60px] leading-[72px]"
                             style={{
                                 left: '61px',
-                                top: '182px', // 935px (figma y) - 753px (hero height approx)
+                                top: '182px',
                                 width: '477px',
                                 height: '126px',
                             }}
@@ -70,7 +70,7 @@ export default function CareerIntroSection() {
                             className="absolute font-poppins font-normal text-[24px] leading-[36px] text-black"
                             style={{
                                 left: '61px',
-                                top: '365px', // 1118px (figma y) - 753px (hero height)
+                                top: '365px',
                                 width: '525px',
                                 height: '126px',
                             }}
@@ -85,7 +85,7 @@ export default function CareerIntroSection() {
                             className="absolute bg-black rounded-[20px] overflow-hidden shadow-xl"
                             style={{
                                 left: '664px',
-                                top: '201px', // 954px (figma y) - 753px (hero height)
+                                top: '201px',
                                 width: '685px',
                                 height: '379px',
                             }}

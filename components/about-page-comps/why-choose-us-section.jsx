@@ -301,31 +301,31 @@ export default function WhyChooseUsSection() {
             {/* ===== DESKTOP LAYOUT ===== */}
             <section className="hidden lg:block relative w-full" style={{ paddingTop: '43px' }}>
                 {/* Title */}
-                <AnimateOnScroll animation="fadeUp" delay={0}>
-                    <h2
-                        className="font-poppins font-semibold text-[60px] leading-[73px] text-center"
-                        style={{
-                            width: '100%',
-                        }}
-                    >
-                        <span className="text-black">{t('aboutPage.whyUs.title1')}</span>
-                        <span className="text-[#0055A4]">{t('aboutPage.whyUs.title2')}</span>
-                        <span className="text-black">{t('aboutPage.whyUs.title3')}</span>
-                    </h2>
-                </AnimateOnScroll>
+                <h2
+                    className="font-poppins font-semibold text-[60px] leading-[73px] text-center"
+                    style={{
+                        width: '100%',
+                    }}
+                >
+                    <span className="text-black">{t('aboutPage.whyUs.title1')}</span>
+                    <span className="text-[#0055A4]">{t('aboutPage.whyUs.title2')}</span>
+                    <span className="text-black">{t('aboutPage.whyUs.title3')}</span>
+                </h2>
+                {/* <AnimateOnScroll animation="fadeUp" delay={0}>
+                </AnimateOnScroll> */}
 
                 {/* Description */}
-                <AnimateOnScroll animation="fadeUp" delay={100}>
-                    <p
-                        className="font-poppins font-normal text-[24px] leading-[36px] text-black text-center"
-                        style={{
-                            width: '100%',
-                            marginTop: '23px',
-                        }}
-                    >
-                        {t('aboutPage.whyUs.subtitle')}
-                    </p>
-                </AnimateOnScroll>
+                <p
+                    className="font-poppins font-normal text-[24px] leading-[36px] text-black text-center"
+                    style={{
+                        width: '100%',
+                        marginTop: '23px',
+                    }}
+                >
+                    {t('aboutPage.whyUs.subtitle')}
+                </p>
+                {/* <AnimateOnScroll animation="fadeUp" delay={100}>
+                </AnimateOnScroll> */}
 
                 {/* Cards Container */}
                 <div

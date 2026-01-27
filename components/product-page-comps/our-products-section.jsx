@@ -23,7 +23,7 @@ function ProductCard({ imageSrc, title, description, delay = 0 }) {
                 className="relative cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
                 style={{
                     width: '350px',
-                    height: '450px',
+                    height: '500px',
                     backgroundColor: '#FFFFFF',
                     border: '1px solid #0055A4',
                     borderRadius: '20px',
@@ -86,11 +86,33 @@ function ProductCard({ imageSrc, title, description, delay = 0 }) {
                         top: '274px',
                         left: '35px',
                         width: '280px',
-                        height: '150px',
+                        height: '110px',
                     }}
                 >
                     {description}
                 </p>
+
+                {/* More Details Button */}
+                <button
+                    className="hover:opacity-80 transition-opacity"
+                    style={{
+                        position: 'absolute',
+                        bottom: '20px',
+                        left: '35px',
+                        width: '280px',
+                        height: '40px',
+                        backgroundColor: '#0055A4',
+                        borderRadius: '20px',
+                        border: 'none',
+                        cursor: 'pointer',
+                        fontFamily: 'Poppins, sans-serif',
+                        fontWeight: 400,
+                        fontSize: '16px',
+                        color: '#FFFFFF',
+                    }}
+                >
+                    More Details
+                </button>
             </div>
         </AnimateOnScroll>
     )
@@ -137,9 +159,28 @@ function MobileProductCard({ imageSrc, title, description, delay = 0 }) {
                 </div>
 
                 {/* Card Description */}
-                <p className="font-poppins font-normal text-[14px] leading-[20px] text-black">
+                <p className="font-poppins font-normal text-[14px] leading-[20px] text-black" style={{ marginBottom: '16px' }}>
                     {description}
                 </p>
+
+                {/* More Details Button */}
+                <button
+                    className="hover:opacity-80 transition-opacity"
+                    style={{
+                        width: '100%',
+                        height: '36px',
+                        backgroundColor: '#0055A4',
+                        borderRadius: '18px',
+                        border: 'none',
+                        cursor: 'pointer',
+                        fontFamily: 'Poppins, sans-serif',
+                        fontWeight: 400,
+                        fontSize: '14px',
+                        color: '#FFFFFF',
+                    }}
+                >
+                    More Details
+                </button>
             </div>
         </AnimateOnScroll>
     )
@@ -215,36 +256,36 @@ export default function OurProductsSection() {
                 {/* Title Group */}
                 <div className="text-center">
                     {/* Title */}
-                    <AnimateOnScroll animation="fadeUp" delay={0}>
-                        <h2
-                            className="font-poppins font-semibold text-[56px] leading-[84px]"
-                            style={{
-                                marginLeft: 'auto',
-                                marginRight: 'auto',
-                                width: '371px',
-                                height: '84px',
-                            }}
-                        >
-                            <span className="text-black">Our </span>
-                            <span className="text-[#0055A4]">Products</span>
-                        </h2>
-                    </AnimateOnScroll>
+                    <h2
+                        className="font-poppins font-semibold text-[56px] leading-[84px]"
+                        style={{
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            width: '371px',
+                            height: '84px',
+                        }}
+                    >
+                        <span className="text-black">Our </span>
+                        <span className="text-[#0055A4]">Products</span>
+                    </h2>
+                    {/* <AnimateOnScroll animation="fadeUp" delay={0}>
+                    </AnimateOnScroll> */}
 
                     {/* Subtitle */}
-                    <AnimateOnScroll animation="fadeUp" delay={100}>
-                        <p
-                            className="font-poppins font-normal text-[32px] leading-[48px] text-black"
-                            style={{
-                                marginLeft: 'auto',
-                                marginRight: 'auto',
-                                marginTop: '7px',
-                                width: '1133px',
-                                height: '100px',
-                            }}
-                        >
-                            Comprehensive range of precision-engineered components designed to meet the highest industry standards.
-                        </p>
-                    </AnimateOnScroll>
+                    <p
+                        className="font-poppins font-normal text-[32px] leading-[48px] text-black"
+                        style={{
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginTop: '7px',
+                            width: '1133px',
+                            height: '100px',
+                        }}
+                    >
+                        Comprehensive range of precision-engineered components designed to meet the highest industry standards.
+                    </p>
+                    {/* <AnimateOnScroll animation="fadeUp" delay={100}>
+                    </AnimateOnScroll> */}
                 </div>
 
                 {/* Product Cards Container */}

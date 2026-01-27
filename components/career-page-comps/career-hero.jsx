@@ -123,18 +123,33 @@ export default function CareerHero() {
 
                     </p>
 
-                    {/* e. Logo PT */}
-                    <Image
-                        src="/images/logo-pt-puteh.png"
-                        alt="Logo PT"
-                        width={139}
-                        height={146}
-                        className="absolute"
+                    {/* e. Button Login */}
+                    <button
+                        className="absolute cursor-pointer hover:opacity-80 transition-opacity"
                         style={{
-                            top: '19px',
-                            right: '28px',
+                            top: '25px',
+                            right: '32px',
+                            width: '90px',
+                            height: '50px',
+                            backgroundColor: '#E9E9E9',
+                            borderRadius: '10px',
+                            border: 'none',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
                         }}
-                    />
+                    >
+                        <span
+                            style={{
+                                fontFamily: 'Poppins, sans-serif',
+                                fontWeight: 600,
+                                fontSize: '20px',
+                                color: '#0055A4',
+                            }}
+                        >
+                            Login
+                        </span>
+                    </button>
                 </div>
             </section>
         </>

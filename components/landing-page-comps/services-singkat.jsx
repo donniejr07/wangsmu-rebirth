@@ -84,13 +84,13 @@ export default function ServicesSingkat() {
             {/* Desktop Layout */}
             <section className="hidden lg:block relative w-full bg-white py-12 overflow-hidden">
                 {/* Deskripsi */}
+                <p
+                    className="font-poppins font-semibold text-[28px] leading-[51px] text-black max-w-[1450px]"
+                    style={{ paddingLeft: '185px', paddingRight: '185px', marginBottom: '67px' }}
+                >
+                    {t('servicesSingkat.descDesktop')}
+                </p>
                 <AnimateOnScroll animation="fadeRight" duration={800}>
-                    <p
-                        className="font-poppins font-semibold text-[28px] leading-[51px] text-black max-w-[1450px]"
-                        style={{ paddingLeft: '185px', paddingRight: '185px', marginBottom: '67px' }}
-                    >
-                        {t('servicesSingkat.descDesktop')}
-                    </p>
                 </AnimateOnScroll>
 
                 {/* Cards */}
