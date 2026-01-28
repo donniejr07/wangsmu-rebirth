@@ -15,7 +15,7 @@ export default function ProductHeroSection() {
                     {/* Background Image */}
                     <div className="absolute inset-0" style={{ paddingTop: '20px' }}>
                         <Image
-                            src="/images/gallery-wsu.png"
+                            src="/images/shifter.png"
                             alt="Product Hero Background"
                             fill
                             className="object-cover"
