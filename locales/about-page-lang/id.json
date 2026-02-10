@@ -17,12 +17,12 @@
             "subtitle": "Inilah mengapa kami menonjol dari kompetitor",
             "cards": {
                 "quality": {
-                    "title": "Kualitas Tak Tertandingi",
+                    "title": "Kualitas Sangat Baik",
                     "desc": "Proses bersertifikat ISO 9001 memastikan keunggulan konsisten di setiap produk yang kami buat."
                 },
                 "precision": {
                     "title": "Rekayasa Presisi",
-                    "desc": "Peralatan canggih dan teknisi terampil memberikan toleransi hingga ±0.001mm dengan akurasi 99.8%."
+                    "desc": "Peralatan canggih dan teknisi terampil memastikan kualitas hasil kerja yang konsisten"
                 },
                 "delivery": {
                     "title": "Pengiriman Tepat Waktu",
@@ -30,7 +30,7 @@
                 },
                 "certified": {
                     "title": "Keunggulan Bersertifikat",
-                    "desc": "Berbagai sertifikasi industri termasuk kepatuhan ISO 9001 dan IATF 16949."
+                    "desc": "Berbagai sertifikasi industri termasuk kepatuhan ISO 9001, IATF 16949, dan ISO 14001."
                 },
                 "support": {
                     "title": "Dukungan Ahli",

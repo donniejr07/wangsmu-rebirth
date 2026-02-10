@@ -23,7 +23,6 @@ export default function Home() {
       <div style={{ marginTop: '100px', marginBottom: '50px' }}>
         <OurPartner />
       </div>
-      {/* Komponen lain seperti Features dll akan ditambahkan di sini secara berurutan */}
       <Footer />
     </main>
   );

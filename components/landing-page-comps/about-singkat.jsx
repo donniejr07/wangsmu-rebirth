@@ -11,7 +11,7 @@ export default function AboutSingkat() {
     return (
         <>
             {/* Mobile Layout */}
-            <section className="lg:hidden relative w-full bg-[#0055A4] overflow-hidden" style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '20px', paddingBottom: '24px' }}>
+            <section className="lg:hidden relative w-full bg-[#0055A4] overflow-hidden" style={{ paddingLeft: '0px', paddingRight: '0px', paddingTop: '20px', paddingBottom: '24px' }}>
                 {/* Background */}
                 <div className="absolute inset-0 w-full h-full">
                     <Image

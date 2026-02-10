@@ -6,9 +6,9 @@ import { AnimateOnScroll } from '@/components/animations/scroll-animations'
 export default function OurPartner() {
     // Data partner
     const partners = [
-        { src: '/images/partner-logos/daihatsu.png', alt: 'Daihatsu' },
-        { src: '/images/partner-logos/isuzu.png', alt: 'Isuzu' },
-        { src: '/images/partner-logos/honda.png', alt: 'Honda' },
+        { src: '/images/partner-logos/astraOto.png', alt: 'Daihatsu' },
+        { src: '/images/partner-logos/atsumitec.png', alt: 'Isuzu' },
+        { src: '/images/partner-logos/Polytron.png', alt: 'Honda' },
         { src: '/images/partner-4.png', alt: 'Partner 4' },
         { src: '/images/partner-5.png', alt: 'Partner 5' },
         { src: '/images/partner-6.png', alt: 'Partner 6' },

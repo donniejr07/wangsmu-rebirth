@@ -17,12 +17,12 @@
             "subtitle": "Here's why we stand out from the competition",
             "cards": {
                 "quality": {
-                    "title": "Unmatched Quality",
+                    "title": "Excellent Quality",
                     "desc": "ISO 9001 certified processes ensure consistent excellence in every product we manufacture."
                 },
                 "precision": {
                     "title": "Precision Engineering",
-                    "desc": "Advanced equipment and skilled technicians deliver tolerances to ±0.001mm with 99.8% accuracy."
+                    "desc": "Advanced equipment and skilled technicians ensure consistent quality of work."
                 },
                 "delivery": {
                     "title": "On-Time Delivery",
@@ -30,7 +30,7 @@
                 },
                 "certified": {
                     "title": "Certified Excellence",
-                    "desc": "Multiple industry certifications including ISO 9001 and IATF 16949 compliance."
+                    "desc": "Multiple industry certifications including ISO 9001, IATF 16949, and ISO 14001."
                 },
                 "support": {
                     "title": "Expert Support",
