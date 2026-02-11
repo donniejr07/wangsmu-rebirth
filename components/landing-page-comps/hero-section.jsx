@@ -87,7 +87,7 @@ export default function HeroSection() {
                 className="hidden lg:block"
                 style={{
                     position: 'relative',
-                    marginTop: '61px',
+                    marginTop: '31px',
                     marginLeft: '18px',
                     marginRight: '18px',
                     width: 'calc(100vw - 36px)',

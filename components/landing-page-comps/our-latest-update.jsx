@@ -23,7 +23,7 @@ function NewsCard({ news, delay = 0 }) {
 
     return (
         <AnimateOnScroll animation="fadeUp" delay={delay}>
-            <div className="group w-[350px] cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl rounded-[10px]">
+            <div className="group w-[350px] cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl rounded-[10px] mt-10">
                 <div className="relative w-[350px] h-[180px] rounded-[10px] overflow-hidden">
                     <Image
                         src={photoUrl}
@@ -119,9 +119,26 @@ export default function OurLatestUpdate() {
                 className="lg:hidden flex flex-col items-center gap-8"
                 style={{ paddingTop: '24px' }}
             >
-                {newsList.map((news, index) => (
-                    <NewsCard key={news.id} news={news} delay={index * 100} />
-                ))}
+                {newsList.length > 0 ? (
+                    newsList.map((news, index) => (
+                        <NewsCard key={news.id} news={news} delay={index * 100} />
+                    ))
+                ) : (
+                    <div className="flex flex-col items-center justify-center py-12 px-6">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0055A4" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="opacity-30 mb-4">
+                            <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
+                            <path d="M18 14h-8" />
+                            <path d="M15 18h-5" />
+                            <path d="M10 6h8v4h-8V6Z" />
+                        </svg>
+                        <p className="font-poppins font-semibold text-[18px] text-[#0055A4]/50 text-center">
+                            No News Available
+                        </p>
+                        <p className="font-poppins font-normal text-[14px] text-black/40 text-center mt-1">
+                            Stay tuned! We're preparing exciting updates for you.
+                        </p>
+                    </div>
+                )}
             </div>
 
             {/* desktop cards - horizontal */}
@@ -129,9 +146,26 @@ export default function OurLatestUpdate() {
                 className="hidden lg:flex justify-center"
                 style={{ paddingTop: '30px', gap: '30px' }}
             >
-                {newsList.map((news, index) => (
-                    <NewsCard key={news.id} news={news} delay={index * 150} />
-                ))}
+                {newsList.length > 0 ? (
+                    newsList.map((news, index) => (
+                        <NewsCard key={news.id} news={news} delay={index * 150} />
+                    ))
+                ) : (
+                    <div className="flex flex-col items-center justify-center" style={{ paddingTop: '40px', paddingBottom: '40px' }}>
+                        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#0055A4" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="opacity-25 mb-5">
+                            <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
+                            <path d="M18 14h-8" />
+                            <path d="M15 18h-5" />
+                            <path d="M10 6h8v4h-8V6Z" />
+                        </svg>
+                        <p className="font-poppins font-semibold text-[22px] text-[#0055A4]/50">
+                            No News Available Yet
+                        </p>
+                        <p className="font-poppins font-normal text-[16px] text-black/40 mt-2">
+                            Stay tuned! We're preparing exciting updates for you.
+                        </p>
+                    </div>
+                )}
             </div>
 
         </section>
