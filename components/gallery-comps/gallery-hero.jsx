@@ -119,7 +119,7 @@ export default function CareerHero() {
                             height: '147px',
                         }}
                     >
-                        Explore our state-of-the-art manufacturing capabilities, precision tooling, and quality production processes. From mold making to plastic injection and secondary processing, witness the engineering excellence that drives our industry leadership.
+                        a curated collection of our work, facilities, and team in action, highlighting the standards and values that define our company
                     </p>
 
                     {/* e. Icon */}

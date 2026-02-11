@@ -93,46 +93,52 @@ export default function Gallery() {
                 ))}
             </div>
 
-            {/* Image Grid: 4 kolom x 3 baris */}
+            {/* Image */}
             <div
-                className="grid grid-cols-4"
                 style={{
                     paddingLeft: '75px',
                     paddingRight: '75px',
                     marginTop: '60px',
-                    gap: '30px',
+                    minHeight: '530px',
                 }}
             >
-                {currentImages.map((image) => (
-                    <div
-                        key={image.id}
-                        className="relative overflow-hidden group cursor-pointer"
-                        style={{
-                            width: '100%',
-                            aspectRatio: '266 / 141',
-                            borderRadius: '20px',
-                        }}
-                    >
-                        <Image
-                            src={image.src}
-                            alt={image.alt}
-                            fill
-                            className="object-cover transition-transform duration-500 group-hover:scale-110"
-                        />
-                        {/* Overlay on hover */}
-                        <div className="absolute inset-0 bg-[#0055A4]/0 group-hover:bg-[#0055A4]/40 transition-all duration-300 flex items-end">
-                            <p
-                                className="text-white font-poppins font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                                style={{
-                                    padding: '12px 16px',
-                                    fontSize: '14px',
-                                }}
-                            >
-                                {image.alt}
-                            </p>
+                <div
+                    className="grid grid-cols-4"
+                    style={{
+                        gap: '30px',
+                    }}
+                >
+                    {currentImages.map((image) => (
+                        <div
+                            key={image.id}
+                            className="relative overflow-hidden group cursor-pointer"
+                            style={{
+                                width: '100%',
+                                aspectRatio: '266 / 141',
+                                borderRadius: '20px',
+                            }}
+                        >
+                            <Image
+                                src={image.src}
+                                alt={image.alt}
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                            {/* Overlay on hover */}
+                            <div className="absolute inset-0 bg-[#0055A4]/0 group-hover:bg-[#0055A4]/40 transition-all duration-300 flex items-end">
+                                <p
+                                    className="text-white font-poppins font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                    style={{
+                                        padding: '12px 16px',
+                                        fontSize: '14px',
+                                    }}
+                                >
+                                    {image.alt}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
 
             {/* Pagination */}
@@ -182,7 +188,7 @@ export default function Gallery() {
                         </button>
                     ))}
 
-                    {/* Next Button */}
+                    {/* Pagination */}
                     <button
                         onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
                         disabled={currentPage === totalPages}

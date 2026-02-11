@@ -6,12 +6,15 @@ import { AnimateOnScroll } from '@/components/animations/scroll-animations'
 export default function OurPartner() {
     // Data partner
     const partners = [
-        { src: '/images/partner-logos/astraOto.png', alt: 'Daihatsu' },
-        { src: '/images/partner-logos/atsumitec.png', alt: 'Isuzu' },
-        { src: '/images/partner-logos/Polytron.png', alt: 'Honda' },
-        { src: '/images/partner-4.png', alt: 'Partner 4' },
-        { src: '/images/partner-5.png', alt: 'Partner 5' },
-        { src: '/images/partner-6.png', alt: 'Partner 6' },
+        { src: '/images/partner-logos/Astra Otoparts Logo.png', alt: 'Astra Otoparts' },
+        { src: '/images/partner-logos/Atsumitec Logo.jpeg', alt: 'Atsumitec' },
+        { src: '/images/partner-logos/Polytron Logo.png', alt: 'Polytron' },
+        { src: '/images/partner-logos/Dynaplast Logo.png', alt: 'Dynaplast' },
+        { src: '/images/partner-logos/TAM Logo.png', alt: 'TAM' },
+        { src: '/images/partner-logos/TSI Logo.png', alt: 'TSI' },
+        { src: '/images/partner-logos/Toyo Denso Logo.jpeg', alt: 'Toyo Denso' },
+        { src: '/images/partner-logos/YEMI Logo.jpeg', alt: 'YEMI' },
+        { src: '/images/partner-logos/SMA Logo.jpeg', alt: 'SMA' },
     ]
 
     return (
