@@ -7,10 +7,10 @@ export default function Services() {
     return (
         <>
             <Navbar />
-            <div style={{ marginBottom: '40px' }}>
+            <div style={{ marginBottom: '50px' }}>
                 <ServiceHero />
             </div>
-            <div style={{ marginBottom: '40px' }}>
+            <div style={{ marginBottom: '50px' }}>
                 <ServicesSection />
             </div>
             <Footer />

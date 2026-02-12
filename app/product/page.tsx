@@ -10,7 +10,7 @@ export default function ProductPage() {
             <Navbar />
             <ProductHeroSection />
             <OurProductsSection />
-            <div style={{ paddingTop: '61px', paddingBottom: '61px' }}>
+            <div style={{ paddingTop: '50px', paddingBottom: '50px' }}>
                 <BenefitSection />
             </div>
             <Footer />

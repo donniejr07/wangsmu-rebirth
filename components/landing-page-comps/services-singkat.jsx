@@ -20,7 +20,7 @@ export default function ServicesSingkat() {
             <section className="lg:hidden relative w-full bg-white overflow-hidden" style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '16px', paddingBottom: '20px' }}>
                 {/* Deskripsi */}
                 <AnimateOnScroll animation="fadeUp" duration={800}>
-                    <p className="font-poppins font-semibold text-[18px] leading-[20px] text-black text-center" style={{ marginBottom: '16px' }}>
+                    <p className="font-poppins font-semibold text-[18px] leading-[20px] text-black text-center" style={{ marginBottom: '30px' }}>
                         {t('servicesSingkat.descMobile')}
                     </p>
                 </AnimateOnScroll>

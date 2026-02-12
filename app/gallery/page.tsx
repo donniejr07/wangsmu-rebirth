@@ -8,7 +8,7 @@ export default function GalleryPage() {
         <>
             <Navbar />
             <GalleryHero />
-            <div style={{ marginTop: '26px', marginBottom: '26px' }}>
+            <div style={{ marginTop: '50px', marginBottom: '50px' }}>
                 <Gallery />
             </div>
             <Footer />

@@ -27,22 +27,22 @@ export default function AboutSingkat() {
                 <div className="relative z-10">
                     {/* Title */}
                     <AnimateOnScroll animation="fadeUp" duration={800}>
-                        <h2 className="text-white font-poppins font-semibold text-[28px] leading-[36px]" style={{ marginBottom: '16px' }}>
+                        <h2 className="text-white font-poppins font-semibold text-[28px] leading-[36px]" style={{ marginBottom: '16px', marginLeft: '20px', marginRight: '20px' }}>
                             {t('aboutSingkat.title')}
                         </h2>
                     </AnimateOnScroll>
 
                     {/* Deskripsi */}
                     <AnimateOnScroll animation="fadeUp" delay={100} duration={800}>
-                        <p className="text-white font-poppins font-normal text-[14px] leading-[22px]" style={{ marginBottom: '24px' }}>
+                        <p className="text-white font-poppins font-normal text-[14px] leading-[22px]" style={{ marginBottom: '24px', marginLeft: '20px', marginRight: '20px' }}>
                             {t('aboutSingkat.descriptionMobile')}
                         </p>
                     </AnimateOnScroll>
 
-                    {/* CTA Button */}
+                    {/* Redirect to about page */}
                     <AnimateOnScroll animation="scaleUp" delay={200} duration={600}>
                         <Link href="/about">
-                            <button className="bg-white rounded-[16px] w-full h-[48px] flex items-center justify-center hover:bg-gray-100 hover:scale-105 transition-all duration-300">
+                            <button className="bg-white rounded-[16px] w-[200px] h-[48px] flex items-center justify-center hover:bg-gray-100 hover:scale-105 transition-all duration-300" style={{ position: 'relative', left: '50%', transform: 'translateX(-50%)' }}>
                                 <span className="text-black font-poppins font-semibold text-[16px]">
                                     {t('aboutSingkat.readMore')}
                                 </span>
@@ -53,7 +53,7 @@ export default function AboutSingkat() {
             </section>
 
             {/* Desktop Layout */}
-            <section className="hidden lg:block relative w-full min-h-[700px] bg-[#0055A4] pb-[120px] overflow-hidden">
+            <section className="hidden lg:block relative w-full min-h-[580px] bg-[#0055A4] pb-[120px] overflow-hidden">
                 {/* Background */}
                 <div className="absolute inset-0 w-full h-full">
                     <Image
@@ -71,7 +71,7 @@ export default function AboutSingkat() {
                     <AnimateOnScroll animation="fadeRight" duration={800}>
                         <h2
                             className="text-white font-poppins font-semibold text-[50px] leading-[75px] max-w-[1000px]"
-                            style={{ paddingTop: '21px', paddingLeft: '107px', marginBottom: '9px' }}
+                            style={{ paddingTop: '25px', paddingLeft: '107px', marginBottom: '9px' }}
                         >
                             {t('aboutSingkat.title')}
                         </h2>

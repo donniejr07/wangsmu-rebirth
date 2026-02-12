@@ -31,21 +31,13 @@ export default function Navbar() {
 
     /**
     * Navbar
-    * 
-    * Responsive navigation dengan hamburger menu.
-    * - Mobile: Slide-in menu dari kiri
-    * - Desktop: Panel besar dengan menu items + video preview
-    * 
-    * Fitur:
-    * - Toggle menu open/close
-    * - Language switcher (ID/EN)
-    * - Animated hamburger icon
     */
 
     return (
         <>
             {/* Mobile Layout */}
             <div className="lg:hidden">
+                {/* hamburger */}
                 <div
                     onClick={toggleMenu}
                     className="fixed cursor-pointer z-[1400]"
@@ -108,7 +100,6 @@ export default function Navbar() {
                             width: '36px',
                             height: '36px',
                             backgroundColor: language === 'id' ? '#FFFFFF' : 'transparent',
-                            border: language === 'id' ? '1px solid #000000' : 'none',
                             borderRadius: '50%',
                             display: 'flex',
                             alignItems: 'center',
@@ -124,7 +115,6 @@ export default function Navbar() {
                             width: '36px',
                             height: '36px',
                             backgroundColor: language === 'en' ? '#FFFFFF' : 'transparent',
-                            border: language === 'en' ? '1px solid #000000' : 'none',
                             borderRadius: '50%',
                             display: 'flex',
                             alignItems: 'center',
@@ -153,7 +143,8 @@ export default function Navbar() {
                         padding: '20px',
                     }}
                 >
-                    <nav className="flex flex-col gap-4 mt-8">
+                    {/* menu */}
+                    <nav className="flex flex-col gap-8 mt-8">
                         {menuItems.map((item) => (
                             <Link key={item.href} href={item.href} onClick={toggleMenu}>
                                 <div className="flex items-center gap-4 text-white hover:opacity-80 transition-opacity py-2">
@@ -165,9 +156,9 @@ export default function Navbar() {
                     </nav>
 
                     <p className="text-white/50 text-[12px] font-poppins text-center border-t border-white/20"
-                        style={{ marginTop: '10px' }}
+                        style={{ marginTop: '15px' }}
                     >
-                        © 2025 Wang Sarimulti Utama
+                        © 2026 Wang Sarimulti Utama
                     </p>
                 </div>
             </div>
@@ -237,7 +228,6 @@ export default function Navbar() {
                             width: '42px',
                             height: '42px',
                             backgroundColor: language === 'id' ? '#FFFFFF' : 'transparent',
-                            border: language === 'id' ? '1px solid #000000' : 'none',
                             borderRadius: '50%',
                             display: 'flex',
                             alignItems: 'center',
@@ -253,7 +243,6 @@ export default function Navbar() {
                             width: '42px',
                             height: '42px',
                             backgroundColor: language === 'en' ? '#FFFFFF' : 'transparent',
-                            border: language === 'en' ? '1px solid #000000' : 'none',
                             borderRadius: '50%',
                             display: 'flex',
                             alignItems: 'center',

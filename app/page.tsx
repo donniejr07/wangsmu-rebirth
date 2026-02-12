@@ -12,15 +12,15 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <HeroSection />
-      <div style={{ marginTop: '100px', marginBottom: '100px' }}>
+      <div style={{ marginTop: '50px', marginBottom: '50px' }}>
         <AboutSingkat />
       </div>
       <OurAdvantages />
-      <div style={{ marginTop: '100px', marginBottom: '100px' }}>
+      <div style={{ marginTop: '50px', marginBottom: '50px' }}>
         <ServicesSingkat />
       </div>
       <OurLatestUpdate />
-      <div style={{ marginTop: '100px', marginBottom: '50px' }}>
+      <div style={{ marginTop: '50px', marginBottom: '50px' }}>
         <OurPartner />
       </div>
       <Footer />

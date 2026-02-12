@@ -11,10 +11,10 @@ export default function AboutPage() {
         <main className="min-h-screen">
             <Navbar />
             <AboutHeroSection />
-            <div style={{ paddingTop: '61px', paddingBottom: '61px' }}>
+            <div style={{ paddingTop: '50px', paddingBottom: '50px' }}>
                 <AboutStorySection />
             </div>
-            <div style={{ paddingBottom: '61px' }}>
+            <div style={{ paddingBottom: '50px' }}>
                 <WhyChooseUsSection />
             </div>
             <Footer />

@@ -6,7 +6,7 @@ export default function ContactPage() {
     return (
         <main>
             <Navbar />
-            <div style={{ marginBottom: '26px' }}>
+            <div style={{ marginBottom: '50px' }}>
                 <FormSection />
             </div>
             <Footer />

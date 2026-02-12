@@ -38,7 +38,7 @@ export default function AboutHeroSection() {
                         />
 
                         {/* Title */}
-                        <h1 className="font-poppins font-semibold text-[32px] leading-[36px] text-white mb-4">
+                        <h1 className="font-poppins font-semibold text-[32px] leading-[36px] text-white" style={{ marginBottom: '10px' }}>
                             Wang SMU<br />Story
                         </h1>
 
