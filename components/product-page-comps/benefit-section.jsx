@@ -81,7 +81,7 @@ function BenefitItem({ icon, title, description, delay = 0 }) {
 
                 {/* Benefit Title */}
                 <h3
-                    className="font-poppins font-medium text-[24px] leading-[36px] text-black"
+                    className="font-poppins font-medium text-[20px] leading-[36px] text-black"
                     style={{
                         marginTop: '11px',
                         width: '366px',
@@ -93,7 +93,7 @@ function BenefitItem({ icon, title, description, delay = 0 }) {
 
                 {/* Benefit Description */}
                 <p
-                    className="font-poppins font-normal text-[20px] leading-[30px] text-black"
+                    className="font-poppins font-normal text-[18px] leading-[30px] text-black"
                     style={{
                         marginTop: '10px',
                         width: '262px',
@@ -290,7 +290,7 @@ export default function BenefitSection() {
 
                     {/* Benefits Container */}
                     <div
-                        className="flex justify-center gap-[15px]"
+                        className="flex justify-center gap-[8px]"
                         style={{
                             marginTop: '98px',
                         }}

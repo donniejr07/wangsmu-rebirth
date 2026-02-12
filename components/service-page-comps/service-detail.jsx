@@ -30,7 +30,7 @@ export default function ServiceDetail() {
 
                         {/* Logo */}
                         <Image
-                            src="/images/logo-pt-puteh.png"
+                            src="/images/logo-putih.png"
                             alt="Logo PT"
                             width={80}
                             height={84}
@@ -168,14 +168,14 @@ export default function ServiceDetail() {
 
                     {/* e. Logo PT */}
                     <Image
-                        src="/images/logo-pt-puteh.png"
+                        src="/images/logo-putih.png"
                         alt="Logo PT"
-                        width={139}
-                        height={146}
+                        width={119}
+                        height={116}
                         className="absolute"
                         style={{
                             top: '19px',
-                            right: '28px',
+                            right: '48px',
                         }}
                     />
                 </div>

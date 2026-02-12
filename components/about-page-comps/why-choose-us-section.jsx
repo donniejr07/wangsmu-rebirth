@@ -299,7 +299,7 @@ export default function WhyChooseUsSection() {
             </section>
 
             {/* ===== DESKTOP LAYOUT ===== */}
-            <section className="hidden lg:block relative w-full" style={{ paddingTop: '43px' }}>
+            <section className="hidden lg:block relative w-full">
                 {/* Title */}
                 <h2
                     className="font-poppins font-semibold text-[60px] leading-[73px] text-center"

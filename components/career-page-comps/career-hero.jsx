@@ -32,7 +32,7 @@ export default function CareerHero() {
 
                         {/* Logo */}
                         <Image
-                            src="/images/logo-pt-puteh.png"
+                            src="/images/logo-putih.png"
                             alt="Logo PT"
                             width={80}
                             height={84}

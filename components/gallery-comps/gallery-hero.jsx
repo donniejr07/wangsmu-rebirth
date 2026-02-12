@@ -32,7 +32,7 @@ export default function CareerHero() {
 
                         {/* Logo */}
                         <Image
-                            src="/images/logo-pt-puteh.png"
+                            src="/images/logo-putih.png"
                             alt="Logo PT"
                             width={80}
                             height={84}
@@ -124,15 +124,14 @@ export default function CareerHero() {
 
                     {/* e. Icon */}
                     <Image
-                        src="/images/logo-pt-puteh.png"
+                        src="/images/logo-putih.png"
                         alt="Gallery Icon"
-                        width={150}
-                        height={144}
-                        className="mb-6"
+                        width={119}
+                        height={116}
+                        className="absolute"
                         style={{
-                            position: 'absolute',
-                            top: '25px',
-                            right: '32px',
+                            top: '19px',
+                            right: '48px',
                         }}
                     />
                 </div>

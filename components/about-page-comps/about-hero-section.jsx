@@ -30,10 +30,10 @@ export default function AboutHeroSection() {
 
                         {/* Logo */}
                         <Image
-                            src="/images/logo-pt-puteh.png"
+                            src="/images/logo-putih.png"
                             alt="Logo PT"
-                            width={80}
-                            height={84}
+                            width={70}
+                            height={64}
                             className="mb-6"
                         />
 
@@ -122,14 +122,14 @@ export default function AboutHeroSection() {
 
                     {/* e. Logo PT */}
                     <Image
-                        src="/images/logo-pt-puteh.png"
+                        src="/images/logo-putih.png"
                         alt="Logo PT"
-                        width={139}
-                        height={146}
+                        width={119}
+                        height={116}
                         className="absolute"
                         style={{
                             top: '19px',
-                            right: '28px',
+                            right: '48px',
                         }}
                     />
                 </div>

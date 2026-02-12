@@ -51,14 +51,14 @@ export default async function NewsDetailPage({ params }: PageProps) {
                     />
 
                     <img
-                        src="/images/logo-pt-puteh.png"
+                        src="/images/logo-putih.png"
                         alt="PT Wang SMU Logo"
                         style={{
                             position: 'absolute',
-                            top: '35px',
-                            right: '50px',
-                            width: '150px',
-                            height: '110px',
+                            top: '19px',
+                            right: '48px',
+                            width: '119px',
+                            height: '116px',
                         }}
                     />
                 </div>

@@ -16,7 +16,7 @@ export default function NewsHeroSection() {
                 />
 
                 <img
-                    src="/images/logo-pt-puteh.png"
+                    src="/images/logo-putih.png"
                     alt="PT Wang SMU Logo"
                     style={{
                         position: 'absolute',

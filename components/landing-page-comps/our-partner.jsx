@@ -7,8 +7,8 @@ export default function OurPartner() {
     // Data partner
     const partners = [
         { src: '/images/partner-logos/Astra Otoparts Logo.png', alt: 'Astra Otoparts' },
-        { src: '/images/partner-logos/Atsumitec Logo.jpeg', alt: 'Atsumitec' },
         { src: '/images/partner-logos/Polytron Logo.png', alt: 'Polytron' },
+        { src: '/images/partner-logos/Atsumitec Logo.jpeg', alt: 'Atsumitec' },
         { src: '/images/partner-logos/Dynaplast Logo.png', alt: 'Dynaplast' },
         { src: '/images/partner-logos/TAM Logo.png', alt: 'TAM' },
         { src: '/images/partner-logos/TSI Logo.png', alt: 'TSI' },
@@ -51,7 +51,7 @@ export default function OurPartner() {
                     <div className="relative w-full overflow-hidden mt-6">
                         <div className="flex animate-marquee">
                             {partners.map((partner, index) => (
-                                <div key={`m1-${index}`} className="flex-shrink-0 mx-4">
+                                <div key={`m1-${index}`} className="flex-shrink-0" style={{ margin: '10px' }}>
                                     <div className="relative w-[90px] h-[40px]">
                                         <Image
                                             src={partner.src}
@@ -64,7 +64,7 @@ export default function OurPartner() {
                             ))}
                             {/* Duplikat untuk loop */}
                             {partners.map((partner, index) => (
-                                <div key={`m2-${index}`} className="flex-shrink-0 mx-4">
+                                <div key={`m2-${index}`} className="flex-shrink-0" style={{ margin: '10px' }}>
                                     <div className="relative w-[100px] h-[50px]">
                                         <Image
                                             src={partner.src}
@@ -113,7 +113,7 @@ export default function OurPartner() {
                     >
                         <div className="flex animate-marquee">
                             {partners.map((partner, index) => (
-                                <div key={`d1-${index}`} className="flex-shrink-0 mx-8">
+                                <div key={`d1-${index}`} className="flex-shrink-0" style={{ margin: '10px' }}>
                                     <div className="relative w-[150px] h-[80px]">
                                         <Image
                                             src={partner.src}
@@ -126,7 +126,7 @@ export default function OurPartner() {
                             ))}
                             {/* Duplikat untuk loop */}
                             {partners.map((partner, index) => (
-                                <div key={`d2-${index}`} className="flex-shrink-0 mx-8">
+                                <div key={`d2-${index}`} className="flex-shrink-0" style={{ margin: '10px' }}>
                                     <div className="relative w-[150px] h-[80px]">
                                         <Image
                                             src={partner.src}

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function FormSection() {
     const [subjectOpen, setSubjectOpen] = useState(false)
@@ -20,6 +21,15 @@ export default function FormSection() {
                     src="images/abss.png"
                     alt="Contact Background"
                     className="absolute inset-0 w-full h-full object-cover opacity-30"
+                />
+
+                {/* company icon */}
+                <Image
+                    src="/images/logo-putih.png"
+                    alt="WSMU Logo"
+                    width={54}
+                    height={52}
+                    className="absolute top-1 right-4 z-12"
                 />
 
                 {/* form fields stacked vertically */}
@@ -146,6 +156,16 @@ export default function FormSection() {
                     src="images/abss.png"
                     alt="Contact Background"
                     className="absolute top-[-103px] left-0 w-full h-[970px] object-cover opacity-30"
+                />
+
+                {/* icon */}
+                <Image
+                    src="/images/logo-putih.png"
+                    alt="WSMU Logo"
+                    width={119}
+                    height={116}
+                    className="absolute z-10"
+                    style={{ top: '12px', right: '48px' }}
                 />
 
                 {/* row 1: fullname & email */}
