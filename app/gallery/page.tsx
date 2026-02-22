@@ -1,4 +1,4 @@
-import Gallery from "@/components/gallery-comps/gallery";
+import Gallery from "@/components/gallery-comps/gallery-section";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import GalleryHero from "@/components/gallery-comps/gallery-hero";

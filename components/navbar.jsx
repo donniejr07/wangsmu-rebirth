@@ -18,6 +18,8 @@ export default function Navbar() {
 
         { href: '/about', label: 'About', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><line x1="12" y1="16" x2="12" y2="12" /><line x1="12" y1="8" x2="12.01" y2="8" /></svg> },
 
+        { href: '/hse', label: 'HSE', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline points="10 9 12 11 16 7" /></svg> },
+
         { href: '/services', label: 'Services', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg> },
 
         { href: '/product', label: 'Product', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg> },
@@ -155,7 +157,7 @@ export default function Navbar() {
                         ))}
                     </nav>
 
-                    <p className="text-white/50 text-[12px] font-poppins text-center border-t border-white/20"
+                    <p className="text-white/50 text-[12px] font-poppins text-center border-t border-white/40"
                         style={{ marginTop: '15px' }}
                     >
                         © 2026 Wang Sarimulti Utama
@@ -265,7 +267,7 @@ export default function Navbar() {
                     style={{
                         top: '0px',
                         width: '956px',
-                        height: '564px',
+                        height: '604px',
                         backgroundColor: '#0055A4',
                         borderRadius: '0px 40px 40px 40px',
                         overflow: 'hidden',
@@ -299,7 +301,7 @@ export default function Navbar() {
                             left: '280px',
                             top: '90px',
                             width: '2px',
-                            height: '360px',
+                            height: '420px',
                             backgroundColor: '#FFFFFF',
                         }}
                     />
@@ -332,7 +334,7 @@ export default function Navbar() {
                         className="absolute"
                         style={{
                             left: '299px',
-                            top: '522px',
+                            top: '560px',
                             width: '359px',
                             height: '30px',
                             fontFamily: 'Poppins, sans-serif',

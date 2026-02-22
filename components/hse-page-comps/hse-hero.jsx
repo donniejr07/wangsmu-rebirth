@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function ProductHeroSection() {
+export default function AboutHeroSection() {
     return (
         <>
             {/* Mobile Layout */}
@@ -15,8 +15,8 @@ export default function ProductHeroSection() {
                     {/* Background Image */}
                     <div className="absolute inset-0" style={{ paddingTop: '20px' }}>
                         <Image
-                            src="/images/shifter.png"
-                            alt="Product Hero Background"
+                            src="/images/gallery-wsu.png"
+                            alt="About Hero Background"
                             fill
                             className="object-cover"
                             priority
@@ -32,19 +32,19 @@ export default function ProductHeroSection() {
                         <Image
                             src="/images/logo-putih.png"
                             alt="Logo PT"
-                            width={80}
-                            height={84}
+                            width={70}
+                            height={64}
                             className="mb-6"
                         />
 
                         {/* Title */}
-                        <h1 className="font-poppins font-semibold text-[28px] leading-[36px] text-white" style={{ marginBottom: '20px' }}>
-                            Our<br />Products
+                        <h1 className="font-poppins font-semibold text-[32px] leading-[36px] text-white" style={{ marginBottom: '10px' }}>
+                            Wang SMU<br />HSE
                         </h1>
 
                         {/* Description */}
                         <p className="font-poppins font-normal text-[16px] leading-[24px] text-white max-w-[300px]">
-                            Explore our wide range of quality products
+                            Let’s take a closer look at our HSE commitment to understand the standards and practices that ensure a safe, healthy, and sustainable working environment
                         </p>
                     </div>
                 </div>
@@ -58,15 +58,15 @@ export default function ProductHeroSection() {
                     paddingRight: '6%',
                 }}
             >
-                {/* a. Rectangle 1 - Blue background */}
+                {/* Blue background */}
                 <div
-                    className="relative overflow-hidden bg-[#0055A4] w-full"
+                    className="relative overflow-hidden bg-[#0055A1] w-full"
                     style={{
                         height: '753px',
                         borderRadius: '0 0 160px 160px',
                     }}
                 >
-                    {/* b. Background Image */}
+                    {/* Background Image */}
                     <div
                         className="absolute left-0 w-full overflow-hidden"
                         style={{
@@ -77,7 +77,7 @@ export default function ProductHeroSection() {
                     >
                         <Image
                             src="/images/gallery-wsu.png"
-                            alt="Product Hero Background"
+                            alt="About Hero Background"
                             fill
                             style={{ objectFit: 'cover' }}
                             priority
@@ -89,7 +89,7 @@ export default function ProductHeroSection() {
                         />
                     </div>
 
-                    {/* c. Title Text - Our Products */}
+                    {/* Title Text - Wang SMU Story */}
                     <h1
                         className="absolute font-poppins font-semibold text-[60px] leading-[63px] text-white"
                         style={{
@@ -99,23 +99,22 @@ export default function ProductHeroSection() {
                     >
                         <span style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                             <span>Wang SMU</span>
-                            <span>Products</span>
+                            <span>HSE</span>
                         </span>
                     </h1>
 
-                    {/* d. Description Text */}
+                    {/* Description Text */}
                     <p
-                        className="absolute font-poppins font-normal text-[28px] leading-[42px] text-white"
+                        className="absolute font-poppins font-normal text-[28px] leading-[42px] text-white max-w-[75%]"
                         style={{
                             left: '7%',
-                            right: '7%',
-                            bottom: '72px',
+                            bottom: '120px',
                         }}
                     >
-                        Advanced industrial components engineered for reliability, durability, and exceptional performance across diverse applications.
+                        Let’s take a closer look at our HSE commitment to understand the standards and practices that ensure a safe, healthy, and sustainable working environment
                     </p>
 
-                    {/* e. Logo PT */}
+                    {/* Logo PT */}
                     <Image
                         src="/images/logo-putih.png"
                         alt="Logo PT"

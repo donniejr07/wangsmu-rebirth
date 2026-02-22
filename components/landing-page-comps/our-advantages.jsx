@@ -16,7 +16,7 @@ export default function OurAdvantages() {
 
     return (
         <>
-            {/* ===== MOBILE LAYOUT ===== */}
+            {/* MOBILE LAYOUT */}
             <section className="lg:hidden relative w-full bg-white overflow-hidden" style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '16px', paddingBottom: '20px' }}>
                 {/* Header */}
                 <AnimateOnScroll animation="fadeUp" duration={800}>
@@ -56,15 +56,15 @@ export default function OurAdvantages() {
             <section className="hidden lg:block relative w-full bg-white overflow-hidden">
                 <div
                     className="flex items-center gap-5"
-                    style={{ paddingLeft: '34px' }}
+                    style={{ paddingLeft: '2.5%', paddingRight: '2.5%' }}
                 >
                     <h2 className="font-poppins font-semibold text-[48px] leading-[72px] whitespace-nowrap">
                         <span className="text-black">{t('ourAdvantages.titleOur')} </span>
                         <span className="text-[#0055A4]">{t('ourAdvantages.titleAdvantages')}</span>
                     </h2>
                     <div
-                        className="bg-[#0055A4]"
-                        style={{ width: '713px', height: '12px' }}
+                        className="bg-[#0055A4] flex-1"
+                        style={{ height: '12px' }}
                     />
                 </div>
                 {/* <AnimateOnScroll animation="fadeLeft" duration={800}>
@@ -74,7 +74,7 @@ export default function OurAdvantages() {
                 {/* kolom cards */}
                 <div
                     className="flex flex-row justify-center items-start"
-                    style={{ paddingBottom: '49px', marginTop: '60px', gap: '80px' }}
+                    style={{ paddingBottom: '49px', marginTop: '60px', gap: '60px' }}
                 >
                     {/* kolom kiri */}
                     <div className="flex flex-col" style={{ gap: '32px' }}>

@@ -102,7 +102,7 @@ function ProductCard({ imageSrc, title, description, delay = 0 }) {
                         width: '280px',
                         height: '40px',
                         backgroundColor: '#0055A4',
-                        borderRadius: '20px',
+                        borderRadius: '15px',
                         border: 'none',
                         cursor: 'pointer',
                         fontFamily: 'Poppins, sans-serif',
@@ -128,7 +128,7 @@ function MobileProductCard({ imageSrc, title, description, delay = 0 }) {
                     width: '100%',
                     backgroundColor: '#FFFFFF',
                     border: '1px solid #0055A4',
-                    borderRadius: '16px',
+                    borderRadius: '15px',
                     padding: '16px',
                 }}
             >
@@ -163,14 +163,14 @@ function MobileProductCard({ imageSrc, title, description, delay = 0 }) {
                     {description}
                 </p>
 
-                {/* More Details Button */}
+                {/* Button */}
                 <button
                     className="hover:opacity-80 transition-opacity"
                     style={{
                         width: '100%',
                         height: '36px',
                         backgroundColor: '#0055A4',
-                        borderRadius: '18px',
+                        borderRadius: '15px',
                         border: 'none',
                         cursor: 'pointer',
                         fontFamily: 'Poppins, sans-serif',
@@ -208,7 +208,7 @@ const productsData = [
 export default function OurProductsSection() {
     return (
         <>
-            {/* ===== MOBILE LAYOUT ===== */}
+            {/* Mobile */}
             <section className="lg:hidden" style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '40px', paddingBottom: '40px' }}>
                 {/* Title */}
                 <AnimateOnScroll animation="fadeUp" delay={0}>
@@ -245,25 +245,18 @@ export default function OurProductsSection() {
                 </div>
             </section>
 
-            {/* ===== DESKTOP LAYOUT ===== */}
+            {/* Desktop*/}
             <section
                 className="hidden lg:block relative"
                 style={{
-                    minWidth: '1440px',
                     paddingTop: '77px',
                 }}
             >
                 {/* Title Group */}
-                <div className="text-center">
+                <div className="w-full">
                     {/* Title */}
                     <h2
-                        className="font-poppins font-semibold text-[56px] leading-[84px]"
-                        style={{
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                            width: '371px',
-                            height: '84px',
-                        }}
+                        className="text-center font-poppins font-semibold text-[56px] leading-[84px]"
                     >
                         <span className="text-black">Our </span>
                         <span className="text-[#0055A4]">Products</span>
@@ -273,13 +266,12 @@ export default function OurProductsSection() {
 
                     {/* Subtitle */}
                     <p
-                        className="font-poppins font-normal text-[32px] leading-[48px] text-black"
+                        className="font-poppins font-normal text-[28px] leading-[48px] text-black max-w-[1133px]"
                         style={{
+                            textAlign: 'center',
+                            marginTop: '7px',
                             marginLeft: 'auto',
                             marginRight: 'auto',
-                            marginTop: '7px',
-                            width: '1133px',
-                            height: '100px',
                         }}
                     >
                         Comprehensive range of precision-engineered components designed to meet the highest industry standards.

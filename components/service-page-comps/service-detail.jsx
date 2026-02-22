@@ -70,16 +70,14 @@ export default function ServiceDetail() {
             <section
                 className="hidden lg:flex justify-center relative"
                 style={{
-                    minWidth: '1440px',
-                    paddingLeft: '61px',
-                    paddingRight: '61px',
+                    paddingLeft: '6%',
+                    paddingRight: '6%',
                 }}
             >
                 {/* a. Rectangle 1 - Blue background */}
                 <div
-                    className="relative overflow-hidden bg-[#0055A4] flex-shrink-0"
+                    className="relative overflow-hidden bg-[#0055A4] w-full"
                     style={{
-                        width: '1317px',
                         height: '753px',
                         borderRadius: '0 0 160px 160px',
                     }}
@@ -111,13 +109,11 @@ export default function ServiceDetail() {
                     <h1
                         className="absolute font-poppins font-semibold text-[60px] leading-[63px] text-white"
                         style={{
-                            left: '105px',
+                            left: '7%',
                             bottom: '269px',
-                            width: '451px',
-                            height: '126px',
                         }}
                     >
-                        <span style={{ display: 'flex', flexDirection: 'column', gap: '10px', width: '451px', height: '126px' }}>
+                        <span style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                             <span>Wang SMU</span>
                             <span>Services</span>
                         </span>
@@ -125,45 +121,27 @@ export default function ServiceDetail() {
 
                     {/* d. Stats Blocks */}
                     <div
-                        className="absolute text-white font-poppins font-normal flex flex-col justify-between"
+                        className="absolute flex justify-between text-white font-poppins font-normal"
                         style={{
-                            left: '105px',
+                            left: '7%',
+                            right: '7%',
                             bottom: '87px',
-                            width: '215px',
-                            height: '90px',
                         }}
                     >
-                        <span style={{ fontSize: '40px', lineHeight: '48px' }}>25+</span>
-                        <span style={{ fontSize: '24px', lineHeight: '36px' }}>Years Experiences</span>
-                    </div>
+                        <div className="flex flex-col">
+                            <span style={{ fontSize: '40px', lineHeight: '48px' }}>25+</span>
+                            <span style={{ fontSize: '24px', lineHeight: '36px' }}>Years Experiences</span>
+                        </div>
 
-                    <div
-                        className="absolute text-white font-poppins font-normal flex flex-col justify-between"
-                        style={{
-                            left: '50%',
-                            transform: 'translateX(-50%)',
-                            bottom: '87px',
-                            width: '215px',
-                            height: '90px',
-                            textAlign: 'center'
-                        }}
-                    >
-                        <span style={{ fontSize: '40px', lineHeight: '48px' }}>1000+</span>
-                        <span style={{ fontSize: '24px', lineHeight: '36px' }}>Projects Finished</span>
-                    </div>
+                        <div className="flex flex-col text-center">
+                            <span style={{ fontSize: '40px', lineHeight: '48px' }}>1000+</span>
+                            <span style={{ fontSize: '24px', lineHeight: '36px' }}>Projects Finished</span>
+                        </div>
 
-                    <div
-                        className="absolute text-white font-poppins font-normal flex flex-col justify-between"
-                        style={{
-                            right: '105px',
-                            bottom: '87px',
-                            width: '215px',
-                            height: '90px',
-                            textAlign: 'right'
-                        }}
-                    >
-                        <span style={{ fontSize: '40px', lineHeight: '48px' }}>90%</span>
-                        <span style={{ fontSize: '24px', lineHeight: '36px' }}>Happy Customers</span>
+                        <div className="flex flex-col text-right">
+                            <span style={{ fontSize: '40px', lineHeight: '48px' }}>90%</span>
+                            <span style={{ fontSize: '24px', lineHeight: '36px' }}>Happy Customers</span>
+                        </div>
                     </div>
 
                     {/* e. Logo PT */}

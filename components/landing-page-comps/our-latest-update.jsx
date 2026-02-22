@@ -102,15 +102,15 @@ export default function OurLatestUpdate() {
             {/* desktop header */}
             <div
                 className="hidden lg:flex items-center"
-                style={{ paddingLeft: '34px', gap: '19px' }}
+                style={{ paddingLeft: '2.5%', paddingRight: '2.5%', gap: '19px' }}
             >
                 <h2 className="font-poppins font-semibold text-[48px] leading-[96px] whitespace-nowrap">
                     <span className="text-black">{t('ourUpdates.titleOur')} </span>
                     <span className="text-[#0055A4]">{t('ourUpdates.titleUpdate')}</span>
                 </h2>
                 <div
-                    className="bg-[#0055A4]"
-                    style={{ width: '713px', height: '12px' }}
+                    className="bg-[#0055A4] flex-1"
+                    style={{ height: '12px' }}
                 />
             </div>
 

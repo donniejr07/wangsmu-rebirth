@@ -40,13 +40,13 @@ export default function CareerHero() {
                         />
 
                         {/* Title */}
-                        <h1 className="font-poppins font-semibold text-[32px] leading-[36px] text-white mb-4">
+                        <h1 className="font-poppins font-semibold text-[32px] leading-[36px] text-white" style={{ marginBottom: '10px' }}>
                             Wang SMU<br />Gallery
                         </h1>
 
                         {/* Description */}
-                        <p className="font-poppins font-normal text-[18px] leading-[24px] text-white max-w-[300px]">
-                            Explore our state-of-the-art manufacturing capabilities, precision tooling, and quality production processes. From mold making to plastic injection and secondary processing, witness the engineering excellence that drives our industry leadership.
+                        <p className="font-poppins font-normal text-[16px] leading-[24px] text-white max-w-[300px]">
+                            Explore our advanced manufacturing, precision tooling, and quality production processes that drive our industry leadership
                         </p>
                     </div>
                 </div>
@@ -111,7 +111,7 @@ export default function CareerHero() {
 
                     {/* d. Description Text */}
                     <p
-                        className="absolute font-poppins font-normal text-[30px] leading-[42px] text-white"
+                        className="absolute font-poppins font-normal text-[28px] leading-[42px] text-white"
                         style={{
                             left: '105px',
                             bottom: '72px',

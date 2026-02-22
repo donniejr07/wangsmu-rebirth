@@ -78,6 +78,7 @@ function DesktopCard({ icon, title, description, variant = 'blue', titleOffset =
                     backgroundColor: isWhite ? '#FFFFFF' : '#0055A4',
                     borderRadius: '20px',
                     border: isWhite ? '2px solid #0055A4' : 'none',
+                    padding: '20px 22px',
                 }}
             >
                 {/* Background Image with 30% opacity - only for blue variant */}
@@ -92,42 +93,27 @@ function DesktopCard({ icon, title, description, variant = 'blue', titleOffset =
                     </div>
                 )}
 
-                {/* Icon Rectangle Background */}
-                <div
-                    className="absolute bg-[#D9D9D9] rounded-[15px] transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
-                    style={{
-                        left: '22px',
-                        top: '20px',
-                        width: '55px',
-                        height: '55px',
-                    }}
-                />
+                {/* Header: Icon + Title */}
+                <div className="relative z-10 flex items-center gap-4" style={{ marginBottom: '16px' }}>
+                    {/* Icon Box */}
+                    <div
+                        className="bg-[#D9D9D9] rounded-[15px] flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
+                        style={{ width: '55px', height: '55px' }}
+                    >
+                        {icon}
+                    </div>
 
-                {/* Icon */}
-                {icon}
-
-                {/* Title */}
-                <h3
-                    className={`absolute font-poppins font-semibold text-[24px] leading-[36px] ${isWhite ? 'text-[#0055A4]' : 'text-white'}`}
-                    style={{
-                        left: '100px',
-                        top: `${27 + titleOffset}px`,
-                        width: '239px',
-                        height: '50px',
-                    }}
-                >
-                    {title}
-                </h3>
+                    {/* Title */}
+                    <h3
+                        className={`font-poppins font-semibold text-[24px] leading-[36px] ${isWhite ? 'text-[#0055A4]' : 'text-white'}`}
+                    >
+                        {title}
+                    </h3>
+                </div>
 
                 {/* Description */}
                 <p
-                    className={`absolute font-poppins font-semibold text-[16px] leading-[24px] ${isWhite ? 'text-[#0055A4]' : 'text-white'}`}
-                    style={{
-                        left: '22px',
-                        top: '93px',
-                        width: '304px',
-                        height: '72px',
-                    }}
+                    className={`relative z-10 font-poppins font-semibold text-[16px] leading-[24px] ${isWhite ? 'text-[#0055A4]' : 'text-white'}`}
                 >
                     {description}
                 </p>
@@ -189,15 +175,15 @@ const MobileScalableIcon = () => (
     </svg>
 )
 
-// Desktop Icons (with absolute positioning)
+// Desktop Icons (no absolute positioning needed - placed inside icon box)
 const StarIcon = () => (
-    <svg className="absolute" style={{ left: '32px', top: '30px', width: '35px', height: '35px' }} viewBox="0 0 50 50" fill="none">
+    <svg style={{ width: '35px', height: '35px' }} viewBox="0 0 50 50" fill="none">
         <path d="M25 2 L31 18 L48 18 L35 29 L40 46 L25 36 L10 46 L15 29 L2 18 L19 18 Z" fill="#0055A4" />
     </svg>
 )
 
 const PrecisionIcon = () => (
-    <svg className="absolute" style={{ left: '32px', top: '30px', width: '35px', height: '35px' }} viewBox="0 0 50 50" fill="none" stroke="#0055A4" strokeWidth="2">
+    <svg style={{ width: '35px', height: '35px' }} viewBox="0 0 50 50" fill="none" stroke="#0055A4" strokeWidth="2">
         <circle cx="25" cy="25" r="20" />
         <circle cx="25" cy="25" r="12" />
         <circle cx="25" cy="25" r="4" fill="#0055A4" />
@@ -209,7 +195,7 @@ const PrecisionIcon = () => (
 )
 
 const ClockIcon = () => (
-    <svg className="absolute" style={{ left: '32px', top: '30px', width: '35px', height: '35px' }} viewBox="0 0 50 50" fill="none" stroke="#0055A4" strokeWidth="2">
+    <svg style={{ width: '35px', height: '35px' }} viewBox="0 0 50 50" fill="none" stroke="#0055A4" strokeWidth="2">
         <circle cx="25" cy="25" r="22" />
         <circle cx="25" cy="25" r="2" fill="#0055A4" />
         <line x1="25" y1="25" x2="25" y2="12" strokeWidth="3" />
@@ -219,7 +205,7 @@ const ClockIcon = () => (
 )
 
 const CertifiedIcon = () => (
-    <svg className="absolute" style={{ left: '32px', top: '30px', width: '35px', height: '35px' }} viewBox="0 0 50 50" fill="#0055A4">
+    <svg style={{ width: '35px', height: '35px' }} viewBox="0 0 50 50" fill="#0055A4">
         <circle cx="25" cy="18" r="15" />
         <path d="M18 30 L18 48 L25 42 L32 48 L32 30" />
         <path d="M20 16 L23 22 L30 22 L24 26 L26 32 L20 28 L14 32 L16 26 L10 22 L17 22 Z" fill="#D9D9D9" />
@@ -227,7 +213,7 @@ const CertifiedIcon = () => (
 )
 
 const SupportIcon = () => (
-    <svg className="absolute" style={{ left: '32px', top: '30px', width: '35px', height: '35px' }} viewBox="0 0 50 50" fill="none" stroke="#0055A4" strokeWidth="2">
+    <svg style={{ width: '35px', height: '35px' }} viewBox="0 0 50 50" fill="none" stroke="#0055A4" strokeWidth="2">
         <path d="M10 25 C10 14, 18 6, 25 6 C32 6, 40 14, 40 25" />
         <rect x="6" y="24" width="8" height="14" rx="3" fill="#0055A4" />
         <rect x="36" y="24" width="8" height="14" rx="3" fill="#0055A4" />
@@ -237,7 +223,7 @@ const SupportIcon = () => (
 )
 
 const ScalableIcon = () => (
-    <svg className="absolute" style={{ left: '32px', top: '30px', width: '35px', height: '35px' }} viewBox="0 0 50 50" fill="#0055A4">
+    <svg style={{ width: '35px', height: '35px' }} viewBox="0 0 50 50" fill="#0055A4">
         <rect x="6" y="32" width="8" height="14" rx="2" />
         <rect x="18" y="24" width="8" height="22" rx="2" />
         <rect x="30" y="16" width="8" height="30" rx="2" />

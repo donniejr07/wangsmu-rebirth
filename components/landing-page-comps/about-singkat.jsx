@@ -70,8 +70,8 @@ export default function AboutSingkat() {
                     {/* Title */}
                     <AnimateOnScroll animation="fadeRight" duration={800}>
                         <h2
-                            className="text-white font-poppins font-semibold text-[50px] leading-[75px] max-w-[1000px]"
-                            style={{ paddingTop: '25px', paddingLeft: '107px', marginBottom: '9px' }}
+                            className="text-white font-poppins font-semibold text-[50px] leading-[75px] max-w-[70%]"
+                            style={{ paddingTop: '25px', paddingLeft: '7%', marginBottom: '9px' }}
                         >
                             {t('aboutSingkat.title')}
                         </h2>
@@ -80,8 +80,8 @@ export default function AboutSingkat() {
                     {/* Deskripsi */}
                     <AnimateOnScroll animation="fadeUp" delay={200} duration={800}>
                         <p
-                            className="text-white font-poppins font-normal text-[28px] leading-[42px] max-w-[800px]"
-                            style={{ paddingLeft: '107px', marginBottom: '27px' }}
+                            className="text-white font-poppins font-normal text-[28px] leading-[42px] max-w-[65%]"
+                            style={{ paddingLeft: '7%', marginBottom: '27px' }}
                         >
                             {t('aboutSingkat.descriptionDesktop')}
                         </p>
@@ -92,7 +92,7 @@ export default function AboutSingkat() {
                         <Link href="/about" scroll={true}>
                             <button
                                 className="bg-white rounded-[20px] w-[300px] h-[60px] flex items-center justify-center hover:bg-gray-100 hover:scale-105 transition-all duration-300"
-                                style={{ marginLeft: '107px' }}
+                                style={{ marginLeft: '7%' }}
                             >
                                 <span className="text-black font-poppins font-normal text-[28px]">
                                     {t('aboutSingkat.readMore')}

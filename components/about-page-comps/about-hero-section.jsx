@@ -43,7 +43,7 @@ export default function AboutHeroSection() {
                         </h1>
 
                         {/* Description */}
-                        <p className="font-poppins font-normal text-[18px] leading-[24px] text-white max-w-[300px]">
+                        <p className="font-poppins font-normal text-[16px] leading-[24px] text-white max-w-[300px]">
                             Let's take a look of our History, Vision, and Mission
                         </p>
                     </div>
@@ -54,16 +54,14 @@ export default function AboutHeroSection() {
             <section
                 className="hidden lg:flex justify-center relative"
                 style={{
-                    minWidth: '1440px',
-                    paddingLeft: '61px',
-                    paddingRight: '61px',
+                    paddingLeft: '6%',
+                    paddingRight: '6%',
                 }}
             >
                 {/* a. Rectangle 1 - Blue background */}
                 <div
-                    className="relative overflow-hidden bg-[#0055A1] flex-shrink-0"
+                    className="relative overflow-hidden bg-[#0055A1] w-full"
                     style={{
-                        width: '1317px',
                         height: '753px',
                         borderRadius: '0 0 160px 160px',
                     }}
@@ -95,13 +93,11 @@ export default function AboutHeroSection() {
                     <h1
                         className="absolute font-poppins font-semibold text-[60px] leading-[63px] text-white"
                         style={{
-                            left: '105px',
+                            left: '7%',
                             bottom: '269px',
-                            width: '451px',
-                            height: '126px',
                         }}
                     >
-                        <span style={{ display: 'flex', flexDirection: 'column', gap: '10px', width: '451px', height: '126px' }}>
+                        <span style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                             <span>Wang SMU</span>
                             <span>Story</span>
                         </span>
@@ -109,15 +105,13 @@ export default function AboutHeroSection() {
 
                     {/* d. Description Text */}
                     <p
-                        className="absolute font-poppins font-normal text-[30px] leading-[42px] text-white"
+                        className="absolute font-poppins font-normal text-[28px] leading-[42px] text-white max-w-[75%]"
                         style={{
-                            left: '105px',
-                            bottom: '72px',
-                            width: '1029px',
-                            height: '147px',
+                            left: '7%',
+                            bottom: '140px',
                         }}
                     >
-                        Let's take a look of our History, Vision, and Mission
+                        Let’s take a closer look at our history, vision, and mission to understand the journey that shaped our company.
                     </p>
 
                     {/* e. Logo PT */}

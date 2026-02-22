@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function CareerHero() {
     return (
         <>
-            {/* Mobile Layout */}
+            {/* Mobile */}
             <section className="lg:hidden relative mx-4 mt-4">
                 <div
                     className="relative w-full overflow-hidden bg-[#0055A4]"
@@ -45,27 +45,25 @@ export default function CareerHero() {
                         </h1>
 
                         {/* Description */}
-                        <p className="font-poppins font-normal text-[18px] leading-[24px] text-white max-w-[300px]">
+                        <p className="font-poppins font-normal text-[16px] leading-[24px] text-white max-w-[300px]">
                             Join us and build your future together.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* Desktop Layout */}
+            {/* Desktop */}
             <section
                 className="hidden lg:flex justify-center relative"
                 style={{
-                    minWidth: '1440px',
-                    paddingLeft: '61px',
-                    paddingRight: '61px',
+                    paddingLeft: '6%',
+                    paddingRight: '6%',
                 }}
             >
                 {/* a. Rectangle 1 - Blue background */}
                 <div
-                    className="relative overflow-hidden bg-[#0055A1] flex-shrink-0"
+                    className="relative overflow-hidden bg-[#0055A4] w-full"
                     style={{
-                        width: '1317px',
                         height: '753px',
                         borderRadius: '0 0 160px 160px',
                     }}
@@ -111,7 +109,7 @@ export default function CareerHero() {
 
                     {/* d. Description Text */}
                     <p
-                        className="absolute font-poppins font-normal text-[30px] leading-[42px] text-white"
+                        className="absolute font-poppins font-normal text-[28px] leading-[42px] text-white max-w-[800px]"
                         style={{
                             left: '105px',
                             bottom: '72px',

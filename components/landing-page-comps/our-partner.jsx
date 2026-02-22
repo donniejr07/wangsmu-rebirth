@@ -84,11 +84,11 @@ export default function OurPartner() {
             <section className="hidden lg:block relative w-full bg-white overflow-hidden">
                 {/* Header */}
                 <AnimateOnScroll animation="scaleUp" duration={800}>
-                    <div className="flex items-center justify-center">
+                    <div className="flex items-center justify-center" style={{ paddingLeft: '4%', paddingRight: '4%' }}>
                         {/* Garis kiri */}
                         <div
-                            className="bg-black"
-                            style={{ width: '500px', height: '12px', marginLeft: '60px', marginRight: '12px' }}
+                            className="bg-black flex-1"
+                            style={{ height: '12px', maxWidth: '500px', marginRight: '12px' }}
                         />
 
                         {/* Judul */}
@@ -99,8 +99,8 @@ export default function OurPartner() {
 
                         {/* Garis kanan */}
                         <div
-                            className="bg-[#0055A4]"
-                            style={{ width: '500px', height: '12px', marginLeft: '12px', marginRight: '60px' }}
+                            className="bg-[#0055A4] flex-1"
+                            style={{ height: '12px', maxWidth: '500px', marginLeft: '12px' }}
                         />
                     </div>
                 </AnimateOnScroll>

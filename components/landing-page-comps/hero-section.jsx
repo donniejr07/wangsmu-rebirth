@@ -105,27 +105,12 @@ export default function HeroSection() {
                     priority
                 />
 
-                <div
+                {/* <h1
                     style={{
                         position: 'absolute',
-                        top: 'calc(117 / 771 * 100%)',
-                        left: 'calc(520 / 1400 * 100%)',
-                        right: '0',
-                        bottom: 'calc(414 / 771 * 100%)',
-                        backgroundColor: 'rgba(0, 85, 164, 0.5)',
-                        borderRadius: 'clamp(25px, 3.5vw, 50px) 0 0 clamp(25px, 3.5vw, 50px)',
-                    }}
-                />
-
-                <h1
-                    style={{
-                        position: 'absolute',
-                        top: 'calc(117 / 771 * 100%)',
-                        left: 'calc((455 + 123) / 1400 * 100%)',
-                        right: 'calc(19 / 1400 * 100%)',
-                        bottom: 'calc(414 / 771 * 100%)',
+                        top: '40px',
                         fontFamily: 'Poppins, sans-serif',
-                        fontSize: 'clamp(18px, 5.7vw, 70px)',
+                        fontSize: 'clamp(12px, 4.7vw, 70px)',
                         fontWeight: 600,
                         color: '#FFFFFF',
                         WebkitTextStroke: '1px #0055A4',
@@ -139,7 +124,7 @@ export default function HeroSection() {
                 >
                     <span>ONE STOP SOLUTION</span>
                     <span>PROVIDER</span>
-                </h1>
+                </h1> */}
 
                 <Image
                     src="/images/logo-pt.png"

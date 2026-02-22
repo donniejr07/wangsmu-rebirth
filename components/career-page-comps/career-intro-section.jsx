@@ -41,21 +41,13 @@ export default function CareerIntroSection() {
                 </AnimateOnScroll>
             </section>
 
-            {/* Desktop Layout */}
-            <section className="hidden lg:block relative w-full min-h-[700px] bg-white">
-                <div className="relative w-full h-full" style={{ minWidth: '1440px' }}>
+            {/* Desktop */}
+            <section className="hidden lg:flex items-center w-full bg-white" style={{ minHeight: '700px', paddingLeft: '4.5%', paddingRight: '4.5%', paddingTop: '60px', paddingBottom: '60px' }}>
 
-                    {/* Title */}
+                {/* Left: Text */}
+                <div style={{ width: '44%', paddingRight: '4%' }}>
                     <AnimateOnScroll animation="fadeUp" delay={0}>
-                        <h2
-                            className="absolute font-poppins font-semibold text-[60px] leading-[72px]"
-                            style={{
-                                left: '61px',
-                                top: '182px',
-                                width: '477px',
-                                height: '126px',
-                            }}
-                        >
+                        <h2 className="font-poppins font-semibold text-[60px] leading-[72px]" style={{ marginBottom: '24px' }}>
                             <span className="text-black">Start </span>
                             <span className="text-black">your </span>
                             <span className="text-[#0055A4]">Career </span>
@@ -63,34 +55,17 @@ export default function CareerIntroSection() {
                             <span className="text-[#0055A4]">Us!</span>
                         </h2>
                     </AnimateOnScroll>
-
-                    {/* Description */}
                     <AnimateOnScroll animation="fadeUp" delay={100}>
-                        <p
-                            className="absolute font-poppins font-normal text-[24px] leading-[36px] text-black"
-                            style={{
-                                left: '61px',
-                                top: '365px',
-                                width: '525px',
-                                height: '126px',
-                            }}
-                        >
+                        <p className="font-poppins font-normal text-[22px] leading-[36px] text-black">
                             PT Wang Sarimulti Utama berfokus pada pengembangan generasi muda yang berpotensi, agar mereka dapat tumbuh, berkarya, dan memberikan kontribusi positif bagi perusahaan dan bangsa. Mulai langkah kariermu di sini dan berkembang bersama kami!
                         </p>
                     </AnimateOnScroll>
+                </div>
 
-                    {/* Video Player Desktop */}
+                {/* Right: Video */}
+                <div style={{ width: '52%' }}>
                     <AnimateOnScroll animation="fadeUp" delay={200}>
-                        <div
-                            className="absolute bg-black rounded-[20px] overflow-hidden shadow-xl"
-                            style={{
-                                left: '664px',
-                                top: '201px',
-                                width: '685px',
-                                height: '379px',
-                            }}
-                        >
-                            {/* Url */}
+                        <div className="rounded-[20px] overflow-hidden shadow-xl bg-black" style={{ width: '100%', aspectRatio: '16/9' }}>
                             <iframe
                                 width="100%"
                                 height="100%"
@@ -103,6 +78,7 @@ export default function CareerIntroSection() {
                         </div>
                     </AnimateOnScroll>
                 </div>
+
             </section>
         </>
     )

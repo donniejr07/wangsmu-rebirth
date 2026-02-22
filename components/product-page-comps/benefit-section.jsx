@@ -84,7 +84,7 @@ function BenefitItem({ icon, title, description, delay = 0 }) {
                     className="font-poppins font-medium text-[20px] leading-[36px] text-black"
                     style={{
                         marginTop: '11px',
-                        width: '366px',
+                        width: '325px',
                         height: '36px',
                     }}
                 >
@@ -239,7 +239,7 @@ export default function BenefitSection() {
             <section
                 className="hidden lg:block relative"
                 style={{
-                    minWidth: '1440px',
+                    minWidth: '100%',
                     height: '775px',
                     paddingTop: '60px',
                 }}
@@ -290,7 +290,7 @@ export default function BenefitSection() {
 
                     {/* Benefits Container */}
                     <div
-                        className="flex justify-center gap-[8px]"
+                        className="flex justify-center gap-0"
                         style={{
                             marginTop: '98px',
                         }}
