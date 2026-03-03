@@ -20,7 +20,7 @@ export default function ServicesSingkat() {
             <section className="lg:hidden relative w-full bg-white overflow-hidden" style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '16px', paddingBottom: '20px' }}>
                 {/* Deskripsi */}
                 <AnimateOnScroll animation="fadeUp" duration={800}>
-                    <p className="font-poppins font-semibold text-[18px] leading-[20px] text-black text-center" style={{ marginBottom: '30px' }}>
+                    <p className="font-poppins font-bold text-[22px] leading-[2rem] text-black text-center" style={{ marginBottom: '30px' }}>
                         {t('servicesSingkat.descMobile')}
                     </p>
                 </AnimateOnScroll>
@@ -103,7 +103,7 @@ export default function ServicesSingkat() {
                         >
                             <div className="relative w-full h-[122px]">
                                 <Image
-                                    src="/images/design-wangsmu.png"
+                                    src="/images/services/tooling.png"
                                     alt="Design Service"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -111,32 +111,22 @@ export default function ServicesSingkat() {
                                 />
                             </div>
 
-                            <div
-                                className="absolute w-[50px] h-[50px] rounded-full bg-[#0055A4] flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
-                                style={{ left: '22px', top: '137px' }}
-                            >
-                                <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
-                                    {/* Icon */}
-                                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
-                                </svg>
-                            </div>
-
                             <h3
                                 className="absolute font-poppins font-semibold text-[26px] leading-[39px] text-[#0055A4]"
-                                style={{ left: '92px', top: '142px' }}
+                                style={{ left: '32px', top: '142px' }}
                             >
-                                Design
+                                Manufacture Tooling
                             </h3>
 
                             <p
                                 className="absolute font-poppins font-semibold text-[17px] leading-[26px] text-black"
-                                style={{ left: '32px', top: '204px', right: '40px', bottom: '117px' }}
+                                style={{ left: '32px', top: '215px', right: '40px' }}
                             >
                                 {t('servicesSingkat.cardDesc')}
                             </p>
 
                             <div className="absolute" style={{ bottom: '22px', right: '28px' }}>
-                                <Link href="/services/design">
+                                <Link href="/services/#">
                                     <button className="bg-[#0055A4] rounded-[20px] w-[170px] h-[40px] flex items-center justify-center hover:bg-[#004080] transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
                                         <span className="text-white font-poppins font-normal text-[20px]">
                                             {t('servicesSingkat.moreDetails')}
@@ -155,7 +145,7 @@ export default function ServicesSingkat() {
                         >
                             <div className="relative w-full h-[122px]">
                                 <Image
-                                    src="/images/printing-wsu-1.png"
+                                    src="/images/services/injection.png"
                                     alt="Printing Service"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -163,26 +153,16 @@ export default function ServicesSingkat() {
                                 />
                             </div>
 
-                            <div
-                                className="absolute w-[50px] h-[50px] rounded-full bg-[#0055A4] flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
-                                style={{ left: '22px', top: '137px' }}
-                            >
-                                <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
-                                    {/* Icon */}
-                                    <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z" />
-                                </svg>
-                            </div>
-
                             <h3
                                 className="absolute font-poppins font-semibold text-[26px] leading-[39px] text-[#0055A4]"
-                                style={{ left: '92px', top: '142px' }}
+                                style={{ left: '32px', top: '130px' }}
                             >
-                                Printing
+                                Manufacture Plastic Injection
                             </h3>
 
                             <p
                                 className="absolute font-poppins font-semibold text-[17px] leading-[26px] text-black"
-                                style={{ left: '32px', top: '204px', right: '40px', bottom: '117px' }}
+                                style={{ left: '32px', top: '215px', right: '40px' }}
                             >
                                 {t('servicesSingkat.cardDesc')}
                             </p>

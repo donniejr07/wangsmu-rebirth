@@ -20,7 +20,7 @@ export default function ServicesSection() {
                 <div className="relative z-10">
                     {/* Title */}
                     <h2 className="font-poppins font-semibold text-2xl text-center mb-3">
-                        <span className="text-black">The </span>
+                        <span className="text-black">Our </span>
                         <span style={{ color: '#0055A4' }}>Services</span>
                     </h2>
 
@@ -158,7 +158,7 @@ export default function ServicesSection() {
                                 lineHeight: '63px',
                             }}
                         >
-                            <span className="text-black">The </span>
+                            <span className="text-black">Our </span>
                             <span style={{ color: '#0055A4' }}>Services</span>
                         </h2>
                     </AnimateOnScroll>

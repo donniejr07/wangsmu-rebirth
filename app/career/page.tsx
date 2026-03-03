@@ -11,7 +11,7 @@ export default function CareerPage() {
             <Navbar />
             <CareerHero />
             <CareerIntroSection />
-            <div style={{ marginTop: '50px', marginBottom: '50px' }}>
+            <div style={{ marginBottom: '50px' }}>
                 <CareerPositionSection />
             </div>
             <div style={{ marginBottom: '50px' }}>

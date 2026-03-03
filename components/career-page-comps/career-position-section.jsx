@@ -29,17 +29,18 @@ const ChevronDownIcon = () => (
 
 export default function CareerPositionSection() {
     const [searchTerm, setSearchTerm] = useState('')
-    const [activeDropdown, setActiveDropdown] = useState(null) // 'jobType' | 'eduLevel' | null
+    const [activeDropdown, setActiveDropdown] = useState(null)
     const [selectedJobType, setSelectedJobType] = useState('Semua lowongan')
     const [selectedEduLevel, setSelectedEduLevel] = useState('Semua Jenjang')
     const [currentPage, setCurrentPage] = useState(1)
 
     const dropdownRef = useRef(null)
 
-    // Pagination config
+    const mobileDropdownRef = useRef(null)
+
     const JOBS_PER_PAGE = 3
 
-    // Mock Data - Future CRUD ready
+    // Data lowongan
     const jobsData = [
         { id: 1, title: 'Quality Control Staff', department: 'Quality Control', location: 'Bekasi, Indonesia', type: 'Full-time', description: 'Bertanggung jawab untuk memastikan kualitas produk sesuai standar perusahaan dan regulasi industri.' },
         { id: 2, title: 'IT Support Specialist', department: 'IT', location: 'Bekasi, Indonesia', type: 'Full-time', description: 'Menangani troubleshooting hardware/software dan maintenance infrastruktur IT perusahaan.' },
@@ -49,19 +50,22 @@ export default function CareerPositionSection() {
         { id: 6, title: 'Finance Staff', department: 'Finance', location: 'Bekasi, Indonesia', type: 'Full-time', description: 'Mengelola pembukuan, laporan keuangan, dan administrasi keuangan perusahaan.' },
     ]
 
-    // Pagination calculations
+    // Pagination
     const totalPages = Math.ceil(jobsData.length / JOBS_PER_PAGE)
     const startIndex = (currentPage - 1) * JOBS_PER_PAGE
     const paginatedJobs = jobsData.slice(startIndex, startIndex + JOBS_PER_PAGE)
 
-    // Mock Options
+    // Filter options
     const jobTypes = ['Semua lowongan', 'Quality Control', 'IT', 'PPIC', 'Moulding']
     const eduLevels = ['Semua Jenjang', 'SMA/SMK', 'Diploma', 'Sarjana (S1)', 'Magister (S2)']
 
-    // Close dropdown when clicking outside
+    // Close dropdown on outside click
     useEffect(() => {
         function handleClickOutside(event) {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            const clickedOutsideDesktop = dropdownRef.current && !dropdownRef.current.contains(event.target)
+            const clickedOutsideMobile = mobileDropdownRef.current && !mobileDropdownRef.current.contains(event.target)
+
+            if (clickedOutsideDesktop && clickedOutsideMobile) {
                 setActiveDropdown(null)
             }
         }
@@ -97,10 +101,194 @@ export default function CareerPositionSection() {
                 }
             `}</style>
 
-            {/* Desktop Layout (Pixel Perfect based on Specs) */}
-            <section className="hidden lg:block relative w-full" style={{ height: '850px' }}>
+            {/* Mobile Layout */}
+            <section className="lg:hidden relative" style={{ paddingTop: '1rem', paddingBottom: '1rem' }}>
+                {/* Background */}
+                <div
+                    className="absolute inset-0 bg-[#D9D9D9]/40 z-0"
+                    style={{
+                        maskImage: 'linear-gradient(to bottom, transparent 0%, black 10px, black calc(100% - 10px), transparent 100%)',
+                        WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 10px, black calc(100% - 10px), transparent 100%)'
+                    }}
+                />
 
-                {/* 1. Background Main */}
+                <div className="relative z-10 flex flex-col items-center px-4 w-full">
+                    {/* Title */}
+                    <h2 className="font-poppins font-semibold text-2xl text-center mb-2">
+                        <span className="text-black">Open </span>
+                        <span className="text-[#0055A4]">Positions</span>
+                    </h2>
+                    <p className="font-poppins text-xs text-black text-center" style={{ marginBottom: '1rem' }}>
+                        Find your dream job and join our team
+                    </p>
+
+                    {/* Filter Bar */}
+                    <div className="flex flex-col bg-white rounded-xl border border-gray-300 w-72 mb-5"
+                        style={{ padding: '10px', gap: '10px' }}
+                    >
+                        {/* Search */}
+                        <div className="flex items-center gap-2 pb-3 border-b border-gray-200">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                                <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="#666" />
+                            </svg>
+                            <input
+                                type="text"
+                                placeholder="Cari lowongan..."
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                                className="font-poppins text-xs w-full outline-none bg-transparent placeholder-gray-400"
+                            />
+                        </div>
+
+                        {/* Jenis Lowongan */}
+                        <div className="relative">
+                            <div
+                                className="flex items-center justify-between pb-3 border-b border-gray-200 cursor-pointer"
+                                onClick={() => toggleDropdown('mobileJobType')}
+                            >
+                                <div className="flex items-center gap-2">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                                        <path d="M18 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V4C20 2.9 19.1 2 18 2ZM18 20H6V4H18V20ZM14 10H8V12H14V10ZM14 14H8V16H14V14ZM16 6H8V8H16V6Z" fill="#666" />
+                                    </svg>
+                                    <span className={`font-poppins text-xs ${selectedJobType !== 'Semua lowongan' ? 'text-[#0055A4] font-medium' : 'text-gray-500'}`}>
+                                        {selectedJobType}
+                                    </span>
+                                </div>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={`transition-transform duration-200 text-gray-400 ${activeDropdown === 'mobileJobType' ? 'rotate-180' : ''}`}>
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </div>
+                            {activeDropdown === 'mobileJobType' && (
+                                <div className="absolute left-0 right-0 top-full z-50 mt-1 bg-white rounded-lg shadow-xl border border-gray-100 p-2">
+                                    {jobTypes.map((type) => (
+                                        <div
+                                            key={type}
+                                            onClick={() => handleSelectJobType(type)}
+                                            className={`px-3 py-2 text-xs rounded-lg cursor-pointer ${selectedJobType === type ? 'bg-[#0055A4]/10 text-[#0055A4] font-medium' : 'text-gray-600 hover:bg-gray-50'}`}
+                                        >
+                                            {type}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Jenjang Pendidikan */}
+                        <div className="relative">
+                            <div
+                                className="flex items-center justify-between cursor-pointer"
+                                onClick={() => toggleDropdown('mobileEduLevel')}
+                            >
+                                <div className="flex items-center gap-2">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                                        <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z" fill="#666" />
+                                    </svg>
+                                    <span className={`font-poppins text-xs ${selectedEduLevel !== 'Semua Jenjang' ? 'text-[#0055A4] font-medium' : 'text-gray-500'}`}>
+                                        {selectedEduLevel}
+                                    </span>
+                                </div>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={`transition-transform duration-200 text-gray-400 ${activeDropdown === 'mobileEduLevel' ? 'rotate-180' : ''}`}>
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </div>
+                            {activeDropdown === 'mobileEduLevel' && (
+                                <div className="absolute left-0 right-0 top-full z-50 mt-1 bg-white rounded-lg shadow-xl border border-gray-100 p-2">
+                                    {eduLevels.map((level) => (
+                                        <div
+                                            key={level}
+                                            onClick={() => handleSelectEduLevel(level)}
+                                            className={`px-3 py-2 text-xs rounded-lg cursor-pointer ${selectedEduLevel === level ? 'bg-[#0055A4]/10 text-[#0055A4] font-medium' : 'text-gray-600 hover:bg-gray-50'}`}
+                                        >
+                                            {level}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Button Search */}
+                        <button
+                            className="w-full flex items-center justify-center gap-2 py-2.5 bg-[#0055A4] hover:bg-[#004080] active:scale-95 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md mt-1"
+                        >
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="white" />
+                            </svg>
+                            <span className="font-poppins font-semibold text-[13px] text-white">Search</span>
+                        </button>
+                    </div>
+
+                    {/* Job Cards */}
+                    <div className="flex flex-col gap-3 w-72" style={{ marginTop: '1rem' }}>
+                        {paginatedJobs.map((job) => (
+                            <div key={job.id} className="bg-white rounded-xl" style={{ padding: '1rem' }}>
+                                <h3 className="font-poppins font-semibold text-sm text-[#0055A4] mb-2">
+                                    {job.title}
+                                </h3>
+
+                                <div className="flex flex-wrap gap-x-4 gap-y-1 mb-2">
+                                    <div className="flex items-center gap-1 text-[11px] text-gray-500">
+                                        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h5v5H2V2zm7 0h5v5H9V2zM2 9h5v5H2V9zm7 3.5a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0z" /></svg>
+                                        <span>{job.department}</span>
+                                    </div>
+                                    <div className="flex items-center gap-1 text-[11px] text-gray-500">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
+                                        <span>{job.location}</span>
+                                    </div>
+                                    <div className="flex items-center gap-1 text-[11px] text-gray-500">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" /></svg>
+                                        <span>{job.type}</span>
+                                    </div>
+                                </div>
+
+                                <p className="font-poppins text-xs text-gray-500 mb-3 leading-relaxed">
+                                    {job.description}
+                                </p>
+
+                                <div className="flex gap-2">
+                                    <button className="flex-1 py-1.5 rounded-lg border border-gray-300 text-xs font-poppins font-medium text-gray-700 hover:bg-gray-50 transition-colors">
+                                        Detail
+                                    </button>
+                                    <button className="flex-1 py-1.5 rounded-lg bg-[#0055A4] text-white text-xs font-poppins font-medium hover:bg-[#004080] transition-colors">
+                                        Apply Now
+                                    </button>
+                                </div>
+                            </div>
+                        ))}
+
+                        {/* Pagination */}
+                        <div className="flex items-center justify-center gap-2 mt-3 pb-2">
+                            <button
+                                onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                                disabled={currentPage === 1}
+                                className={`w-8 h-8 rounded-lg border border-gray-300 flex items-center justify-center ${currentPage === 1 ? 'opacity-30' : 'hover:bg-gray-100'}`}
+                            >
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#555" strokeWidth="2"><path d="M15 18l-6-6 6-6" /></svg>
+                            </button>
+
+                            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                                <button
+                                    key={page}
+                                    onClick={() => setCurrentPage(page)}
+                                    className={`w-8 h-8 rounded-lg text-xs font-poppins font-medium transition-colors ${currentPage === page ? 'bg-[#0055A4] text-white' : 'border border-gray-300 text-gray-600 hover:bg-gray-100'}`}
+                                >
+                                    {page}
+                                </button>
+                            ))}
+
+                            <button
+                                onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                                disabled={currentPage === totalPages}
+                                className={`w-8 h-8 rounded-lg border border-gray-300 flex items-center justify-center ${currentPage === totalPages ? 'opacity-30' : 'hover:bg-gray-100'}`}
+                            >
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#555" strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Desktop Layout */}
+            <section className="hidden lg:block relative w-full" style={{ height: '850px' }}>
                 <div
                     className="absolute z-0"
                     style={{
@@ -116,7 +304,7 @@ export default function CareerPositionSection() {
                 />
 
                 <div className="relative z-10 w-full h-full">
-                    {/* 2. Teks Judul "Open Positions" */}
+
                     <AnimateOnScroll animation="fadeUp" delay={0}>
                         <h2
                             className="absolute font-poppins font-semibold text-[60px] leading-[81px]"
@@ -131,7 +319,6 @@ export default function CareerPositionSection() {
                         </h2>
                     </AnimateOnScroll>
 
-                    {/* 3. Teks Subjudul */}
                     <AnimateOnScroll animation="fadeUp" delay={50}>
                         <p
                             className="absolute font-poppins font-normal text-[24px] leading-[36px] text-black text-center"
@@ -145,7 +332,7 @@ export default function CareerPositionSection() {
                         </p>
                     </AnimateOnScroll>
 
-                    {/* 4. Filterisasi */}
+                    {/* Filter */}
                     <div style={{ position: 'relative', zIndex: 100 }}>
                         <AnimateOnScroll animation="fadeUp" delay={100}>
                             <div
@@ -161,7 +348,7 @@ export default function CareerPositionSection() {
                                     zIndex: 100,
                                 }}
                             >
-                                {/* a). Filter by Pencarian */}
+
                                 <div className="flex items-center" style={{ paddingLeft: '14px' }}>
                                     <div style={{ width: '30px', height: '30px' }}>
                                         <SearchIcon />
@@ -175,21 +362,21 @@ export default function CareerPositionSection() {
                                     />
                                 </div>
 
-                                {/* c. Line Border 1 */}
+
                                 <div
                                     style={{
                                         position: 'absolute',
-                                        left: '385px', // 605 - 220
+                                        left: '385px',
                                         height: '50px',
                                         width: '1px',
                                         backgroundColor: 'black'
                                     }}
                                 />
 
-                                {/* d. Filter by Jenis Lowongan */}
+
                                 <div
                                     className="flex items-center absolute cursor-pointer hover:bg-gray-50 rounded-xl px-2 transition-colors duration-200"
-                                    style={{ left: '400px', top: '5px', bottom: '5px' }} // Adjusted positioning
+                                    style={{ left: '400px', top: '5px', bottom: '5px' }}
                                     onClick={() => toggleDropdown('jobType')}
                                 >
                                     <div style={{ width: '30px', height: '30px' }}>
@@ -204,7 +391,7 @@ export default function CareerPositionSection() {
                                         </div>
                                     </div>
 
-                                    {/* Dropdown Menu */}
+
                                     {activeDropdown === 'jobType' && (
                                         <div
                                             className="dropdown-animate"
@@ -258,18 +445,18 @@ export default function CareerPositionSection() {
                                     )}
                                 </div>
 
-                                {/* e. Line Border 2 */}
+
                                 <div
                                     style={{
                                         position: 'absolute',
-                                        left: '681px', // 901 - 220
+                                        left: '681px',
                                         height: '50px',
                                         width: '1px',
                                         backgroundColor: 'black'
                                     }}
                                 />
 
-                                {/* d. Filter by Jenjang Pendidikan */}
+
                                 <div
                                     className="flex items-center absolute cursor-pointer hover:bg-gray-50 rounded-xl px-2 transition-colors duration-200"
                                     style={{ left: '695px', top: '5px', bottom: '5px' }}
@@ -287,7 +474,7 @@ export default function CareerPositionSection() {
                                         </div>
                                     </div>
 
-                                    {/* Dropdown Menu */}
+
                                     {activeDropdown === 'eduLevel' && (
                                         <div
                                             className="dropdown-animate"
@@ -345,11 +532,11 @@ export default function CareerPositionSection() {
                         </AnimateOnScroll>
                     </div>
 
-                    {/* 5. Job Position Cards */}
+                    {/* Job Cards */}
                     <div
                         className="absolute flex flex-col items-center"
                         style={{
-                            top: '294px', // 179 + 50 + 65 padding
+                            top: '294px',
                             left: '50%',
                             transform: 'translateX(-50%)',
                             width: '1000px',
@@ -357,7 +544,7 @@ export default function CareerPositionSection() {
                             zIndex: 30,
                         }}
                     >
-                        {/* Paginated Jobs */}
+
                         {paginatedJobs.map((job) => (
                             <div
                                 key={job.id}
@@ -370,7 +557,7 @@ export default function CareerPositionSection() {
                                     position: 'relative',
                                 }}
                             >
-                                {/* Job Title */}
+
                                 <h3
                                     className="font-poppins font-semibold"
                                     style={{
@@ -384,7 +571,7 @@ export default function CareerPositionSection() {
                                     {job.title}
                                 </h3>
 
-                                {/* Icons Row */}
+
                                 <div
                                     className="flex items-center"
                                     style={{
@@ -394,7 +581,7 @@ export default function CareerPositionSection() {
                                         gap: '24px',
                                     }}
                                 >
-                                    {/* Department */}
+
                                     <div className="flex items-center" style={{ gap: '6px' }}>
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="#000000">
                                             <path d="M2 2h5v5H2V2zm7 0h5v5H9V2zM2 9h5v5H2V9zm7 3.5a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0z" />
@@ -404,7 +591,7 @@ export default function CareerPositionSection() {
                                         </span>
                                     </div>
 
-                                    {/* Location */}
+
                                     <div className="flex items-center" style={{ gap: '6px' }}>
                                         <svg width="16" height="16" viewBox="0 0 24 24" fill="#000000">
                                             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
@@ -414,7 +601,7 @@ export default function CareerPositionSection() {
                                         </span>
                                     </div>
 
-                                    {/* Type */}
+
                                     <div className="flex items-center" style={{ gap: '6px' }}>
                                         <svg width="16" height="16" viewBox="0 0 24 24" fill="#000000">
                                             <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
@@ -425,7 +612,7 @@ export default function CareerPositionSection() {
                                     </div>
                                 </div>
 
-                                {/* Description */}
+
                                 <p
                                     className="font-poppins font-normal text-[14px] text-black"
                                     style={{
@@ -438,7 +625,7 @@ export default function CareerPositionSection() {
                                     {job.description}
                                 </p>
 
-                                {/* Buttons */}
+
                                 <div
                                     className="flex items-center"
                                     style={{
@@ -448,7 +635,7 @@ export default function CareerPositionSection() {
                                         gap: '12px',
                                     }}
                                 >
-                                    {/* Detail Button */}
+
                                     <button
                                         className="hover:bg-gray-100 transition-all cursor-pointer"
                                         style={{
@@ -470,7 +657,7 @@ export default function CareerPositionSection() {
                                         </span>
                                     </button>
 
-                                    {/* Apply Now Button */}
+
                                     <button
                                         className="hover:opacity-80 transition-opacity cursor-pointer"
                                         style={{
@@ -495,12 +682,12 @@ export default function CareerPositionSection() {
                             </div>
                         ))}
 
-                        {/* Pagination Controls */}
+
                         <div
                             className="flex items-center justify-center"
                             style={{ marginTop: '24px', gap: '12px' }}
                         >
-                            {/* Previous Button */}
+
                             <button
                                 onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
                                 disabled={currentPage === 1}
@@ -518,7 +705,7 @@ export default function CareerPositionSection() {
                                 </svg>
                             </button>
 
-                            {/* Page Numbers */}
+
                             {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                                 <button
                                     key={page}
@@ -540,7 +727,7 @@ export default function CareerPositionSection() {
                                 </button>
                             ))}
 
-                            {/* Next Button */}
+
                             <button
                                 onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
                                 disabled={currentPage === totalPages}
@@ -560,99 +747,6 @@ export default function CareerPositionSection() {
                         </div>
                     </div>
 
-                </div>
-            </section>
-
-            {/* Mobile Layout (Simplified) */}
-            <section className="lg:hidden px-4 py-8 bg-[#D9D9D9]/40 relative">
-                <div
-                    className="absolute inset-0 bg-[#D9D9D9]/40 z-0"
-                    style={{
-                        maskImage: 'linear-gradient(to bottom, transparent 0%, black 10px, black calc(100% - 10px), transparent 100%)',
-                        WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 10px, black calc(100% - 10px), transparent 100%)'
-                    }}
-                />
-                <div className="relative z-10">
-                    <h2 className="font-poppins font-semibold text-[32px] text-center mb-4">
-                        <span className="text-black">Open </span>
-                        <span className="text-[#0055A4]">Positions</span>
-                    </h2>
-                    <p className="font-poppins font-normal text-[14px] text-black text-center mb-6">
-                        Find your dream job and join our team
-                    </p>
-
-                    {/* Search Bar Mobile */}
-                    <div className="bg-white rounded-[20px] border border-black p-4 flex flex-col gap-4">
-                        {/* Mobile Input */}
-                        <div className="flex items-center gap-2 border-b border-gray-200 pb-2">
-                            <SearchIcon />
-                            <input
-                                type="text"
-                                placeholder="Cari lowongan..."
-                                value={searchTerm}
-                                onChange={(e) => setSearchTerm(e.target.value)}
-                                className="font-poppins font-extralight text-[14px] w-full outline-none"
-                            />
-                        </div>
-
-                        {/* Mobile Filter Dropdown 1 */}
-                        <div className="relative">
-                            <div
-                                className="flex items-center justify-between border-b border-gray-200 pb-2 cursor-pointer"
-                                onClick={() => toggleDropdown('mobileJobType')}
-                            >
-                                <div className="flex items-center gap-2">
-                                    <BindingIcon />
-                                    <span className="font-poppins font-extralight text-[14px]">{selectedJobType}</span>
-                                </div>
-                                <div className={`transition-transform duration-300 ${activeDropdown === 'mobileJobType' ? 'rotate-180' : ''}`}>
-                                    <ChevronDownIcon />
-                                </div>
-                            </div>
-                            {activeDropdown === 'mobileJobType' && (
-                                <div className="dropdown-animate mt-4 bg-white rounded-xl shadow-lg border border-gray-100 p-3">
-                                    {jobTypes.map((type) => (
-                                        <div
-                                            key={type}
-                                            onClick={() => handleSelectJobType(type)}
-                                            className={`px-4 py-2 text-sm rounded-lg mb-1 last:mb-0 ${selectedJobType === type ? 'bg-[#0055A4]/10 text-[#0055A4]' : 'hover:bg-gray-50'}`}
-                                        >
-                                            {type}
-                                        </div>
-                                    ))}
-                                </div>
-                            )}
-                        </div>
-
-                        {/* Mobile Filter Dropdown 2 */}
-                        <div className="relative">
-                            <div
-                                className="flex items-center justify-between pb-2 cursor-pointer"
-                                onClick={() => toggleDropdown('mobileEduLevel')}
-                            >
-                                <div className="flex items-center gap-2">
-                                    <CollegeIcon />
-                                    <span className="font-poppins font-extralight text-[14px]">{selectedEduLevel}</span>
-                                </div>
-                                <div className={`transition-transform duration-300 ${activeDropdown === 'mobileEduLevel' ? 'rotate-180' : ''}`}>
-                                    <ChevronDownIcon />
-                                </div>
-                            </div>
-                            {activeDropdown === 'mobileEduLevel' && (
-                                <div className="dropdown-animate mt-4 bg-white rounded-xl shadow-lg border border-gray-100 p-3">
-                                    {eduLevels.map((level) => (
-                                        <div
-                                            key={level}
-                                            onClick={() => handleSelectEduLevel(level)}
-                                            className={`px-4 py-2 text-sm rounded-lg mb-1 last:mb-0 ${selectedEduLevel === level ? 'bg-[#0055A4]/10 text-[#0055A4]' : 'hover:bg-gray-50'}`}
-                                        >
-                                            {level}
-                                        </div>
-                                    ))}
-                                </div>
-                            )}
-                        </div>
-                    </div>
                 </div>
             </section>
         </>

@@ -1,0 +1,308 @@
+{
+    "2023": {
+        "scope1": [
+            {
+                "month": "Jan",
+                "value": 7.2
+            },
+            {
+                "month": "Feb",
+                "value": 6.3
+            },
+            {
+                "month": "Mar",
+                "value": 6.4
+            },
+            {
+                "month": "Apr",
+                "value": 5.1
+            },
+            {
+                "month": "May",
+                "value": 6.6
+            },
+            {
+                "month": "Jun",
+                "value": 6.7
+            },
+            {
+                "month": "Jul",
+                "value": 5.1
+            },
+            {
+                "month": "Aug",
+                "value": 4.2
+            },
+            {
+                "month": "Sep",
+                "value": 3.7
+            },
+            {
+                "month": "Oct",
+                "value": 4.4
+            },
+            {
+                "month": "Nov",
+                "value": 4.0
+            },
+            {
+                "month": "Dec",
+                "value": 4.6
+            }
+        ],
+        "scope2": [
+            {
+                "month": "Jan",
+                "value": 96013758
+            },
+            {
+                "month": "Feb",
+                "value": 81816148
+            },
+            {
+                "month": "Mar",
+                "value": 93968090
+            },
+            {
+                "month": "Apr",
+                "value": 67458874
+            },
+            {
+                "month": "May",
+                "value": 80158233
+            },
+            {
+                "month": "Jun",
+                "value": 80268760
+            },
+            {
+                "month": "Jul",
+                "value": 92872157
+            },
+            {
+                "month": "Aug",
+                "value": 94508754
+            },
+            {
+                "month": "Sep",
+                "value": 121316291
+            },
+            {
+                "month": "Oct",
+                "value": 122176768
+            },
+            {
+                "month": "Nov",
+                "value": 114405390
+            },
+            {
+                "month": "Dec",
+                "value": 109063944
+            }
+        ]
+    },
+    "2024": {
+        "scope1": [
+            {
+                "month": "Jan",
+                "value": 5.7
+            },
+            {
+                "month": "Feb",
+                "value": 4.6
+            },
+            {
+                "month": "Mar",
+                "value": 3.1
+            },
+            {
+                "month": "Apr",
+                "value": 4.0
+            },
+            {
+                "month": "May",
+                "value": 3.2
+            },
+            {
+                "month": "Jun",
+                "value": 3.9
+            },
+            {
+                "month": "Jul",
+                "value": 4.2
+            },
+            {
+                "month": "Aug",
+                "value": 3.8
+            },
+            {
+                "month": "Sep",
+                "value": 3.6
+            },
+            {
+                "month": "Oct",
+                "value": 3.5
+            },
+            {
+                "month": "Nov",
+                "value": 2.0
+            },
+            {
+                "month": "Dec",
+                "value": 3.9
+            }
+        ],
+        "scope2": [
+            {
+                "month": "Jan",
+                "value": 119351675
+            },
+            {
+                "month": "Feb",
+                "value": 115386721
+            },
+            {
+                "month": "Mar",
+                "value": 126895496
+            },
+            {
+                "month": "Apr",
+                "value": 105170988
+            },
+            {
+                "month": "May",
+                "value": 127361529
+            },
+            {
+                "month": "Jun",
+                "value": 127604060
+            },
+            {
+                "month": "Jul",
+                "value": 136496862
+            },
+            {
+                "month": "Aug",
+                "value": 125844410
+            },
+            {
+                "month": "Sep",
+                "value": 116921665
+            },
+            {
+                "month": "Oct",
+                "value": 135185422
+            },
+            {
+                "month": "Nov",
+                "value": 108217243
+            },
+            {
+                "month": "Dec",
+                "value": 112331447
+            }
+        ]
+    },
+    "2025": {
+        "scope1": [
+            {
+                "month": "Jan",
+                "value": 2.1
+            },
+            {
+                "month": "Feb",
+                "value": 2.5
+            },
+            {
+                "month": "Mar",
+                "value": 2.6
+            },
+            {
+                "month": "Apr",
+                "value": 2.9
+            },
+            {
+                "month": "May",
+                "value": 2.1
+            },
+            {
+                "month": "Jun",
+                "value": 2.6
+            },
+            {
+                "month": "Jul",
+                "value": 2.1
+            },
+            {
+                "month": "Aug",
+                "value": 2.6
+            },
+            {
+                "month": "Sep",
+                "value": 2.1
+            },
+            {
+                "month": "Oct",
+                "value": 2.5
+            },
+            {
+                "month": "Nov",
+                "value": 2.1
+            },
+            {
+                "month": "Dec",
+                "value": 2.0
+            }
+        ],
+        "scope2": [
+            {
+                "month": "Jan",
+                "value": 83963966
+            },
+            {
+                "month": "Feb",
+                "value": 98197115
+            },
+            {
+                "month": "Mar",
+                "value": 91376258
+            },
+            {
+                "month": "Apr",
+                "value": 77388626
+            },
+            {
+                "month": "May",
+                "value": 73576379
+            },
+            {
+                "month": "Jun",
+                "value": 80091437
+            },
+            {
+                "month": "Jul",
+                "value": 95501932
+            },
+            {
+                "month": "Aug",
+                "value": 83295493
+            },
+            {
+                "month": "Sep",
+                "value": 77900761
+            },
+            {
+                "month": "Oct",
+                "value": 85073100
+            },
+            {
+                "month": "Nov",
+                "value": 71727042
+            },
+            {
+                "month": "Dec",
+                "value": 72754083
+            }
+        ]
+    }
+}

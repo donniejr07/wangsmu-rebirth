@@ -1,332 +1,83 @@
 'use client';
 
+const steps = [
+    { number: '1', title: 'Submit CV', desc: 'Submit your CV and supporting documents through our recruitment system to begin the application process.' },
+    { number: '2', title: 'HR Screening', desc: 'Our HR team reviews your qualifications, experience, and overall suitability for the applied position.' },
+    { number: '3', title: 'Interview', desc: 'Shortlisted candidates will be invited to attend an interview to assess competencies and cultural fit.' },
+    { number: '4', title: 'Psychological Test', desc: 'Candidates may undergo a psychological assessment to evaluate personality traits, potential, and cognitive abilities.' },
+    { number: '5', title: 'Offering', desc: 'Selected candidates will receive a formal job offer outlining the position, compensation, and benefits package.' },
+    { number: '6', title: 'Medical Check Up', desc: 'A medical examination is conducted to ensure candidates meet the company\'s health requirements.' },
+];
+
+const lastStep = {
+    title: 'Hiring Decision',
+    desc: 'After completing all stages, the company will issue the final hiring decision.',
+};
+
+// Step component
+function StepItem({ number, title, desc, isLast, isMobile }) {
+    const bubbleSize = isMobile ? 'w-[3rem] h-[3rem]' : 'w-[4.5rem] h-[4.5rem]';
+    const numSize = isMobile ? 'text-base' : 'text-xl';
+    const titleSize = isMobile ? 'text-base' : 'text-xl';
+    const descSize = isMobile ? 'text-sm leading-relaxed' : 'text-lg leading-relaxed';
+    const gap = isMobile ? 'gap-3' : 'gap-5';
+
+    return (
+        <div className={`flex items-stretch ${gap}`}>
+            {/* Bubble + Line */}
+            <div className="flex flex-col items-center flex-shrink-0">
+                <div className={`${bubbleSize} rounded-full flex items-center justify-center relative z-10 ${isLast ? 'bg-[#00CC44]' : 'bg-[#0055A4]'}`}>
+                    <span className={`font-poppins font-semibold ${numSize} text-white`}>
+                        {isLast ? '✓' : number}
+                    </span>
+                </div>
+                {!isLast && (
+                    <div className="w-[3px] flex-1 bg-[#0055A4]" />
+                )}
+            </div>
+
+            {/* Content */}
+            <div className="min-w-0" style={{ paddingTop: isMobile ? '2px' : '4px', paddingBottom: isLast ? '0' : (isMobile ? '40px' : '56px') }}>
+                <h3 className={`font-poppins font-semibold ${titleSize} text-black`}>
+                    {title}
+                </h3>
+                <p className={`font-poppins font-normal ${descSize} text-gray-600 mt-1`}>
+                    {desc}
+                </p>
+            </div>
+        </div>
+    );
+}
+
 const CareerAppProcess = () => {
     return (
-        <section className="relative w-full bg-white overflow-hidden py-[50px] lg:py-[100px]">
-            <div className="container mx-auto px-4 relative">
+        <section className="w-full bg-white py-12 lg:py-24 flex justify-center">
+            <div className="max-w-3xl w-full px-6">
 
-                {/* DESKTOP LAYOUT */}
-                <div className="hidden lg:block relative w-full">
-
-                    {/* 1. Judul Section */}
-                    <div className="relative w-full" style={{ height: '180px' }}>
-                        <h2
-                            className="absolute font-poppins font-semibold text-[60px] leading-[90px]"
-                            style={{
-                                color: '#000000',
-                                marginBottom: '3px',
-                                width: '1492px',
-                                textAlign: 'center'
-                            }}
-                        >
-                            Our <span style={{ color: '#0055A4' }}>Application</span> Process
-                        </h2>
-
-                        {/* 2. Subjudul */}
-                        <p
-                            className="absolute font-poppins font-normal text-[24px] leading-[36px] text-black"
-                            style={{
-                                top: '93px',
-                                left: 0,
-                                width: '1492px',
-                                textAlign: 'center'
-                            }}
-                        >
-                            A clear, transparent journey from application to hiring
-                        </p>
-                    </div>
-
-                    {/* Bubble Process 1 */}
-                    <div className="relative">
-                        <div className="relative flex items-start" style={{ paddingLeft: '178px' }}>
-                            {/* Left Column: Bubble & Line */}
-                            <div className="flex flex-col items-center mr-[27px]" style={{ marginLeft: '148px' }}>
-                                <div
-                                    className="flex items-center justify-center rounded-full bg-[#0055A4] relative z-20"
-                                    style={{ width: '80px', height: '80px' }}
-                                >
-                                    <span className="font-poppins font-semibold text-[24px] text-white">1</span>
-                                </div>
-                                <div
-                                    style={{
-                                        width: '3px',
-                                        height: '70px',
-                                        backgroundColor: '#0055A4',
-                                        marginTop: '-1px'
-                                    }}
-                                />
-                            </div>
-
-                            {/* Right Column: Content */}
-                            <div style={{ paddingTop: '5px', paddingLeft: '22px' }}>
-                                <h3
-                                    className="font-poppins font-semibold text-[24px] text-black leading-[36px]"
-                                    style={{ marginBottom: '0px' }}
-                                >
-                                    Submit CV
-                                </h3>
-                                <p className="font-poppins font-normal text-[20px] text-black leading-[36px] max-w-[731px]">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. beatae quidem itaque quia dignissimos quis, iusto quasi hic?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Bubble Process 2*/}
-                    <div className="relative">
-                        <div className="relative flex items-start" style={{ paddingLeft: '178px' }}>
-                            {/* Left Column: Bubble & Line */}
-                            <div className="flex flex-col items-center mr-[27px]" style={{ marginLeft: '148px' }}>
-                                <div
-                                    className="flex items-center justify-center rounded-full bg-[#0055A4] relative z-20"
-                                    style={{ width: '80px', height: '80px' }}
-                                >
-                                    <span className="font-poppins font-semibold text-[24px] text-white">2</span>
-                                </div>
-                                <div
-                                    style={{
-                                        width: '3px',
-                                        height: '70px',
-                                        backgroundColor: '#0055A4',
-                                        marginTop: '-1px'
-                                    }}
-                                />
-                            </div>
-
-                            {/* Right Column: Content */}
-                            <div style={{ paddingTop: '5px', paddingLeft: '22px' }}>
-                                <h3
-                                    className="font-poppins font-semibold text-[24px] text-black leading-[36px]"
-                                    style={{ marginBottom: '0px' }}
-                                >
-                                    HR Screening
-                                </h3>
-                                <p className="font-poppins font-normal text-[20px] text-black leading-[36px] max-w-[731px]">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. beatae quidem itaque quia dignissimos quis, iusto quasi hic?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* 3. Bubble Process 3 */}
-                    <div className="relative">
-                        <div className="relative flex items-start" style={{ paddingLeft: '178px' }}>
-                            {/* Left Column: Bubble & Line */}
-                            <div className="flex flex-col items-center mr-[27px]" style={{ marginLeft: '148px' }}>
-                                <div
-                                    className="flex items-center justify-center rounded-full bg-[#0055A4] relative z-20"
-                                    style={{ width: '80px', height: '80px' }}
-                                >
-                                    <span className="font-poppins font-semibold text-[24px] text-white">3</span>
-                                </div>
-                                <div
-                                    style={{
-                                        width: '3px',
-                                        height: '70px',
-                                        backgroundColor: '#0055A4',
-                                        marginTop: '-1px'
-                                    }}
-                                />
-                            </div>
-
-                            {/* Right Column: Content */}
-                            <div style={{ paddingTop: '5px', paddingLeft: '22px' }}>
-                                <h3
-                                    className="font-poppins font-semibold text-[24px] text-black leading-[36px]"
-                                    style={{ marginBottom: '0px' }}
-                                >
-                                    Interview
-                                </h3>
-                                <p className="font-poppins font-normal text-[20px] text-black leading-[36px] max-w-[731px]">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. beatae quidem itaque quia dignissimos quis, iusto quasi hic?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* 4. Bubble Process 4 */}
-                    <div className="relative">
-                        <div className="relative flex items-start" style={{ paddingLeft: '178px' }}>
-                            {/* Left Column: Bubble & Line */}
-                            <div className="flex flex-col items-center mr-[27px]" style={{ marginLeft: '148px' }}>
-                                <div
-                                    className="flex items-center justify-center rounded-full bg-[#0055A4] relative z-20"
-                                    style={{ width: '80px', height: '80px' }}
-                                >
-                                    <span className="font-poppins font-semibold text-[24px] text-white">4</span>
-                                </div>
-                                <div
-                                    style={{
-                                        width: '3px',
-                                        height: '70px',
-                                        backgroundColor: '#0055A4',
-                                        marginTop: '-1px'
-                                    }}
-                                />
-                            </div>
-
-                            {/* Right Column: Content */}
-                            <div style={{ paddingTop: '5px', paddingLeft: '22px' }}>
-                                <h3
-                                    className="font-poppins font-semibold text-[24px] text-black leading-[36px]"
-                                    style={{ marginBottom: '0px' }}
-                                >
-                                    Psychological Test
-                                </h3>
-                                <p className="font-poppins font-normal text-[20px] text-black leading-[36px] max-w-[731px]">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. beatae quidem itaque quia dignissimos quis, iusto quasi hic?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* 5. Bubble Process 5 */}
-                    <div className="relative">
-                        <div className="relative flex items-start" style={{ paddingLeft: '178px' }}>
-                            {/* Left Column: Bubble & Line */}
-                            <div className="flex flex-col items-center mr-[27px]" style={{ marginLeft: '148px' }}>
-                                <div
-                                    className="flex items-center justify-center rounded-full bg-[#0055A4] relative z-20"
-                                    style={{ width: '80px', height: '80px' }}
-                                >
-                                    <span className="font-poppins font-semibold text-[24px] text-white">5</span>
-                                </div>
-                                <div
-                                    style={{
-                                        width: '3px',
-                                        height: '70px',
-                                        backgroundColor: '#0055A4',
-                                        marginTop: '-1px'
-                                    }}
-                                />
-                            </div>
-
-                            {/* Right Column: Content */}
-                            <div style={{ paddingTop: '5px', paddingLeft: '22px' }}>
-                                <h3
-                                    className="font-poppins font-semibold text-[24px] text-black leading-[36px]"
-                                    style={{ marginBottom: '0px' }}
-                                >
-                                    Offering
-                                </h3>
-                                <p className="font-poppins font-normal text-[20px] text-black leading-[36px] max-w-[731px]">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. beatae quidem itaque quia dignissimos quis, iusto quasi hic?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* 6. Bubble Process 6 */}
-                    <div className="relative">
-                        <div className="relative flex items-start" style={{ paddingLeft: '178px' }}>
-                            {/* Left Column: Bubble & Line */}
-                            <div className="flex flex-col items-center mr-[27px]" style={{ marginLeft: '148px' }}>
-                                <div
-                                    className="flex items-center justify-center rounded-full bg-[#0055A4] relative z-20"
-                                    style={{ width: '80px', height: '80px' }}
-                                >
-                                    <span className="font-poppins font-semibold text-[24px] text-white">6</span>
-                                </div>
-                                <div
-                                    style={{
-                                        width: '3px',
-                                        height: '70px',
-                                        backgroundColor: '#0055A4',
-                                        marginTop: '-1px'
-                                    }}
-                                />
-                            </div>
-
-                            {/* Right Column: Content */}
-                            <div style={{ paddingTop: '5px', paddingLeft: '22px' }}>
-                                <h3
-                                    className="font-poppins font-semibold text-[24px] text-black leading-[36px]"
-                                    style={{ marginBottom: '0px' }}
-                                >
-                                    Medical Check Up
-                                </h3>
-                                <p className="font-poppins font-normal text-[20px] text-black leading-[36px] max-w-[731px]">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. beatae quidem itaque quia dignissimos quis, iusto quasi hic?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* 7. Bubble Process 7 */}
-                    <div className="relative">
-                        <div className="relative flex items-start" style={{ paddingLeft: '178px' }}>
-                            {/* Left Column: Bubble & Line */}
-                            <div className="flex flex-col items-center mr-[27px]" style={{ marginLeft: '148px' }}>
-                                <div
-                                    className="flex items-center justify-center rounded-full bg-[#00FF00] relative z-20"
-                                    style={{ width: '80px', height: '80px' }}
-                                >
-                                    <i className="fa-solid fa-check" style={{ color: 'white', fontSize: '24px' }}></i>
-                                </div>
-
-                            </div>
-
-                            {/* Right Column: Content */}
-                            <div style={{ paddingTop: '5px', paddingLeft: '22px' }}>
-                                <h3
-                                    className="font-poppins font-semibold text-[24px] text-black leading-[36px]"
-                                    style={{ marginBottom: '0px' }}
-                                >
-                                    Hiring Decision
-                                </h3>
-                                <p className="font-poppins font-normal text-[20px] text-black leading-[36px] max-w-[731px]">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                {/* Title */}
+                <div className="text-center mb-10 lg:mb-14">
+                    <h2 className="font-poppins font-semibold text-3xl lg:text-5xl text-black leading-tight">
+                        Our <span className="text-[#0055A4]">Application</span> Process
+                    </h2>
+                    <p className="font-poppins text-sm lg:text-xl text-black mt-2 lg:mt-3" style={{ marginBottom: '20px' }}>
+                        A clear, transparent journey from application to hiring
+                    </p>
                 </div>
 
-                {/* MOBILE LAYOUT */}
-                <div className="lg:hidden flex flex-col items-center">
-                    {/* 1. Judul Section */}
-                    <div className="text-center mb-[40px]">
-                        <h2 className="font-poppins font-semibold text-[32px] leading-[40px] text-black mb-[8px]">
-                            Our <span style={{ color: '#0055A4' }}>Application</span> Process
-                        </h2>
-                        <p className="font-poppins font-normal text-[14px] leading-[22px] text-black px-4">
-                            A clear, transparent journey from application to hiring
-                        </p>
-                    </div>
+                {/* MOBILE */}
+                <div className="lg:hidden flex flex-col" style={{ padding: '1.5rem' }}>
+                    {steps.map((step, i) => (
+                        <StepItem key={i} {...step} isMobile isLast={false} />
+                    ))}
+                    <StepItem title={lastStep.title} desc={lastStep.desc} isMobile isLast />
+                </div>
 
-                    {/* 3. Bubble Process 1 (Submit CV) */}
-                    <div className="flex flex-col items-center w-full px-4">
-                        <div className="flex flex-col items-center w-full mb-8">
-                            {/* Bubble */}
-                            <div
-                                className="flex items-center justify-center rounded-full bg-[#0055A4] relative z-20 mb-4 shadow-md"
-                                style={{ width: '60px', height: '60px' }}
-                            >
-                                <span className="font-poppins font-semibold text-[20px] text-white">1</span>
-                            </div>
-
-                            {/* Line (Visual only for now, can be removed or adjusted if multiple steps) */}
-                            <div
-                                style={{
-                                    width: '2px',
-                                    height: '30px',
-                                    backgroundColor: '#0055A4',
-                                    marginBottom: '16px',
-                                    display: 'none' // Hidden for single item, show when more items added
-                                }}
-                            />
-
-                            {/* Content */}
-                            <div className="text-center">
-                                <h3 className="font-poppins font-semibold text-[18px] text-black mb-2">
-                                    Submit CV
-                                </h3>
-                                <p className="font-poppins font-normal text-[14px] leading-[24px] text-black max-w-[300px] mx-auto">
-                                    Submit your updated CV and cover letter through our career portal. Make sure to highlight your relevant experience and skills.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                {/* DESKTOP */}
+                <div className="hidden lg:flex lg:flex-col">
+                    {steps.map((step, i) => (
+                        <StepItem key={i} {...step} isMobile={false} isLast={false} />
+                    ))}
+                    <StepItem title={lastStep.title} desc={lastStep.desc} isMobile={false} isLast />
                 </div>
 
             </div>

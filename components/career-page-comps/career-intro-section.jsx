@@ -5,10 +5,10 @@ import { AnimateOnScroll } from '@/components/animations/scroll-animations'
 export default function CareerIntroSection() {
     return (
         <>
-            {/* Mobile Layout */}
-            <section className="lg:hidden px-6 py-12 bg-white">
+            {/* Mobile */}
+            <section className="lg:hidden bg-white flex flex-col items-start">
                 <AnimateOnScroll animation="fadeUp" delay={0}>
-                    <h2 className="font-poppins font-semibold text-[32px] leading-[40px] mb-6">
+                    <h2 className="font-poppins font-semibold text-[24px] leading-[40px]" style={{ padding: '20px' }}>
                         <span className="text-black">Start </span>
                         <span className="text-black">your </span>
                         <span className="text-[#0055A4]">Career </span>
@@ -18,31 +18,29 @@ export default function CareerIntroSection() {
                     </h2>
                 </AnimateOnScroll>
 
-                {/* Video Player Mobile */}
                 <AnimateOnScroll animation="fadeUp" delay={100}>
-                    <div className="w-full aspect-video bg-gray-300 rounded-[20px] mb-6 overflow-hidden relative">
-                        {/* Ganti VIDEO_ID dengan ID video YouTube yang diinginkan (contoh: dQw4w9WgXcQ) */}
-                        <iframe
-                            width="100%"
-                            height="100%"
-                            src="https://www.youtube.com/embed/lxTQZNfn3EQ?si=pzaosG0N020vO33b"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen
-                            className="absolute inset-0"
-                        ></iframe>
-                    </div>
-                </AnimateOnScroll>
-
-                <AnimateOnScroll animation="fadeUp" delay={200}>
-                    <p className="font-poppins font-normal text-[14px] leading-[24px] text-black text-center">
+                    <p className="font-poppins font-normal text-[14px] leading-[24px] text-black mb-6" style={{ padding: '0px 20px 20px 20px' }}>
                         PT Wang Sarimulti Utama berfokus pada pengembangan generasi muda yang berpotensi, agar mereka dapat tumbuh, berkarya, dan memberikan kontribusi positif bagi perusahaan dan bangsa. Mulai langkah kariermu di sini dan berkembang bersama kami!
                     </p>
                 </AnimateOnScroll>
+
+                {/* Video */}
+                <div className="w-full flex justify-center mt-4" style={{ marginBottom: '1rem' }}>
+                    <AnimateOnScroll animation="fadeUp" delay={200}>
+                        <div className="w-[300px] aspect-video bg-black rounded-[15px] overflow-hidden">
+                            <iframe
+                                src="https://www.youtube.com/embed/lxTQZNfn3EQ"
+                                title="YouTube video player"
+                                allowFullScreen
+                                className="w-full h-full"
+                            ></iframe>
+                        </div>
+                    </AnimateOnScroll>
+                </div>
             </section>
 
             {/* Desktop */}
-            <section className="hidden lg:flex items-center w-full bg-white" style={{ minHeight: '700px', paddingLeft: '4.5%', paddingRight: '4.5%', paddingTop: '60px', paddingBottom: '60px' }}>
+            <section className="hidden lg:flex items-center w-full bg-white" style={{ minHeight: '700px', paddingLeft: '4.5%', paddingRight: '4.5%', paddingBottom: '60px' }}>
 
                 {/* Left: Text */}
                 <div style={{ width: '44%', paddingRight: '4%' }}>

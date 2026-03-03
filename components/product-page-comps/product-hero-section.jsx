@@ -94,7 +94,7 @@ export default function ProductHeroSection() {
                         className="absolute font-poppins font-semibold text-[60px] leading-[63px] text-white"
                         style={{
                             left: '7%',
-                            bottom: '269px',
+                            bottom: '270px',
                         }}
                     >
                         <span style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -109,7 +109,7 @@ export default function ProductHeroSection() {
                         style={{
                             left: '7%',
                             right: '7%',
-                            bottom: '72px',
+                            bottom: '140px',
                         }}
                     >
                         Advanced industrial components engineered for reliability, durability, and exceptional performance across diverse applications.

@@ -194,14 +194,9 @@ const productsData = [
         description: "High-precision automotive parts manufactured to exact specifications for optimal performance and safety.",
     },
     {
-        imageSrc: "/images/shifter.jpg",
+        imageSrc: "/images/product-exp.jpg",
         title: "Electronics Part",
         description: "Advanced electronic components engineered for reliability in demanding technological applications.",
-    },
-    {
-        imageSrc: "/images/shifter.jpg",
-        title: "Industrial Components",
-        description: "Robust machinery components built to withstand harsh industrial environments and heavy usage.",
     },
 ]
 

@@ -40,12 +40,12 @@ export default function CareerHero() {
                         />
 
                         {/* Title */}
-                        <h1 className="font-poppins font-semibold text-[32px] leading-[36px] text-white mb-4">
+                        <h1 className="font-poppins font-semibold text-[28px] leading-[36px] text-white mb-4">
                             Wang SMU<br />Career
                         </h1>
 
                         {/* Description */}
-                        <p className="font-poppins font-normal text-[16px] leading-[24px] text-white max-w-[300px]">
+                        <p className="font-poppins font-normal text-[14px] leading-[24px] text-white max-w-[300px]" style={{ marginTop: '10px' }}>
                             Join us and build your future together.
                         </p>
                     </div>

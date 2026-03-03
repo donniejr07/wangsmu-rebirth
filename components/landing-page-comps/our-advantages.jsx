@@ -20,9 +20,13 @@ export default function OurAdvantages() {
             <section className="lg:hidden relative w-full bg-white overflow-hidden" style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '16px', paddingBottom: '20px' }}>
                 {/* Header */}
                 <AnimateOnScroll animation="fadeUp" duration={800}>
-                    <h2 className="font-poppins font-semibold text-[28px] leading-[36px]" style={{ marginBottom: '20px' }}>
+                    <h2 className="flex items-center font-poppins font-semibold text-[28px] leading-[36px]" style={{ marginBottom: '20px' }}>
                         <span className="text-black">{t('ourAdvantages.titleOur')} </span>
                         <span className="text-[#0055A4]">{t('ourAdvantages.titleAdvantages')}</span>
+                        <div
+                            className="bg-[#0055A4] flex-1"
+                            style={{ height: '6px', maxWidth: '140px', marginLeft: '12px' }}
+                        />
                     </h2>
                 </AnimateOnScroll>
 

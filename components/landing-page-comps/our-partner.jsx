@@ -33,7 +33,7 @@ export default function OurPartner() {
                         />
 
                         {/* Judul */}
-                        <h2 className="font-poppins font-semibold text-[34px] leading-[36px] whitespace-nowrap mx-3">
+                        <h2 className="font-poppins font-semibold text-[28px] leading-[34px] whitespace-nowrap mx-3">
                             <span className="text-black">Our </span>
                             <span className="text-[#0055A4]">Partner</span>
                         </h2>

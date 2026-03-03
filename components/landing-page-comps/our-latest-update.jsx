@@ -89,7 +89,7 @@ export default function OurLatestUpdate() {
 
             {/* mobile header */}
             <div className="lg:hidden flex flex-col items-center">
-                <h2 className="font-poppins font-semibold text-[32px] leading-[48px] text-center">
+                <h2 className="font-poppins font-semibold text-[28px] leading-[36px] text-center">
                     <span className="text-black">{t('ourUpdates.titleOur')} </span>
                     <span className="text-[#0055A4]">{t('ourUpdates.titleUpdate')}</span>
                 </h2>
@@ -99,20 +99,6 @@ export default function OurLatestUpdate() {
                 />
             </div>
 
-            {/* desktop header */}
-            <div
-                className="hidden lg:flex items-center"
-                style={{ paddingLeft: '2.5%', paddingRight: '2.5%', gap: '19px' }}
-            >
-                <h2 className="font-poppins font-semibold text-[48px] leading-[96px] whitespace-nowrap">
-                    <span className="text-black">{t('ourUpdates.titleOur')} </span>
-                    <span className="text-[#0055A4]">{t('ourUpdates.titleUpdate')}</span>
-                </h2>
-                <div
-                    className="bg-[#0055A4] flex-1"
-                    style={{ height: '12px' }}
-                />
-            </div>
 
             {/* mobile cards - vertical */}
             <div
@@ -141,6 +127,21 @@ export default function OurLatestUpdate() {
                 )}
             </div>
 
+            {/* desktop header */}
+            <div
+                className="hidden lg:flex items-center"
+                style={{ paddingLeft: '2.5%', paddingRight: '2.5%', gap: '19px' }}
+            >
+                <h2 className="font-poppins font-semibold text-[48px] leading-[96px] whitespace-nowrap">
+                    <span className="text-black">{t('ourUpdates.titleOur')} </span>
+                    <span className="text-[#0055A4]">{t('ourUpdates.titleUpdate')}</span>
+                </h2>
+                <div
+                    className="bg-[#0055A4] flex-1"
+                    style={{ height: '12px' }}
+                />
+            </div>
+
             {/* desktop cards - horizontal */}
             <div
                 className="hidden lg:flex justify-center"
@@ -167,7 +168,6 @@ export default function OurLatestUpdate() {
                     </div>
                 )}
             </div>
-
         </section>
     )
 }
