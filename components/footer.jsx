@@ -93,7 +93,7 @@ export default function Footer() {
                             </a>
 
                             {/* Instagram */}
-                            <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/pt.wangsmu" target="_blank" rel="noopener noreferrer">
                                 <div
                                     className="bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors"
                                     style={{ width: '40px', height: '40px' }}
@@ -105,7 +105,7 @@ export default function Footer() {
                             </a>
 
                             {/* LinkedIn */}
-                            <a href="https://linkedin.com/company/yourcompany" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/company/pt-wang-sarimulti-utama-wsmu/" target="_blank" rel="noopener noreferrer">
                                 <div
                                     className="bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors"
                                     style={{ width: '40px', height: '40px' }}
@@ -117,7 +117,7 @@ export default function Footer() {
                             </a>
 
                             {/* Mail */}
-                            <Link href="mailto:your@email.com">
+                            <Link href="mailto:hrd@wangsmu.co.id">
                                 <div
                                     className="bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors"
                                     style={{ width: '40px', height: '40px' }}
@@ -129,7 +129,7 @@ export default function Footer() {
                             </Link>
 
                             {/* Location */}
-                            <a href="https://maps.google.com/?q=yourlocation" target="_blank" rel="noopener noreferrer">
+                            <a href="https://maps.app.goo.gl/eohbqK1CrCPz2pJF8" target="_blank" rel="noopener noreferrer">
                                 <div
                                     className="bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors"
                                     style={{ width: '40px', height: '40px' }}

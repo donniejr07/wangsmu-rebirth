@@ -85,7 +85,7 @@ export default function ServicesSingkat() {
             <section className="hidden lg:block relative w-full bg-white py-12 overflow-hidden">
                 {/* Deskripsi */}
                 <p
-                    className="font-poppins font-semibold text-[28px] leading-[51px] text-black"
+                    className="font-poppins font-bold text-[30px] leading-[51px] text-black"
                     style={{ paddingLeft: '12%', paddingRight: '12%', marginBottom: '67px' }}
                 >
                     {t('servicesSingkat.descDesktop')}
