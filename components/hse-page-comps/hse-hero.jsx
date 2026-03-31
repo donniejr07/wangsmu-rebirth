@@ -15,7 +15,7 @@ export default function HseHeroSection() {
                     {/* Background Image */}
                     <div className="absolute inset-0" style={{ paddingTop: '20px' }}>
                         <Image
-                            src="/images/gallery-wsu.png"
+                            src="/images/pt-wang-smu.png"
                             alt="About Hero Background"
                             fill
                             className="object-cover"
@@ -76,7 +76,7 @@ export default function HseHeroSection() {
                         }}
                     >
                         <Image
-                            src="/images/gallery-wsu.png"
+                            src="/images/pt-wang-smu.png"
                             alt="About Hero Background"
                             fill
                             style={{ objectFit: 'cover' }}

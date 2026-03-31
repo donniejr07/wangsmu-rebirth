@@ -46,10 +46,29 @@ export default function CareerHero() {
 
                         {/* Description */}
                         <p className="font-poppins font-normal text-[14px] leading-[24px] text-white max-w-[300px]" style={{ marginTop: '10px' }}>
-                            Join us and build your future together.
+                            Join a company where your talent grows, your ideas matter, and your career thrives. 25+ years of excellence, endless opportunities ahead.
                         </p>
                     </div>
                 </div>
+
+                {/* Button Login */}
+                <button
+                    className="absolute cursor-pointer hover:opacity-80 transition-opacity"
+                    style={{
+                        top: '15px',
+                        right: '28px',
+                        width: '55px',
+                        height: '40px',
+                        backgroundColor: '#E9E9E9',
+                        borderRadius: '10px',
+                        border: 'none',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}
+                >
+                    <i className="fas fa-sign-in-alt"></i>
+                </button>
             </section>
 
             {/* Desktop */}
@@ -118,7 +137,6 @@ export default function CareerHero() {
                         }}
                     >
                         Join a company where your talent grows, your ideas matter, and your career thrives. 25+ years of excellence, endless opportunities ahead.
-
                     </p>
 
                     {/* e. Button Login */}

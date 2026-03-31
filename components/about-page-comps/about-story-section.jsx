@@ -23,7 +23,7 @@ export default function AboutStorySection() {
                     <AnimateOnScroll animation="fadeUp" delay={0}>
                         <div className="relative w-full h-[250px] rounded-[15px] overflow-hidden mb-6">
                             <Image
-                                src="/images/story.png"
+                                src="/images/guest.png"
                                 alt="Wang SMU Story"
                                 fill
                                 className="object-cover"
@@ -197,7 +197,7 @@ export default function AboutStorySection() {
                     <AnimateOnScroll animation="fadeLeft" delay={200}>
                         <div className="relative w-[519px] h-[566px] rounded-[20px] overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer flex-shrink-0" style={{ marginTop: '30px' }}>
                             <Image
-                                src="/images/story.png"
+                                src="/images/guest.png"
                                 alt="Wang SMU Story"
                                 fill
                                 className="object-cover transition-transform duration-500 hover:scale-110"

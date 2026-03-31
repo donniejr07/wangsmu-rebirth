@@ -110,7 +110,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
                 </p>
             </section>
 
-            <div style={{ marginBottom: '60px' }}> <MoreNewsSection /></div>
+            <div style={{ marginBottom: '60px' }}> <MoreNewsSection currentNewsId={id} /></div>
 
             <Footer />
         </>

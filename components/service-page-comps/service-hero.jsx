@@ -15,7 +15,7 @@ export default function ServiceHeroSection() {
                     {/* Background Image */}
                     <div className="absolute inset-0" style={{ paddingTop: '20px' }}>
                         <Image
-                            src="/images/gallery-wsu.png"
+                            src="/images/production.png"
                             alt="Service Hero Background"
                             fill
                             className="object-cover"
@@ -92,7 +92,7 @@ export default function ServiceHeroSection() {
                         }}
                     >
                         <Image
-                            src="/images/gallery-wsu.png"
+                            src="/images/production.png"
                             alt="Service Hero Background"
                             fill
                             style={{ objectFit: 'cover' }}

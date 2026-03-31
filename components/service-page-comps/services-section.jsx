@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
 
 export default function ServicesSection() {
@@ -36,14 +37,17 @@ export default function ServicesSection() {
                             {
                                 id: 1, title: 'Manufacture Tooling', col: 0, row: 0, desc: 'Pembuatan tooling dan cetakan presisi untuk mendukung produksi massal.',
                                 image: '/images/services/tooling.png',
+                                href: '/service-detail/manuTool',
                             },
                             {
                                 id: 2, title: 'Manufacture Plastic Injection', col: 1, row: 0, desc: 'Produksi komponen plastik injection molding dengan standar kualitas internasional.',
                                 image: '/images/services/injection.png',
+                                href: '/service-detail/manuPlastic',
                             },
                             {
                                 id: 3, title: 'Secondary Process', col: 2, row: 0, desc: 'Solusi cetak berkualitas tinggi untuk packaging dan kebutuhan branding produk.',
                                 image: '/images/services/printing.png',
+                                href: '/service-detail/secondaryProcess',
                             },
                         ].map((service) => (
                             <div
@@ -106,22 +110,24 @@ export default function ServicesSection() {
                                     </p>
 
                                     {/* Button */}
-                                    <button
-                                        style={{
-                                            width: '100%',
-                                            height: '36px',
-                                            backgroundColor: '#0055A4',
-                                            borderRadius: '15px',
-                                            border: 'none',
-                                            cursor: 'pointer',
-                                            fontFamily: 'Poppins, sans-serif',
-                                            fontWeight: 400,
-                                            fontSize: '14px',
-                                            color: '#FFFFFF',
-                                        }}
-                                    >
-                                        More Details
-                                    </button>
+                                    <Link href={service.href}>
+                                        <button
+                                            style={{
+                                                width: '100%',
+                                                height: '36px',
+                                                backgroundColor: '#0055A4',
+                                                borderRadius: '15px',
+                                                border: 'none',
+                                                cursor: 'pointer',
+                                                fontFamily: 'Poppins, sans-serif',
+                                                fontWeight: 400,
+                                                fontSize: '14px',
+                                                color: '#FFFFFF',
+                                            }}
+                                        >
+                                            More Details
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         ))}
@@ -196,14 +202,17 @@ export default function ServicesSection() {
                             {
                                 id: 1, title: 'Manufacture Tooling', col: 0, row: 0, desc: 'Pembuatan tooling dan cetakan presisi untuk mendukung produksi massal.',
                                 image: '/images/services/tooling.png',
+                                href: '/service-detail/manuTool',
                             },
                             {
                                 id: 2, title: 'Manufacture Plastic Injection', col: 1, row: 0, desc: 'Produksi komponen plastik injection molding dengan standar kualitas internasional.',
                                 image: '/images/services/injection.png',
+                                href: '/service-detail/manuPlastic',
                             },
                             {
                                 id: 3, title: 'Secondary Process', col: 2, row: 0, desc: 'Solusi cetak berkualitas tinggi untuk packaging dan kebutuhan branding produk.',
                                 image: '/images/services/printing.png',
+                                href: '/service-detail/secondaryProcess',
                             },
                         ].map((service, index) => {
                             // Grid positions
@@ -288,33 +297,35 @@ export default function ServicesSection() {
                                         </p>
 
                                         {/* CTA Button */}
-                                        <button
-                                            style={{
-                                                position: 'absolute',
-                                                bottom: '22px',
-                                                right: '25%',
-                                                width: '170px',
-                                                height: '40px',
-                                                backgroundColor: '#0055A4',
-                                                borderRadius: '20px',
-                                                border: 'none',
-                                                cursor: 'pointer',
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                            }}
-                                        >
-                                            <span
+                                        <Link href={service.href}>
+                                            <button
                                                 style={{
-                                                    fontFamily: 'Poppins, sans-serif',
-                                                    fontWeight: 400,
-                                                    fontSize: '20px',
-                                                    color: '#FFFFFF',
+                                                    position: 'absolute',
+                                                    bottom: '22px',
+                                                    right: '25%',
+                                                    width: '170px',
+                                                    height: '40px',
+                                                    backgroundColor: '#0055A4',
+                                                    borderRadius: '20px',
+                                                    border: 'none',
+                                                    cursor: 'pointer',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
                                                 }}
                                             >
-                                                More Details
-                                            </span>
-                                        </button>
+                                                <span
+                                                    style={{
+                                                        fontFamily: 'Poppins, sans-serif',
+                                                        fontWeight: 400,
+                                                        fontSize: '20px',
+                                                        color: '#FFFFFF',
+                                                    }}
+                                                >
+                                                    More Details
+                                                </span>
+                                            </button>
+                                        </Link>
                                     </div>
                                 </AnimateOnScroll>
                             );

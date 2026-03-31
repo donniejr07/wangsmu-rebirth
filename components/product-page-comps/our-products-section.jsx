@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
 
 // Car Icon Component
@@ -16,7 +17,7 @@ const MobileCarIcon = () => (
 )
 
 // Product Card Component for Desktop
-function ProductCard({ imageSrc, title, description, delay = 0 }) {
+function ProductCard({ imageSrc, title, description, href, delay = 0 }) {
     return (
         <AnimateOnScroll animation="fadeUp" delay={delay}>
             <div
@@ -93,8 +94,9 @@ function ProductCard({ imageSrc, title, description, delay = 0 }) {
                 </p>
 
                 {/* More Details Button */}
-                <button
-                    className="hover:opacity-80 transition-opacity"
+                <Link
+                    href={href || '#'}
+                    className="hover:opacity-80 transition-opacity flex items-center justify-center"
                     style={{
                         position: 'absolute',
                         bottom: '20px',
@@ -109,17 +111,18 @@ function ProductCard({ imageSrc, title, description, delay = 0 }) {
                         fontWeight: 400,
                         fontSize: '16px',
                         color: '#FFFFFF',
+                        textDecoration: 'none',
                     }}
                 >
                     More Details
-                </button>
+                </Link>
             </div>
         </AnimateOnScroll>
     )
 }
 
 // Product Card Component for Mobile
-function MobileProductCard({ imageSrc, title, description, delay = 0 }) {
+function MobileProductCard({ imageSrc, title, description, href, delay = 0 }) {
     return (
         <AnimateOnScroll animation="fadeUp" delay={delay}>
             <div
@@ -164,8 +167,9 @@ function MobileProductCard({ imageSrc, title, description, delay = 0 }) {
                 </p>
 
                 {/* Button */}
-                <button
-                    className="hover:opacity-80 transition-opacity"
+                <Link
+                    href={href || '#'}
+                    className="hover:opacity-80 transition-opacity flex items-center justify-center"
                     style={{
                         width: '100%',
                         height: '36px',
@@ -177,10 +181,11 @@ function MobileProductCard({ imageSrc, title, description, delay = 0 }) {
                         fontWeight: 400,
                         fontSize: '14px',
                         color: '#FFFFFF',
+                        textDecoration: 'none',
                     }}
                 >
                     More Details
-                </button>
+                </Link>
             </div>
         </AnimateOnScroll>
     )
@@ -192,11 +197,13 @@ const productsData = [
         imageSrc: "/images/shifter.jpg",
         title: "Automotive Components",
         description: "High-precision automotive parts manufactured to exact specifications for optimal performance and safety.",
+        href: "/product-detail/automotive",
     },
     {
         imageSrc: "/images/product-exp.jpg",
         title: "Electronics Part",
         description: "Advanced electronic components engineered for reliability in demanding technological applications.",
+        href: "/product-detail/electronic",
     },
 ]
 
@@ -234,6 +241,7 @@ export default function OurProductsSection() {
                             imageSrc={product.imageSrc}
                             title={product.title}
                             description={product.description}
+                            href={product.href}
                             delay={index * 50}
                         />
                     ))}
@@ -288,6 +296,7 @@ export default function OurProductsSection() {
                             imageSrc={product.imageSrc}
                             title={product.title}
                             description={product.description}
+                            href={product.href}
                             delay={index * 100}
                         />
                     ))}

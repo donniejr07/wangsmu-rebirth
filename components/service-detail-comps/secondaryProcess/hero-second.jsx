@@ -1,14 +1,8 @@
 'use client'
 
-import { useState } from 'react'
 import Image from 'next/image'
 
-export default function FormSection() {
-    const [subjectOpen, setSubjectOpen] = useState(false)
-    const [selectedSubject, setSelectedSubject] = useState('')
-
-    const subjectOptions = ['Services', 'Products', 'Careers', 'Other']
-
+export default function HeroSecond() {
     return (
         <section className="relative w-full">
 
@@ -16,15 +10,12 @@ export default function FormSection() {
             <div className="lg:hidden relative overflow-hidden w-full bg-[#0055A4]"
                 style={{ borderRadius: '0 0 60px 60px', padding: '65px 24px 50px', minHeight: '250px' }}
             >
-
-                {/* background image */}
                 <img
-                    src="/images/services/laser.png"
-                    alt="Services"
+                    src="/images/services/painting.png"
+                    alt="Secondary Process"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
-
-                {/* company icon */}
+                <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }} />
                 <Image
                     src="/images/logo-putih.png"
                     alt="WSMU Logo"
@@ -32,29 +23,26 @@ export default function FormSection() {
                     height={52}
                     className="absolute top-1 right-4 z-12"
                 />
-
-                {/* title */}
-                <h1 className="absolute inset-0 flex justify-center items-center font-poppins font-bold text-[40px] text-[#0055A4] z-10 opacity-80">
+                <h1 className="absolute inset-0 flex justify-center items-center font-poppins font-bold text-[36px] text-white z-10 drop-shadow-lg">
                     Services
                 </h1>
-
-                {/* breadcrumb */}
-                <h2 className="absolute left-0 right-0 top-[60%] flex justify-center items-center gap-1.5 font-poppins font-bold text-[14px] text-[#0055A4] z-10 opacity-90">
-                    <a href="/" className="text-white hover:text-[#0055A4]">Home</a>
-                    <span className="text-white">&gt;</span> Manufacture Tooling
+                <h2 className="absolute left-0 right-0 top-[60%] flex justify-center items-center gap-1.5 font-poppins font-bold text-[14px] z-10">
+                    <a href="/" className="text-white hover:text-[#93C5FD]">Home</a>
+                    <span className="text-white/70">&gt;</span>
+                    <a href="/services" className="text-white hover:text-[#93C5FD]">Services</a>
+                    <span className="text-white/70">&gt;</span>
+                    <span className="text-[#93C5FD]">Secondary Process</span>
                 </h2>
             </div>
 
             {/* Desktop Layout */}
             <div className="hidden lg:block relative overflow-hidden w-full h-[700px] bg-[#0055A4] rounded-b-[160px]">
-
                 <img
-                    src="/images/services/laser.png"
-                    alt="Contact Background"
+                    src="/images/services/painting.png"
+                    alt="Secondary Process Background"
                     className="absolute top-[-103px] left-0 w-full h-[970px] object-cover blur-[3px]"
                 />
-
-                {/* icon */}
+                <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }} />
                 <Image
                     src="/images/logo-putih.png"
                     alt="WSMU Logo"
@@ -63,16 +51,15 @@ export default function FormSection() {
                     className="absolute z-10"
                     style={{ top: '12px', right: '48px' }}
                 />
-
-                {/* title */}
-                <h1 className="absolute inset-0 flex justify-center items-center font-poppins font-bold text-[72px] text-[#0055A4] z-10 opacity-80">
+                <h1 className="absolute inset-0 flex justify-center items-center font-poppins font-bold text-[72px] text-white z-10 drop-shadow-lg">
                     Services
                 </h1>
-
-                {/* description */}
-                <h2 className="absolute inset-105 flex justify-center items-center gap-2 font-poppins font-bold text-[26px] text-[#0055A4] z-10 opacity-90">
-                    <a href="/" className="text-white hover:text-[#0055A4]">Home</a>
-                    <span className="text-white">&gt;</span> Manufacture Tooling
+                <h2 className="absolute inset-105 flex justify-center items-center gap-2 font-poppins font-bold text-[26px] z-10">
+                    <a href="/" className="text-white hover:text-[#93C5FD]">Home</a>
+                    <span className="text-white/70">&gt;</span>
+                    <a href="/services" className="text-white hover:text-[#93C5FD]">Services</a>
+                    <span className="text-white/70">&gt;</span>
+                    <span className="text-[#93C5FD]">Secondary Process</span>
                 </h2>
             </div>
         </section>

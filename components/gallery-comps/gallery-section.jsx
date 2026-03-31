@@ -54,16 +54,25 @@ export default function Gallery() {
         <>
             {/* mobile */}
             <section
-                className="lg:hidden w-full"
+                className="lg:hidden w-full relative"
                 style={{
-                    backgroundColor: 'rgba(217, 217, 217, 0.4)',
                     paddingTop: '30px',
                     paddingBottom: '40px',
                     paddingLeft: '16px',
                     paddingRight: '16px',
                 }}
             >
+                {/* Gradient background with fade edges */}
+                <div
+                    className="absolute inset-0 z-0"
+                    style={{
+                        background: 'linear-gradient(180deg, #F0F4F8 0%, rgba(217, 217, 217, 0.4) 15%, rgba(217, 217, 217, 0.4) 85%, #F0F4F8 100%)',
+                        maskImage: 'linear-gradient(to bottom, transparent 0%, black 10px, black calc(100% - 10px), transparent 100%)',
+                        WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 10px, black calc(100% - 10px), transparent 100%)',
+                    }}
+                />
                 {/* tabs */}
+                <div className="relative z-10">
                 <div
                     className="flex items-center overflow-x-auto no-scrollbar"
                     style={{ gap: '8px', paddingBottom: '8px' }}
@@ -197,19 +206,29 @@ export default function Gallery() {
                         </div>
                     )
                 })()}
+                </div>
             </section>
 
             {/* desktop */}
             <section
-                className="hidden lg:block w-full"
+                className="hidden lg:block w-full relative"
                 style={{
-                    backgroundColor: 'rgba(217, 217, 217, 0.4)',
                     minHeight: '704px',
                     paddingTop: '45px',
                     paddingBottom: '60px',
                 }}
             >
+                {/* Gradient background with fade edges */}
+                <div
+                    className="absolute inset-0 z-0"
+                    style={{
+                        background: 'linear-gradient(180deg, #F0F4F8 0%, rgba(217, 217, 217, 0.4) 10%, rgba(217, 217, 217, 0.4) 90%, #F0F4F8 100%)',
+                        maskImage: 'linear-gradient(to bottom, transparent 0%, black 15px, black calc(100% - 15px), transparent 100%)',
+                        WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 15px, black calc(100% - 15px), transparent 100%)',
+                    }}
+                />
                 {/* tabs */}
+                <div className="relative z-10">
                 <div
                     className="flex flex-wrap items-center"
                     style={{
@@ -358,6 +377,7 @@ export default function Gallery() {
                         </div>
                     )
                 })()}
+                </div>
             </section>
         </>
     )

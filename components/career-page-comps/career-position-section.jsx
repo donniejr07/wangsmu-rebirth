@@ -159,11 +159,13 @@ export default function CareerPositionSection() {
                                 </svg>
                             </div>
                             {activeDropdown === 'mobileJobType' && (
-                                <div className="absolute left-0 right-0 top-full z-50 mt-1 bg-white rounded-lg shadow-xl border border-gray-100 p-2">
+                                <div className="absolute left-0 right-0 top-full z-50 mt-1 bg-white rounded-lg shadow-xl border border-gray-100 p-2"
+                                    style={{ padding: '1rem' }}>
                                     {jobTypes.map((type) => (
                                         <div
                                             key={type}
                                             onClick={() => handleSelectJobType(type)}
+                                            style={{ padding: '1rem' }}
                                             className={`px-3 py-2 text-xs rounded-lg cursor-pointer ${selectedJobType === type ? 'bg-[#0055A4]/10 text-[#0055A4] font-medium' : 'text-gray-600 hover:bg-gray-50'}`}
                                         >
                                             {type}
@@ -192,11 +194,13 @@ export default function CareerPositionSection() {
                                 </svg>
                             </div>
                             {activeDropdown === 'mobileEduLevel' && (
-                                <div className="absolute left-0 right-0 top-full z-50 mt-1 bg-white rounded-lg shadow-xl border border-gray-100 p-2">
+                                <div className="absolute left-0 right-0 top-full z-50 mt-1 bg-white rounded-lg shadow-xl border border-gray-100 p-2"
+                                    style={{ padding: '1rem' }}>
                                     {eduLevels.map((level) => (
                                         <div
                                             key={level}
                                             onClick={() => handleSelectEduLevel(level)}
+                                            style={{ padding: '1rem' }}
                                             className={`px-3 py-2 text-xs rounded-lg cursor-pointer ${selectedEduLevel === level ? 'bg-[#0055A4]/10 text-[#0055A4] font-medium' : 'text-gray-600 hover:bg-gray-50'}`}
                                         >
                                             {level}

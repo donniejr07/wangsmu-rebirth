@@ -8,12 +8,6 @@ import { useLanguage } from '@/context/language-context'
 export default function ServicesSingkat() {
     const { t } = useLanguage()
 
-    // Data
-    const servicesData = [
-        { title: "Design", imageSrc: "/images/design-wangsmu.png", href: "/services/design" },
-        { title: "Printing", imageSrc: "/images/printing-wsu-1.png", href: "/services/printing" },
-    ]
-
     return (
         <>
             {/* Mobile Layout */}
@@ -27,33 +21,59 @@ export default function ServicesSingkat() {
 
                 {/* Cards */}
                 <div className="flex flex-col items-center" style={{ gap: '16px' }}>
-                    {servicesData.map((service, index) => (
-                        <AnimateOnScroll key={index} animation="fadeUp" delay={index * 50}>
-                            <Link href={service.href} className="block">
-                                <div className="group bg-white rounded-[16px] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#0055A4]" style={{ width: '280px' }}>
-                                    {/* Image */}
-                                    <div className="relative w-full h-[100px]">
-                                        <Image
-                                            src={service.imageSrc}
-                                            alt={service.title}
-                                            fill
-                                            className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                        />
-                                    </div>
-
-                                    {/* Content */}
-                                    <div className="text-center" style={{ padding: '12px', paddingBottom: '10px' }}>
-                                        <h3 className="font-poppins font-semibold text-[16px] text-[#0055A4]" style={{ marginBottom: '10px' }}>
-                                            {service.title}
-                                        </h3>
-                                        <button className="bg-[#0055A4] text-white font-semibold font-poppins rounded-full hover:bg-[#004080] transition-colors" style={{ fontSize: '10px', paddingLeft: '15px', paddingRight: '15px', paddingTop: '8px', paddingBottom: '8px' }}>
-                                            {t('servicesSingkat.moreDetails')}
-                                        </button>
-                                    </div>
+                    {/* Card Tooling */}
+                    <AnimateOnScroll animation="fadeUp" delay={0}>
+                        <Link href="/services/#" className="block">
+                            <div className="group bg-white rounded-[16px] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#0055A4]" style={{ width: '280px' }}>
+                                {/* Image */}
+                                <div className="relative w-full h-[100px]">
+                                    <Image
+                                        src="/images/services/tooling.png"
+                                        alt="Manufacture Tooling"
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                    />
                                 </div>
-                            </Link>
-                        </AnimateOnScroll>
-                    ))}
+
+                                {/* Content */}
+                                <div className="text-center" style={{ padding: '12px', paddingBottom: '10px' }}>
+                                    <h3 className="font-poppins font-semibold text-[16px] text-[#0055A4]" style={{ marginBottom: '10px' }}>
+                                        Manufacture Tooling
+                                    </h3>
+                                    <button className="bg-[#0055A4] text-white font-semibold font-poppins rounded-full hover:bg-[#004080] transition-colors" style={{ fontSize: '10px', paddingLeft: '15px', paddingRight: '15px', paddingTop: '8px', paddingBottom: '8px' }}>
+                                        {t('servicesSingkat.moreDetails')}
+                                    </button>
+                                </div>
+                            </div>
+                        </Link>
+                    </AnimateOnScroll>
+
+                    {/* Card Injection */}
+                    <AnimateOnScroll animation="fadeUp" delay={50}>
+                        <Link href="/services/printing" className="block">
+                            <div className="group bg-white rounded-[16px] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#0055A4]" style={{ width: '280px' }}>
+                                {/* Image */}
+                                <div className="relative w-full h-[100px]">
+                                    <Image
+                                        src="/images/services/injection.png"
+                                        alt="Manufacture Plastic Injection"
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                    />
+                                </div>
+
+                                {/* Content */}
+                                <div className="text-center" style={{ padding: '12px', paddingBottom: '10px' }}>
+                                    <h3 className="font-poppins font-semibold text-[16px] text-[#0055A4]" style={{ marginBottom: '10px' }}>
+                                        Manufacture Plastic Injection
+                                    </h3>
+                                    <button className="bg-[#0055A4] text-white font-semibold font-poppins rounded-full hover:bg-[#004080] transition-colors" style={{ fontSize: '10px', paddingLeft: '15px', paddingRight: '15px', paddingTop: '8px', paddingBottom: '8px' }}>
+                                        {t('servicesSingkat.moreDetails')}
+                                    </button>
+                                </div>
+                            </div>
+                        </Link>
+                    </AnimateOnScroll>
 
                     {/* More Services */}
                     <AnimateOnScroll animation="fadeUp" delay={100}>
@@ -71,7 +91,7 @@ export default function ServicesSingkat() {
                                     <h3 className="font-poppins font-semibold text-[16px] text-white">
                                         Another Service
                                     </h3>
-                                    <button className="bg-white text-[#0055A4] font-poppins font-semibold rounded-full" style={{ fontSize: '10px', paddingLeft: '20px', paddingRight: '20px', paddingTop: '10px', paddingBottom: '10px' }}>
+                                    <button className="bg-white text-[#0055A4] font-poppins font-semibold rounded-[10px]" style={{ fontSize: '10px', paddingLeft: '15px', paddingRight: '15px', paddingTop: '8px', paddingBottom: '8px' }}>
                                         {t('servicesSingkat.moreServices')}
                                     </button>
                                 </div>
@@ -200,8 +220,8 @@ export default function ServicesSingkat() {
 
                             <div className="absolute inset-0 z-10 flex items-center justify-center">
                                 <Link href="/services">
-                                    <button className="bg-[#FFFFFF] rounded-[20px] w-[170px] h-[40px] flex items-center justify-center hover:bg-gray-200 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
-                                        <span className="text-black font-poppins font-semibold text-[20px]">
+                                    <button className="bg-[#FFFFFF] rounded-[15px] w-[170px] h-[40px] flex items-center justify-center hover:bg-gray-200 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
+                                        <span className="text-[#0055A4] font-poppins font-semibold text-[20px]">
                                             {t('servicesSingkat.moreServices')}
                                         </span>
                                     </button>

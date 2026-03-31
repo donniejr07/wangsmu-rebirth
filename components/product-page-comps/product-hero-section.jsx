@@ -15,7 +15,7 @@ export default function ProductHeroSection() {
                     {/* Background Image */}
                     <div className="absolute inset-0" style={{ paddingTop: '20px' }}>
                         <Image
-                            src="/images/shifter.png"
+                            src="/images/production.png"
                             alt="Product Hero Background"
                             fill
                             className="object-cover"
@@ -76,7 +76,7 @@ export default function ProductHeroSection() {
                         }}
                     >
                         <Image
-                            src="/images/gallery-wsu.png"
+                            src="/images/production.png"
                             alt="Product Hero Background"
                             fill
                             style={{ objectFit: 'cover' }}

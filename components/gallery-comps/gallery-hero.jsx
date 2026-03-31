@@ -1,8 +1,6 @@
-'use client'
-
 import Image from 'next/image'
 
-export default function CareerHero() {
+export default function GalleryHeroSection() {
     return (
         <>
             {/* Mobile Layout */}
@@ -17,8 +15,8 @@ export default function CareerHero() {
                     {/* Background Image */}
                     <div className="absolute inset-0" style={{ paddingTop: '20px' }}>
                         <Image
-                            src="/images/gallery-wsu.png"
-                            alt="Career Hero Background"
+                            src="/images/lobby.png"
+                            alt="About Hero Background"
                             fill
                             className="object-cover"
                             priority
@@ -34,8 +32,8 @@ export default function CareerHero() {
                         <Image
                             src="/images/logo-putih.png"
                             alt="Logo PT"
-                            width={80}
-                            height={84}
+                            width={70}
+                            height={64}
                             className="mb-6"
                         />
 
@@ -46,7 +44,7 @@ export default function CareerHero() {
 
                         {/* Description */}
                         <p className="font-poppins font-normal text-[16px] leading-[24px] text-white max-w-[300px]">
-                            Explore our advanced manufacturing, precision tooling, and quality production processes that drive our industry leadership
+                            Let's take a closer look at our gallery and explore the visual story behind our company’s journey
                         </p>
                     </div>
                 </div>
@@ -56,16 +54,14 @@ export default function CareerHero() {
             <section
                 className="hidden lg:flex justify-center relative"
                 style={{
-                    minWidth: '1440px',
-                    paddingLeft: '61px',
-                    paddingRight: '61px',
+                    paddingLeft: '6%',
+                    paddingRight: '6%',
                 }}
             >
-                {/* a. Blue background */}
+                {/* a. Rectangle 1 - Blue background */}
                 <div
-                    className="relative overflow-hidden bg-[#0055A1] flex-shrink-0"
+                    className="relative overflow-hidden bg-[#0055A1] w-full"
                     style={{
-                        width: '1317px',
                         height: '753px',
                         borderRadius: '0 0 160px 160px',
                     }}
@@ -80,8 +76,8 @@ export default function CareerHero() {
                         }}
                     >
                         <Image
-                            src="/images/gallery-wsu.png"
-                            alt="Career Hero Background"
+                            src="/images/lobby.png"
+                            alt="About Hero Background"
                             fill
                             style={{ objectFit: 'cover' }}
                             priority
@@ -93,17 +89,15 @@ export default function CareerHero() {
                         />
                     </div>
 
-                    {/* c. Title Text */}
+                    {/* c. Title Text - Wang SMU Story */}
                     <h1
                         className="absolute font-poppins font-semibold text-[60px] leading-[63px] text-white"
                         style={{
-                            left: '105px',
+                            left: '7%',
                             bottom: '269px',
-                            width: '451px',
-                            height: '126px',
                         }}
                     >
-                        <span style={{ display: 'flex', flexDirection: 'column', gap: '10px', width: '451px', height: '126px' }}>
+                        <span style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                             <span>Wang SMU</span>
                             <span>Gallery</span>
                         </span>
@@ -111,21 +105,19 @@ export default function CareerHero() {
 
                     {/* d. Description Text */}
                     <p
-                        className="absolute font-poppins font-normal text-[28px] leading-[42px] text-white"
+                        className="absolute font-poppins font-normal text-[28px] leading-[42px] text-white max-w-[75%]"
                         style={{
-                            left: '105px',
-                            bottom: '72px',
-                            width: '1029px',
-                            height: '147px',
+                            left: '7%',
+                            bottom: '140px',
                         }}
                     >
-                        a curated collection of our work, facilities, and team in action, highlighting the standards and values that define our company
+                        Let’s take a closer look at our gallery and explore the visual story behind our company’s journey
                     </p>
 
-                    {/* e. Icon */}
+                    {/* e. Logo PT */}
                     <Image
                         src="/images/logo-putih.png"
-                        alt="Gallery Icon"
+                        alt="Logo PT"
                         width={119}
                         height={116}
                         className="absolute"

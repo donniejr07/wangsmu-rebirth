@@ -6,6 +6,14 @@ const nextConfig: NextConfig = {
     "http://192.168.*.*",
     "http://10.*.*.*",
   ],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
