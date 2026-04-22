@@ -37,8 +37,8 @@ const showcaseProducts = [
     },
     {
         src: '/images/products/automotive/lamp.png',
-        alt: 'Automotive Lamp',
-        caption: 'Lamp',
+        alt: 'Reflector Head Light',
+        caption: 'Reflector Head Light',
     },
 ]
 

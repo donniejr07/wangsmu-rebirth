@@ -26,7 +26,7 @@ export default function HeroPlastic() {
                 <h1 className="absolute inset-0 flex justify-center items-center font-poppins font-bold text-[36px] text-white z-10 drop-shadow-lg">
                     Services
                 </h1>
-                <h2 className="absolute left-0 right-0 top-[60%] flex justify-center items-center gap-1.5 font-poppins font-bold text-[14px] z-10">
+                <h2 className="absolute left-0 right-0 top-[60%] flex justify-center items-center gap-1.5 font-poppins font-bold text-[14px] z-10 whitespace-nowrap px-4">
                     <a href="/" className="text-white hover:text-[#93C5FD]">Home</a>
                     <span className="text-white/70">&gt;</span>
                     <a href="/services" className="text-white hover:text-[#93C5FD]">Services</a>
@@ -54,7 +54,7 @@ export default function HeroPlastic() {
                 <h1 className="absolute inset-0 flex justify-center items-center font-poppins font-bold text-[72px] text-white z-10 drop-shadow-lg">
                     Services
                 </h1>
-                <h2 className="absolute inset-105 flex justify-center items-center gap-2 font-poppins font-bold text-[26px] z-10">
+                <h2 className="absolute left-0 right-0 top-[57%] flex justify-center items-center gap-2 font-poppins font-bold text-[26px] z-10 whitespace-nowrap px-6">
                     <a href="/" className="text-white hover:text-[#93C5FD]">Home</a>
                     <span className="text-white/70">&gt;</span>
                     <a href="/services" className="text-white hover:text-[#93C5FD]">Services</a>
