@@ -15,7 +15,7 @@ export default function NewsHeroSection() {
                     className="w-full h-full object-cover"
                 />
 
-                <img
+                {/* <img
                     src="/images/logo-putih.png"
                     alt="PT Wang SMU Logo"
                     style={{
@@ -25,7 +25,7 @@ export default function NewsHeroSection() {
                         width: '150px',
                         height: '110px',
                     }}
-                />
+                /> */}
             </div>
         </section>
     );

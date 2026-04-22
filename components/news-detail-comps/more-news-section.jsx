@@ -125,7 +125,7 @@ export default function MoreNewsSection({ currentNewsId }) {
 
     return (
         <>
-            {/* === MOBILE LAYOUT === */}
+            {/* MOBILE LAYOUT */}
             <section
                 className="lg:hidden"
                 style={{ marginLeft: '20px', marginRight: '20px', marginTop: '50px' }}
@@ -166,11 +166,10 @@ export default function MoreNewsSection({ currentNewsId }) {
                             <button
                                 key={index}
                                 onClick={() => setMobileIndex(index)}
-                                className={`rounded-full transition-all duration-300 ${
-                                    index === mobileIndex
+                                className={`rounded-full transition-all duration-300 ${index === mobileIndex
                                         ? 'bg-[#0055A4] w-6 h-2.5'
                                         : 'bg-gray-300 w-2.5 h-2.5'
-                                }`}
+                                    }`}
                             />
                         ))}
                     </div>
@@ -201,11 +200,10 @@ export default function MoreNewsSection({ currentNewsId }) {
                             <button
                                 onClick={() => setCurrentPage(prev => Math.max(prev - 1, 0))}
                                 disabled={currentPage === 0}
-                                className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-                                    currentPage === 0
+                                className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${currentPage === 0
                                         ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
                                         : 'bg-[#0055A4] text-white hover:bg-[#004080] shadow-md hover:shadow-lg'
-                                }`}
+                                    }`}
                             >
                                 ←
                             </button>
@@ -215,11 +213,10 @@ export default function MoreNewsSection({ currentNewsId }) {
                             <button
                                 onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalDesktopPages - 1))}
                                 disabled={currentPage === totalDesktopPages - 1}
-                                className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-                                    currentPage === totalDesktopPages - 1
+                                className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${currentPage === totalDesktopPages - 1
                                         ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
                                         : 'bg-[#0055A4] text-white hover:bg-[#004080] shadow-md hover:shadow-lg'
-                                }`}
+                                    }`}
                             >
                                 →
                             </button>

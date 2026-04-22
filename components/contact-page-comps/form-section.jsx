@@ -271,8 +271,9 @@ export default function FormSection() {
 
                 {/* Success message desktop */}
                 {success && (
-                    <div className="absolute top-[70px] left-0 right-0 flex justify-center z-20">
-                        <div className="bg-green-500/90 text-white font-poppins font-semibold text-base text-center py-3 px-8 rounded-[15px] shadow-lg">
+                    <div className="absolute top-[50px] left-0 right-0 flex justify-center z-20">
+                        <div className="bg-green-500/90 text-white font-poppins font-semibold text-base text-center rounded-[15px] shadow-lg"
+                            style={{ padding: '1rem' }}>
                             ✅ Pesan berhasil dikirim!
                         </div>
                     </div>

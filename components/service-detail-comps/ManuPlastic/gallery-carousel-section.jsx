@@ -6,34 +6,24 @@ import { AnimateOnScroll } from '@/components/animations/scroll-animations'
 
 const galleryImages = [
     {
-        src: '/images/services/injection.png',
-        alt: 'Injection Molding Machine',
-        caption: 'Injection Molding',
+        src: '/images/services/manuPlastic/zhafir.png',
+        alt: 'Zhafir Injection Molding Machine',
+        caption: 'Zhafir',
     },
     {
-        src: '/images/services/tooling.png',
-        alt: 'Mold Preparation',
-        caption: 'Mold Preparation',
+        src: '/images/services/manuPlastic/mitsubishi2.png',
+        alt: 'Mitsubishi Injection Molding Machine',
+        caption: 'Mitsubishi',
     },
     {
-        src: '/images/production.png',
-        alt: 'Production Floor',
-        caption: 'Production Floor',
+        src: '/images/services/manuPlastic/sumitomo.png',
+        alt: 'Sumitomo Injection Molding Machine',
+        caption: 'Sumitomo',
     },
     {
-        src: '/images/services/laser.png',
-        alt: 'Quality Inspection',
-        caption: 'Quality Inspection',
-    },
-    {
-        src: '/images/services/painting.png',
-        alt: 'Finishing Process',
-        caption: 'Finishing Process',
-    },
-    {
-        src: '/images/services/subassembly.png',
-        alt: 'Sub-Assembly Line',
-        caption: 'Sub-Assembly',
+        src: '/images/services/manuPlastic/operator area.png',
+        alt: 'Operator Area',
+        caption: 'Operator Area',
     },
 ]
 
@@ -131,7 +121,7 @@ export default function GalleryCarouselSection() {
                     <div style={{ paddingLeft: '24px', paddingRight: '24px', marginBottom: '8px' }}>
                         <h2 className="font-poppins font-bold text-[24px] leading-[32px] text-center">
                             <span style={{ color: '#1a1a2e' }}>Our </span>
-                            <span style={{ color: '#0055A4' }}>Gallery</span>
+                            <span style={{ color: '#0055A4' }}>Facility</span>
                         </h2>
                     </div>
                 </AnimateOnScroll>
@@ -181,7 +171,16 @@ export default function GalleryCarouselSection() {
                                     boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
                                 }}
                             >
-                                <Image src={img.src} alt={img.alt} fill className="object-cover" draggable={false} />
+                                <Image
+                                    src={img.src}
+                                    alt={img.alt}
+                                    fill
+                                    quality={100}
+                                    sizes="(max-width: 1024px) 300px, 420px"
+                                    priority={index === 0}
+                                    className="object-cover"
+                                    draggable={false}
+                                />
                                 <div
                                     style={{
                                         position: 'absolute', bottom: 0, left: 0, right: 0, height: '80px',
@@ -251,7 +250,6 @@ export default function GalleryCarouselSection() {
                                 Facility
                                 <span style={{ position: 'absolute', bottom: '-4px', left: 0, right: 0, height: '4px', background: 'linear-gradient(90deg, #0055A4, #3B82F6, transparent)', borderRadius: '2px' }} />
                             </span>
-                            <span style={{ color: '#1a1a2e' }}> & Process</span>
                         </h2>
                     </AnimateOnScroll>
 
@@ -334,7 +332,16 @@ export default function GalleryCarouselSection() {
                                             : '0 4px 12px rgba(0, 0, 0, 0.08)',
                                     }}
                                 >
-                                    <Image src={img.src} alt={img.alt} fill className="object-cover" draggable={false} />
+                                    <Image
+                                        src={img.src}
+                                        alt={img.alt}
+                                        fill
+                                        quality={100}
+                                        sizes="(max-width: 1024px) 300px, 420px"
+                                        priority={index === 0}
+                                        className="object-cover"
+                                        draggable={false}
+                                    />
                                     <div style={{
                                         position: 'absolute', bottom: 0, left: 0, right: 0, height: '100px',
                                         background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%)',

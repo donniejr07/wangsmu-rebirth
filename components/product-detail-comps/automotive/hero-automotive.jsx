@@ -10,7 +10,7 @@ export default function HeroAutomotive() {
                 style={{ borderRadius: '0 0 60px 60px', padding: '65px 24px 50px', minHeight: '250px' }}
             >
                 <img
-                    src="/images/shifter.jpg"
+                    src="/images/products/automotive/cardAutomotive.png"
                     alt="Automotive Products"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -36,7 +36,7 @@ export default function HeroAutomotive() {
             {/* Desktop Layout */}
             <div className="hidden lg:block relative overflow-hidden w-full h-[700px] bg-[#0055A4] rounded-b-[160px]">
                 <img
-                    src="/images/shifter.jpg"
+                    src="/images/products/automotive/cardAutomotive.png"
                     alt="Automotive Products Background"
                     className="absolute top-[-103px] left-0 w-full h-[970px] object-cover blur-[3px]"
                 />

@@ -57,7 +57,7 @@ export default function DefinitionSection() {
                     </p>
                 </AnimateOnScroll>
 
-                <AnimateOnScroll animation="fadeUp" delay={200}>
+                {/* <AnimateOnScroll animation="fadeUp" delay={200}>
                     <div
                         className="flex justify-center gap-6"
                         style={{
@@ -81,7 +81,7 @@ export default function DefinitionSection() {
                             </div>
                         ))}
                     </div>
-                </AnimateOnScroll>
+                </AnimateOnScroll> */}
             </section>
 
             {/* DESKTOP LAYOUT */}
@@ -125,7 +125,7 @@ export default function DefinitionSection() {
                         </p>
                     </AnimateOnScroll>
 
-                    <AnimateOnScroll animation="fadeUp" delay={300}>
+                    {/* <AnimateOnScroll animation="fadeUp" delay={300}>
                         <div className="flex justify-center gap-0" style={{ marginTop: '60px', maxWidth: '750px', margin: '60px auto 0' }}>
                             {[
                                 { number: '10+', label: 'Secondary Processes' },
@@ -145,7 +145,7 @@ export default function DefinitionSection() {
                                 </div>
                             ))}
                         </div>
-                    </AnimateOnScroll>
+                    </AnimateOnScroll> */}
                 </div>
             </section>
         </>

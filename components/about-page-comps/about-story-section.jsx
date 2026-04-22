@@ -23,7 +23,7 @@ export default function AboutStorySection() {
                     <AnimateOnScroll animation="fadeUp" delay={0}>
                         <div className="relative w-full h-[250px] rounded-[15px] overflow-hidden mb-6">
                             <Image
-                                src="/images/guest.png"
+                                src="/images/lobby.png"
                                 alt="Wang SMU Story"
                                 fill
                                 className="object-cover"
@@ -54,14 +54,25 @@ export default function AboutStorySection() {
                             <div className="relative w-[50px] h-[50px] bg-white rounded-[15px] border border-[#0055A4] flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
                                 <svg
                                     className="w-[35px] h-[35px]"
-                                    viewBox="0 0 50 50"
+                                    viewBox="0 0 64 64"
                                     fill="none"
                                     stroke="#0055A4"
                                     strokeWidth="2"
+                                    strokeLinecap="round" 
+                                    strokeLinejoin="round"
                                 >
-                                    <path d="M5 25 C15 10, 35 10, 45 25 C35 40, 15 40, 5 25" />
-                                    <circle cx="25" cy="25" r="8" />
-                                    <circle cx="25" cy="25" r="3" fill="#0055A4" />
+                                    <path d="M 26 46 C 26 40, 18 34, 18 26 C 18 16, 24 10, 32 10 C 40 10, 46 16, 46 26 C 46 34, 38 40, 38 46 Z" />
+                                    <line x1="27" y1="50" x2="37" y2="50" />
+                                    <line x1="28" y1="54" x2="36" y2="54" />
+                                    <path d="M 30 54 L 30 58 L 34 58 L 34 54" />
+                                    <line x1="29" y1="46" x2="29" y2="30" />
+                                    <line x1="35" y1="46" x2="35" y2="30" />
+                                    <path d="M 29 30 C 31 26, 33 26, 35 30" />
+                                    <line x1="32" y1="2" x2="32" y2="6" strokeWidth="2.5" />
+                                    <line x1="16" y1="10" x2="19" y2="13" strokeWidth="2.5" />
+                                    <line x1="48" y1="10" x2="45" y2="13" strokeWidth="2.5" />
+                                    <line x1="8" y1="26" x2="12" y2="26" strokeWidth="2.5" />
+                                    <line x1="56" y1="26" x2="52" y2="26" strokeWidth="2.5" />
                                 </svg>
                             </div>
                             <div>
@@ -141,14 +152,25 @@ export default function AboutStorySection() {
                                 <div className="relative w-[65px] h-[65px] bg-white rounded-[20px] border border-[#0055A4] flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-lg">
                                     <svg
                                         className="w-[50px] h-[50px] transition-transform duration-300 group-hover:scale-110"
-                                        viewBox="0 0 50 50"
+                                        viewBox="0 0 64 64"
                                         fill="none"
                                         stroke="#0055A4"
                                         strokeWidth="2"
+                                        strokeLinecap="round" 
+                                        strokeLinejoin="round"
                                     >
-                                        <path d="M5 25 C15 10, 35 10, 45 25 C35 40, 15 40, 5 25" />
-                                        <circle cx="25" cy="25" r="8" />
-                                        <circle cx="25" cy="25" r="3" fill="#0055A4" />
+                                        <path d="M 26 46 C 26 40, 18 34, 18 26 C 18 16, 24 10, 32 10 C 40 10, 46 16, 46 26 C 46 34, 38 40, 38 46 Z" />
+                                        <line x1="27" y1="50" x2="37" y2="50" />
+                                        <line x1="28" y1="54" x2="36" y2="54" />
+                                        <path d="M 30 54 L 30 58 L 34 58 L 34 54" />
+                                        <line x1="29" y1="46" x2="29" y2="30" />
+                                        <line x1="35" y1="46" x2="35" y2="30" />
+                                        <path d="M 29 30 C 31 26, 33 26, 35 30" />
+                                        <line x1="32" y1="2" x2="32" y2="6" strokeWidth="2.5" />
+                                        <line x1="16" y1="10" x2="19" y2="13" strokeWidth="2.5" />
+                                        <line x1="48" y1="10" x2="45" y2="13" strokeWidth="2.5" />
+                                        <line x1="8" y1="26" x2="12" y2="26" strokeWidth="2.5" />
+                                        <line x1="56" y1="26" x2="52" y2="26" strokeWidth="2.5" />
                                     </svg>
                                 </div>
                                 <div>
@@ -197,7 +219,7 @@ export default function AboutStorySection() {
                     <AnimateOnScroll animation="fadeLeft" delay={200}>
                         <div className="relative w-[519px] h-[566px] rounded-[20px] overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer flex-shrink-0" style={{ marginTop: '30px' }}>
                             <Image
-                                src="/images/guest.png"
+                                src="/images/lobby.png"
                                 alt="Wang SMU Story"
                                 fill
                                 className="object-cover transition-transform duration-500 hover:scale-110"

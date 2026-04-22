@@ -6,34 +6,39 @@ import { AnimateOnScroll } from '@/components/animations/scroll-animations'
 
 const showcaseProducts = [
     {
-        src: 'https://placehold.co/600x400/E8EEF4/0055A4?text=Gear+Shifter+Knob',
-        alt: 'Gear Shifter Knob',
-        caption: 'Gear Shifter Knob',
+        src: '/images/products/automotive/cardAutomotive.png',
+        alt: 'Velg TRD',
+        caption: 'Velg TRD',
     },
     {
-        src: 'https://placehold.co/600x400/E8EEF4/0055A4?text=Dashboard+Components',
-        alt: 'Dashboard Components',
-        caption: 'Dashboard Components',
+        src: '/images/products/automotive/emblem.png',
+        alt: 'Emblem Automotive',
+        caption: 'Emblem',
     },
     {
-        src: 'https://placehold.co/600x400/E8EEF4/0055A4?text=Interior+Trim+Parts',
-        alt: 'Interior Trim Parts',
-        caption: 'Interior Trim Parts',
+        src: '/images/products/automotive/handle.png',
+        alt: 'Door Handle',
+        caption: 'Handle',
     },
     {
-        src: 'https://placehold.co/600x400/E8EEF4/0055A4?text=Under-hood+Components',
-        alt: 'Under-hood Components',
-        caption: 'Under-hood Components',
+        src: '/images/products/automotive/headLamp.png',
+        alt: 'Head Lamp Component',
+        caption: 'Head Lamp',
     },
     {
-        src: 'https://placehold.co/600x400/E8EEF4/0055A4?text=Assembly+Parts',
-        alt: 'Assembly Parts',
-        caption: 'Assembly Parts',
+        src: '/images/products/automotive/shifterBezel.png',
+        alt: 'Shifter Bezel',
+        caption: 'Shifter Bezel',
     },
     {
-        src: 'https://placehold.co/600x400/E8EEF4/0055A4?text=Exterior+Components',
-        alt: 'Exterior Components',
-        caption: 'Exterior Components',
+        src: '/images/products/automotive/steerFrame.png',
+        alt: 'Steer Frame Component',
+        caption: 'Steer Frame',
+    },
+    {
+        src: '/images/products/automotive/lamp.png',
+        alt: 'Automotive Lamp',
+        caption: 'Lamp',
     },
 ]
 
@@ -147,7 +152,16 @@ export default function ProductShowcaseSection() {
                     >
                         {showcaseProducts.map((img, index) => (
                             <div key={index} style={{ flex: `0 0 ${MOBILE_CARD_W}px`, height: '220px', borderRadius: '16px', overflow: 'hidden', position: 'relative', scrollSnapAlign: 'start', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)' }}>
-                                <Image src={img.src} alt={img.alt} fill className="object-cover" draggable={false} />
+                                <Image
+                                    src={img.src}
+                                    alt={img.alt}
+                                    fill
+                                    quality={100}
+                                    sizes="(max-width: 1024px) 300px, 420px"
+                                    priority={index === 0}
+                                    className="object-cover"
+                                    draggable={false}
+                                />
                                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '80px', background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%)' }} />
                                 <span className="font-poppins font-medium" style={{ position: 'absolute', bottom: '14px', left: '16px', fontSize: '14px', color: '#FFFFFF', textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>{img.caption}</span>
                                 <div style={{ position: 'absolute', top: '12px', right: '12px', width: '28px', height: '28px', borderRadius: '50%', backgroundColor: 'rgba(0, 85, 164, 0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -221,7 +235,16 @@ export default function ProductShowcaseSection() {
                         >
                             {showcaseProducts.map((img, index) => (
                                 <div key={index} style={{ flex: `0 0 ${DESKTOP_CARD_W}px`, height: '280px', borderRadius: '20px', overflow: 'hidden', position: 'relative', scrollSnapAlign: 'center', transition: 'transform 0.4s ease, box-shadow 0.4s ease', transform: activeIndex === index ? 'scale(1.03)' : 'scale(0.95)', opacity: activeIndex === index ? 1 : 0.6, boxShadow: activeIndex === index ? '0 12px 40px rgba(0, 85, 164, 0.25)' : '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
-                                    <Image src={img.src} alt={img.alt} fill className="object-cover" draggable={false} />
+                                    <Image
+                                        src={img.src}
+                                        alt={img.alt}
+                                        fill
+                                        quality={100}
+                                        sizes="(max-width: 1024px) 300px, 420px"
+                                        priority={index === 0}
+                                        className="object-cover"
+                                        draggable={false}
+                                    />
                                     <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '100px', background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%)', opacity: activeIndex === index ? 1 : 0.5, transition: 'opacity 0.4s ease' }} />
                                     <div style={{ position: 'absolute', bottom: '18px', left: '22px', right: '22px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                         <span className="font-poppins font-semibold" style={{ fontSize: '18px', color: '#FFFFFF', textShadow: '0 2px 6px rgba(0,0,0,0.4)' }}>{img.caption}</span>

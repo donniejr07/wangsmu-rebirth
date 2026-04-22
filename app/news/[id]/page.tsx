@@ -50,17 +50,6 @@ export default async function NewsDetailPage({ params }: PageProps) {
                         className="w-full h-full object-cover"
                     />
 
-                    <img
-                        src="/images/logo-putih.png"
-                        alt="PT Wang SMU Logo"
-                        style={{
-                            position: 'absolute',
-                            top: '19px',
-                            right: '48px',
-                            width: '119px',
-                            height: '116px',
-                        }}
-                    />
                 </div>
             </section>
 

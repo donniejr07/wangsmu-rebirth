@@ -17,7 +17,7 @@ export default function CareerHero() {
                     {/* Background Image */}
                     <div className="absolute inset-0" style={{ paddingTop: '20px' }}>
                         <Image
-                            src="/images/gallery-wsu.png"
+                            src="/images/pt-wang-new.png"
                             alt="Career Hero Background"
                             fill
                             className="object-cover"
@@ -97,7 +97,7 @@ export default function CareerHero() {
                         }}
                     >
                         <Image
-                            src="/images/gallery-wsu.png"
+                            src="/images/pt-wang-new.png"
                             alt="Career Hero Background"
                             fill
                             style={{ objectFit: 'cover' }}

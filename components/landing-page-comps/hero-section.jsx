@@ -58,7 +58,7 @@ export default function HeroSection() {
                 }}
             >
                 <Image
-                    src="/images/pt-wang-smu.png"
+                    src="/images/pt-wang-new.png"
                     alt="Hero Background"
                     fill
                     style={{
@@ -79,41 +79,75 @@ export default function HeroSection() {
                     }}
                 />
 
-                {/* Glass card */}
+                {/* Minimalist Glow Tagline (Mobile) */}
                 <div
                     style={{
                         position: 'absolute',
-                        bottom: '30px',
-                        left: '50%',
-                        transform: 'translateX(-50%)',
-                        backgroundColor: 'rgba(0, 85, 164, 0.6)',
-                        padding: '16px 32px',
-                        backdropFilter: 'blur(10px)',
-                        WebkitBackdropFilter: 'blur(10px)',
-                        borderRadius: '30px',
-                        border: '1px solid rgba(255, 255, 255, 0.3)',
-                        boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.1)',
-                        width: 'max-content',
-                        maxWidth: '90%',
-                        textAlign: 'center',
-                        animation: 'slide-up 0.8s ease-out',
+                        bottom: '24px',
+                        left: '20px',
+                        paddingLeft: '16px',
+                        animation: loaded ? 'slide-up 0.8s ease-out both' : 'none',
                     }}
                 >
-                    <h1
+                    {/* Glowing background */}
+                    <div
                         style={{
-                            fontFamily: 'Poppins, sans-serif',
-                            fontSize: '16px',
-                            fontWeight: 600,
-                            color: '#FFFFFF',
-                            lineHeight: '1.2',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'center',
+                            position: 'absolute',
+                            top: '-20%',
+                            left: '-10%',
+                            right: '-20%',
+                            bottom: '-20%',
+                            background: 'radial-gradient(circle at center, rgba(0, 85, 164, 0.4) 0%, rgba(0, 85, 164, 0) 70%)',
+                            filter: 'blur(15px)',
+                            pointerEvents: 'none',
+                            zIndex: 0,
                         }}
-                    >
-                        <span>ONE STOP SOLUTION</span>
-                        <span>PROVIDER</span>
-                    </h1>
+                    />
+
+                    {/* Accent line */}
+                    <div
+                        style={{
+                            position: 'absolute',
+                            left: 0,
+                            top: '5%',
+                            bottom: '5%',
+                            width: '4px',
+                            background: 'linear-gradient(to bottom, #0055A4, #4DA6FF)',
+                            borderRadius: '4px',
+                            boxShadow: '0 0 10px rgba(0, 85, 164, 0.5)',
+                            zIndex: 1,
+                        }}
+                    />
+
+                    <div style={{ position: 'relative', zIndex: 1 }}>
+                        <h1
+                            style={{
+                                fontFamily: 'Poppins, sans-serif',
+                                fontSize: '22px',
+                                fontWeight: 800,
+                                color: '#FFFFFF',
+                                lineHeight: '1.2',
+                                textShadow: '0 2px 10px rgba(0,0,0,0.5)',
+                                margin: 0,
+                            }}
+                        >
+                            ONE STOP SOLUTION<br />PROVIDER
+                        </h1>
+                        <p
+                            style={{
+                                fontFamily: 'Poppins, sans-serif',
+                                fontSize: '9px',
+                                fontWeight: 600,
+                                color: 'rgba(255, 255, 255, 0.8)',
+                                marginTop: '8px',
+                                letterSpacing: '2px',
+                                textShadow: '0 1px 5px rgba(0,0,0,0.5)',
+                                textTransform: 'uppercase',
+                            }}
+                        >
+                            Quality &bull; Integrity &bull; Since 1995
+                        </p>
+                    </div>
                 </div>
 
                 <div
@@ -156,7 +190,7 @@ export default function HeroSection() {
             >
                 {/* Background image with subtle zoom */}
                 <Image
-                    src="/images/pt-wang-smu.png"
+                    src="/images/pt-wang-new.png"
                     alt="Hero Background"
                     fill
                     style={{
@@ -229,50 +263,87 @@ export default function HeroSection() {
                     <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '10px', color: 'rgba(255,255,255,0.8)', letterSpacing: '1px', marginTop: '4px' }}>CERTIFIED</span>
                 </div>
 
-                {/* Glassmorphism tagline card */}
+                {/* Minimalist Glow Tagline */}
                 <div
                     style={{
                         position: 'absolute',
                         bottom: 'clamp(30px, 5%, 60px)',
                         left: 'clamp(30px, 4%, 60px)',
-                        backgroundColor: 'rgba(0, 85, 164, 0.45)',
-                        backdropFilter: 'blur(16px)',
-                        WebkitBackdropFilter: 'blur(16px)',
-                        borderRadius: '24px',
-                        border: '1px solid rgba(255, 255, 255, 0.25)',
-                        padding: 'clamp(20px, 2.5vw, 36px) clamp(28px, 3vw, 48px)',
-                        boxShadow: '0 8px 40px rgba(0, 0, 0, 0.2)',
+                        paddingLeft: '28px',
                         animation: loaded ? 'slide-up 0.8s ease-out both' : 'none',
-                        overflow: 'hidden',
                     }}
                 >
-                    <h1
+                    {/* Glowing background */}
+                    <div
                         style={{
-                            fontFamily: 'Poppins, sans-serif',
-                            fontSize: 'clamp(24px, 3.2vw, 48px)',
-                            fontWeight: 700,
-                            color: '#FFFFFF',
-                            lineHeight: 1.15,
-                            margin: 0,
-                            letterSpacing: '1px',
-                            animation: loaded ? 'slide-up 0.8s ease-out 0.3s both' : 'none',
+                            position: 'absolute',
+                            top: '-30%',
+                            left: '-10%',
+                            right: '-30%',
+                            bottom: '-30%',
+                            background: 'radial-gradient(circle at center, rgba(0, 85, 164, 0.5) 0%, rgba(0, 85, 164, 0) 70%)',
+                            filter: 'blur(20px)',
+                            pointerEvents: 'none',
+                            zIndex: 0,
+                            animation: loaded ? 'fade-in 1.5s ease-out both 0.5s' : 'none',
                         }}
-                    >
-                        ONE STOP SOLUTION<br />PROVIDER
-                    </h1>
-                    <p
+                    />
+
+                    {/* Accent line */}
+                    <div
                         style={{
-                            fontFamily: 'Poppins, sans-serif',
-                            fontSize: 'clamp(11px, 1vw, 16px)',
-                            fontWeight: 400,
-                            color: 'rgba(255, 255, 255, 0.8)',
-                            marginTop: '10px',
-                            letterSpacing: '3px',
-                            animation: loaded ? 'slide-up 0.8s ease-out 0.5s both' : 'none',
+                            position: 'absolute',
+                            left: 0,
+                            top: '5%',
+                            bottom: '5%',
+                            width: '6px',
+                            background: 'linear-gradient(to bottom, #0055A4, #4DA6FF)',
+                            borderRadius: '6px',
+                            boxShadow: '0 0 15px rgba(0, 85, 164, 0.6)',
+                            zIndex: 1,
+                            animation: loaded ? 'slide-up 0.8s ease-out 0.2s both' : 'none',
                         }}
-                    >
-                        QUALITY &bull; INTEGRITY &bull; SINCE 1995
-                    </p>
+                    />
+
+                    {/* Content */}
+                    <div style={{ position: 'relative', zIndex: 1 }}>
+                        <h1
+                            style={{
+                                fontFamily: 'Poppins, sans-serif',
+                                fontSize: 'clamp(28px, 3.5vw, 56px)',
+                                fontWeight: 800,
+                                color: '#FFFFFF',
+                                lineHeight: 1,
+                                margin: 0,
+                                letterSpacing: '-0.01em',
+                                textShadow: '0 4px 24px rgba(0,0,0,0.5)',
+                                animation: loaded ? 'slide-up 0.8s ease-out 0.3s both' : 'none',
+                            }}
+                        >
+                            ONE STOP SOLUTION<br />PROVIDER
+                        </h1>
+                        <p
+                            style={{
+                                fontFamily: 'Poppins, sans-serif',
+                                fontSize: 'clamp(12px, 1.1vw, 18px)',
+                                fontWeight: 600,
+                                color: 'rgba(255, 255, 255, 0.9)',
+                                marginTop: '20px',
+                                letterSpacing: '6px',
+                                textShadow: '0 2px 10px rgba(0,0,0,0.5)',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '14px',
+                                animation: loaded ? 'slide-up 0.8s ease-out 0.5s both' : 'none',
+                            }}
+                        >
+                            <span>QUALITY</span>
+                            <span style={{ width: '6px', height: '6px', backgroundColor: '#4DA6FF', borderRadius: '50%', boxShadow: '0 0 10px #4DA6FF' }}></span>
+                            <span>INTEGRITY</span>
+                            <span style={{ width: '6px', height: '6px', backgroundColor: '#4DA6FF', borderRadius: '50%', boxShadow: '0 0 10px #4DA6FF' }}></span>
+                            <span>SINCE 1995</span>
+                        </p>
+                    </div>
                 </div>
 
                 {/* Scroll indicator */}
@@ -303,7 +374,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Logo */}
-                <Image
+                {/* <Image
                     src="/images/logo-pt.png"
                     alt="Logo PT"
                     width={150}
@@ -316,7 +387,7 @@ export default function HeroSection() {
                         height: 'auto',
                         animation: loaded ? 'fade-in 1s ease-out 0.2s both' : 'none',
                     }}
-                />
+                /> */}
             </section>
         </>
     );

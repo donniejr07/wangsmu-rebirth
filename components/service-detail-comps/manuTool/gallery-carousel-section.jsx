@@ -6,34 +6,44 @@ import { AnimateOnScroll } from '@/components/animations/scroll-animations'
 
 const galleryImages = [
     {
-        src: '/images/services/tooling.png',
-        alt: 'CNC Machining Process',
-        caption: 'CNC Machining',
-    },
-    {
-        src: '/images/services/design.png',
+        src: '/images/services/manuTool/Mold Design.png',
         alt: 'Mold Design Engineering',
         caption: 'Mold Design',
     },
     {
-        src: '/images/services/laser.png',
-        alt: 'Laser Cutting Technology',
-        caption: 'Laser Cutting',
+        src: '/images/services/manuTool/CNC EDM.png',
+        alt: 'CNC EDM Machine',
+        caption: 'CNC EDM',
     },
     {
-        src: '/images/production.png',
-        alt: 'Production Floor Overview',
-        caption: 'Production Line',
+        src: '/images/services/manuTool/CNC Milling.png',
+        alt: 'CNC Milling Machine',
+        caption: 'CNC Milling',
     },
     {
-        src: '/images/services/injection.png',
-        alt: 'Injection Mold Assembly',
-        caption: 'Mold Assembly',
+        src: '/images/services/manuTool/CNC Wirecut.png',
+        alt: 'CNC Wirecut Machine',
+        caption: 'CNC Wirecut',
     },
     {
-        src: '/images/services/painting.png',
-        alt: 'Surface Finishing Process',
-        caption: 'Surface Finishing',
+        src: '/images/services/manuTool/Machine Grinding.png',
+        alt: 'Machine Grinding Machine',
+        caption: 'Machine Grinding',
+    },
+    {
+        src: '/images/services/manuTool/Machine Lathe.png',
+        alt: 'Machine Lathe Machine',
+        caption: 'Machine Lathe',
+    },
+    {
+        src: '/images/services/manuTool/Polishing.png',
+        alt: 'Polishing Machine',
+        caption: 'Polishing',
+    },
+    {
+        src: '/images/services/manuTool/Super Drill2.png',
+        alt: 'Super Drill Machine',
+        caption: 'Super Drill',
     },
 ]
 
@@ -153,7 +163,7 @@ export default function GalleryCarouselSection() {
                             className="font-poppins font-bold text-[24px] leading-[32px] text-center"
                         >
                             <span style={{ color: '#1a1a2e' }}>Our </span>
-                            <span style={{ color: '#0055A4' }}>Gallery</span>
+                            <span style={{ color: '#0055A4' }}>Facility</span>
                         </h2>
                     </div>
                 </AnimateOnScroll>
@@ -163,7 +173,7 @@ export default function GalleryCarouselSection() {
                         className="font-poppins font-normal text-[14px] leading-[20px] text-center"
                         style={{ color: '#6B7280', marginBottom: '28px', padding: '0 24px' }}
                     >
-                        A glimpse into our state-of-the-art manufacturing facility and processes.
+                        A glimpse into our state-of-the-art manufacturing facility.
                     </p>
                 </AnimateOnScroll>
 
@@ -208,6 +218,9 @@ export default function GalleryCarouselSection() {
                                     src={img.src}
                                     alt={img.alt}
                                     fill
+                                    quality={100}
+                                    sizes="(max-width: 1024px) 300px, 420px"
+                                    priority={index === 0}
                                     className="object-cover"
                                     draggable={false}
                                 />
@@ -345,7 +358,6 @@ export default function GalleryCarouselSection() {
                                     }}
                                 />
                             </span>
-                            <span style={{ color: '#1a1a2e' }}> & Process</span>
                         </h2>
                     </AnimateOnScroll>
 
@@ -360,7 +372,7 @@ export default function GalleryCarouselSection() {
                                 margin: '0 auto',
                             }}
                         >
-                            A glimpse into our state-of-the-art manufacturing facility and processes.
+                            A glimpse into our state-of-the-art manufacturing facility.
                         </p>
                     </AnimateOnScroll>
                 </div>
@@ -469,6 +481,9 @@ export default function GalleryCarouselSection() {
                                         src={img.src}
                                         alt={img.alt}
                                         fill
+                                        quality={100}
+                                        sizes="(max-width: 1024px) 300px, 420px"
+                                        priority={index === 0}
                                         className="object-cover"
                                         draggable={false}
                                     />

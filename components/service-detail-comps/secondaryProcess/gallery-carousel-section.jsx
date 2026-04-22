@@ -6,34 +6,44 @@ import { AnimateOnScroll } from '@/components/animations/scroll-animations'
 
 const galleryImages = [
     {
-        src: '/images/services/painting.png',
-        alt: 'Painting Process',
-        caption: 'Painting',
+        src: '/images/services/secProc/robotic.png',
+        alt: 'Robotic Painting',
+        caption: 'Robotic Painting',
     },
     {
-        src: '/images/services/printing.png',
-        alt: 'Printing Process',
-        caption: 'Printing',
+        src: '/images/services/secProc/semiSpindle.png',
+        alt: 'Painting Semi Spindle',
+        caption: 'Painting Semi Spindle',
     },
     {
-        src: '/images/services/laser.png',
+        src: '/images/services/secProc/painter_XY.png',
+        alt: 'Painting Semi XY',
+        caption: 'Painting Semi XY',
+    },
+    {
+        src: '/images/services/secProc/ManualPaint.png',
+        alt: 'Manual Painting',
+        caption: 'Manual Painting',
+    },
+    {
+        src: '/images/services/secProc/laser.png',
         alt: 'Laser Marking',
         caption: 'Laser Marking',
     },
     {
-        src: '/images/services/subassembly.png',
-        alt: 'Sub-Assembly',
-        caption: 'Sub-Assembly',
+        src: '/images/services/secProc/silkScreen.png',
+        alt: 'Silk Screen',
+        caption: 'Silk Screen',
     },
     {
-        src: '/images/services/design.png',
-        alt: 'Design & Engineering',
-        caption: 'Design & Engineering',
+        src: '/images/services/secProc/tampo.png',
+        alt: 'Tampo',
+        caption: 'Tampo',
     },
     {
-        src: '/images/production.png',
-        alt: 'Production Line',
-        caption: 'Production Line',
+        src: '/images/services/secProc/subAssembly.png',
+        alt: 'Sub Assembly',
+        caption: 'Sub Assembly',
     },
 ]
 
@@ -121,7 +131,7 @@ export default function GalleryCarouselSection() {
                 <AnimateOnScroll animation="fadeUp" delay={0}>
                     <h2 className="font-poppins font-bold text-[24px] leading-[32px] text-center" style={{ paddingLeft: '24px', paddingRight: '24px', marginBottom: '8px' }}>
                         <span style={{ color: '#1a1a2e' }}>Our </span>
-                        <span style={{ color: '#0055A4' }}>Gallery</span>
+                        <span style={{ color: '#0055A4' }}>Service</span>
                     </h2>
                 </AnimateOnScroll>
 
@@ -157,7 +167,16 @@ export default function GalleryCarouselSection() {
                                     boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
                                 }}
                             >
-                                <Image src={img.src} alt={img.alt} fill className="object-cover" draggable={false} />
+                                <Image
+                                    src={img.src}
+                                    alt={img.alt}
+                                    fill
+                                    quality={100}
+                                    sizes="(max-width: 1024px) 300px, 420px"
+                                    priority={index === 0}
+                                    className="object-cover"
+                                    draggable={false}
+                                />
                                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '80px', background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%)' }} />
                                 <span className="font-poppins font-medium" style={{ position: 'absolute', bottom: '14px', left: '16px', fontSize: '14px', color: '#FFFFFF', textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>
                                     {img.caption}
@@ -188,7 +207,7 @@ export default function GalleryCarouselSection() {
                     <AnimateOnScroll animation="fadeUp" delay={0}>
                         <div className="flex items-center justify-center gap-3" style={{ marginBottom: '20px' }}>
                             <div style={{ width: '40px', height: '2px', background: 'linear-gradient(90deg, transparent, #0055A4)' }} />
-                            <span className="font-poppins font-medium text-[14px] tracking-[4px] uppercase" style={{ color: '#0055A4' }}>Gallery</span>
+                            <span className="font-poppins font-medium text-[14px] tracking-[4px] uppercase" style={{ color: '#0055A4' }}>Service</span>
                             <div style={{ width: '40px', height: '2px', background: 'linear-gradient(90deg, #0055A4, transparent)' }} />
                         </div>
                     </AnimateOnScroll>
@@ -197,10 +216,9 @@ export default function GalleryCarouselSection() {
                         <h2 className="font-poppins font-bold text-center" style={{ fontSize: '48px', lineHeight: '60px', marginBottom: '12px' }}>
                             <span style={{ color: '#1a1a2e' }}>Our </span>
                             <span style={{ color: '#0055A4', position: 'relative' }}>
-                                Facility
+                                Service
                                 <span style={{ position: 'absolute', bottom: '-4px', left: 0, right: 0, height: '4px', background: 'linear-gradient(90deg, #0055A4, #3B82F6, transparent)', borderRadius: '2px' }} />
                             </span>
-                            <span style={{ color: '#1a1a2e' }}> & Process</span>
                         </h2>
                     </AnimateOnScroll>
 
@@ -275,7 +293,16 @@ export default function GalleryCarouselSection() {
                                         boxShadow: activeIndex === index ? '0 12px 40px rgba(0, 85, 164, 0.25)' : '0 4px 12px rgba(0, 0, 0, 0.08)',
                                     }}
                                 >
-                                    <Image src={img.src} alt={img.alt} fill className="object-cover" draggable={false} />
+                                    <Image
+                                        src={img.src}
+                                        alt={img.alt}
+                                        fill
+                                        quality={100}
+                                        sizes="(max-width: 1024px) 300px, 420px"
+                                        priority={index === 0}
+                                        className="object-cover"
+                                        draggable={false}
+                                    />
                                     <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '100px', background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%)', opacity: activeIndex === index ? 1 : 0.5, transition: 'opacity 0.4s ease' }} />
                                     <div style={{ position: 'absolute', bottom: '18px', left: '22px', right: '22px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                         <span className="font-poppins font-semibold" style={{ fontSize: '18px', color: '#FFFFFF', textShadow: '0 2px 6px rgba(0,0,0,0.4)' }}>{img.caption}</span>

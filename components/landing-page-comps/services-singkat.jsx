@@ -115,7 +115,7 @@ export default function ServicesSingkat() {
 
                 {/* Cards */}
                 <div className="flex justify-center items-center gap-8">
-                    {/* Card Design */}
+                    {/* Card ManuTooling */}
                     <AnimateOnScroll animation="fadeUp" delay={0}>
                         <div
                             className="group relative w-[350px] h-[450px] bg-white rounded-[20px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
@@ -146,7 +146,7 @@ export default function ServicesSingkat() {
                             </p>
 
                             <div className="absolute" style={{ bottom: '22px', right: '28px' }}>
-                                <Link href="/services/#">
+                                <Link href="/service-detail/manuTool">
                                     <button className="bg-[#0055A4] rounded-[20px] w-[170px] h-[40px] flex items-center justify-center hover:bg-[#004080] transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
                                         <span className="text-white font-poppins font-normal text-[20px]">
                                             {t('servicesSingkat.moreDetails')}
@@ -157,7 +157,7 @@ export default function ServicesSingkat() {
                         </div>
                     </AnimateOnScroll>
 
-                    {/* Card Printing */}
+                    {/* Card ManuPlastic */}
                     <AnimateOnScroll animation="scaleUp" delay={150}>
                         <div
                             className="group relative w-[350px] h-[450px] bg-white rounded-[20px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
@@ -188,7 +188,7 @@ export default function ServicesSingkat() {
                             </p>
 
                             <div className="absolute" style={{ bottom: '22px', right: '28px' }}>
-                                <Link href="/services/printing">
+                                <Link href="/service-detail/manuPlastic">
                                     <button className="bg-[#0055A4] rounded-[20px] w-[170px] h-[40px] flex items-center justify-center hover:bg-[#004080] transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
                                         <span className="text-white font-poppins font-normal text-[20px]">
                                             {t('servicesSingkat.moreDetails')}

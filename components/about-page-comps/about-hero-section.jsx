@@ -15,7 +15,7 @@ export default function AboutHeroSection() {
                     {/* Background Image */}
                     <div className="absolute inset-0" style={{ paddingTop: '20px' }}>
                         <Image
-                            src="/images/pt-wang-smu.png"
+                            src="/images/pt-wang-new.png"
                             alt="About Hero Background"
                             fill
                             className="object-cover"
@@ -76,7 +76,7 @@ export default function AboutHeroSection() {
                         }}
                     >
                         <Image
-                            src="/images/pt-wang-smu.png"
+                            src="/images/pt-wang-new.png"
                             alt="About Hero Background"
                             fill
                             style={{ objectFit: 'cover' }}

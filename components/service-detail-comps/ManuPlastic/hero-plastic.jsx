@@ -11,7 +11,7 @@ export default function HeroPlastic() {
                 style={{ borderRadius: '0 0 60px 60px', padding: '65px 24px 50px', minHeight: '250px' }}
             >
                 <img
-                    src="/images/services/injection.png"
+                    src="/images/services/manuPlastic/heroPlastic.png"
                     alt="Plastic Injection"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -38,7 +38,7 @@ export default function HeroPlastic() {
             {/* Desktop Layout */}
             <div className="hidden lg:block relative overflow-hidden w-full h-[700px] bg-[#0055A4] rounded-b-[160px]">
                 <img
-                    src="/images/services/injection.png"
+                    src="/images/services/manuPlastic/heroPlastic.png"
                     alt="Plastic Injection Background"
                     className="absolute top-[-103px] left-0 w-full h-[970px] object-cover blur-[3px]"
                 />

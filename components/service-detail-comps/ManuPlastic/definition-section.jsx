@@ -107,9 +107,9 @@ export default function DefinitionSection() {
                         }}
                     >
                         {[
-                            { number: '50+', label: 'Machines' },
-                            { number: '1M+', label: 'Parts/Month' },
-                            { number: '99.5%', label: 'Accuracy' },
+                            { number: '20+', label: 'Machines' },
+                            { number: '100K+', label: 'Parts/Month' },
+                            { number: '95.8%', label: 'Accuracy' },
                         ].map((stat, i) => (
                             <div key={i} className="flex flex-col items-center text-center">
                                 <span
@@ -241,9 +241,9 @@ export default function DefinitionSection() {
                             style={{ marginTop: '60px', maxWidth: '750px', margin: '60px auto 0' }}
                         >
                             {[
-                                { number: '50+', label: 'Injection Machines' },
-                                { number: '1M+', label: 'Parts per Month' },
-                                { number: '99.5%', label: 'Dimensional Accuracy' },
+                                { number: '20+', label: 'Injection Machines' },
+                                { number: '100K+', label: 'Parts per Month' },
+                                { number: '98.9%', label: 'Dimensional Accuracy' },
                             ].map((stat, i) => (
                                 <div
                                     key={i}
