@@ -10,6 +10,7 @@ export default function ServiceHeroSection() {
                     style={{
                         minHeight: '400px',
                         borderRadius: '0 0 60px 60px',
+                        boxShadow: '0 20px 60px rgba(0, 0, 0, 0.35)',
                     }}
                 >
                     {/* Background Image */}
@@ -38,7 +39,7 @@ export default function ServiceHeroSection() {
                         />
 
                         {/* Title */}
-                        <h1 className="font-poppins font-semibold text-[28px] leading-[32px] text-white" style={{ marginBottom: '20px' }}>
+                        <h1 className="font-poppins font-semibold text-[28px] leading-[32px] text-white" style={{ marginBottom: '20px', textShadow: '0 2px 12px rgba(0,0,0,0.45)' }}>
                             Our<br />Services
                         </h1>
 
@@ -80,6 +81,7 @@ export default function ServiceHeroSection() {
                     style={{
                         height: '753px',
                         borderRadius: '0 0 160px 160px',
+                        boxShadow: '0 30px 80px rgba(0, 0, 0, 0.4)',
                     }}
                 >
                     {/* b. Background Image */}
@@ -111,6 +113,7 @@ export default function ServiceHeroSection() {
                         style={{
                             left: '7%',
                             bottom: '269px',
+                            textShadow: '0 4px 20px rgba(0,0,0,0.5)',
                         }}
                     >
                         <span style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>

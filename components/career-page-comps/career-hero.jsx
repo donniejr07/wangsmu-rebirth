@@ -12,12 +12,13 @@ export default function CareerHero() {
                     style={{
                         minHeight: '400px',
                         borderRadius: '0 0 60px 60px',
+                        boxShadow: '0 20px 60px rgba(0, 0, 0, 0.35)',
                     }}
                 >
                     {/* Background Image */}
                     <div className="absolute inset-0" style={{ paddingTop: '20px' }}>
                         <Image
-                            src="/images/pt-wang-new.png"
+                            src="/images/careerHero.png"
                             alt="Career Hero Background"
                             fill
                             className="object-cover"
@@ -40,12 +41,12 @@ export default function CareerHero() {
                         />
 
                         {/* Title */}
-                        <h1 className="font-poppins font-semibold text-[28px] leading-[36px] text-white mb-4">
+                        <h1 className="font-poppins font-semibold text-[28px] leading-[36px] text-white mb-4" style={{ textShadow: '0 2px 12px rgba(0,0,0,0.45)' }}>
                             Wang SMU<br />Career
                         </h1>
 
                         {/* Description */}
-                        <p className="font-poppins font-normal text-[14px] leading-[24px] text-white max-w-[300px]" style={{ marginTop: '10px' }}>
+                        <p className="font-poppins font-normal text-[14px] leading-[24px] text-white max-w-[300px]" style={{ marginTop: '10px', textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>
                             Join a company where your talent grows, your ideas matter, and your career thrives. 25+ years of excellence, endless opportunities ahead.
                         </p>
                     </div>
@@ -85,6 +86,7 @@ export default function CareerHero() {
                     style={{
                         height: '753px',
                         borderRadius: '0 0 160px 160px',
+                        boxShadow: '0 30px 80px rgba(0, 0, 0, 0.4)',
                     }}
                 >
                     {/* b. Background Image */}
@@ -97,7 +99,7 @@ export default function CareerHero() {
                         }}
                     >
                         <Image
-                            src="/images/pt-wang-new.png"
+                            src="/images/careerHero.png"
                             alt="Career Hero Background"
                             fill
                             style={{ objectFit: 'cover' }}
@@ -118,6 +120,7 @@ export default function CareerHero() {
                             bottom: '269px',
                             width: '451px',
                             height: '126px',
+                            textShadow: '0 4px 20px rgba(0,0,0,0.5)',
                         }}
                     >
                         <span style={{ display: 'flex', flexDirection: 'column', gap: '10px', width: '451px', height: '126px' }}>
@@ -134,6 +137,7 @@ export default function CareerHero() {
                             bottom: '72px',
                             width: '1029px',
                             height: '147px',
+                            textShadow: '0 2px 10px rgba(0,0,0,0.4)',
                         }}
                     >
                         Join a company where your talent grows, your ideas matter, and your career thrives. 25+ years of excellence, endless opportunities ahead.

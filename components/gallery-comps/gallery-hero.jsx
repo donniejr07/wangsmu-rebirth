@@ -10,6 +10,7 @@ export default function GalleryHeroSection() {
                     style={{
                         minHeight: '400px',
                         borderRadius: '0 0 60px 60px',
+                        boxShadow: '0 20px 60px rgba(0, 0, 0, 0.35)',
                     }}
                 >
                     {/* Background Image */}
@@ -38,12 +39,12 @@ export default function GalleryHeroSection() {
                         />
 
                         {/* Title */}
-                        <h1 className="font-poppins font-semibold text-[32px] leading-[36px] text-white" style={{ marginBottom: '10px' }}>
+                        <h1 className="font-poppins font-semibold text-[32px] leading-[36px] text-white" style={{ marginBottom: '10px', textShadow: '0 2px 12px rgba(0,0,0,0.45)' }}>
                             Wang SMU<br />Gallery
                         </h1>
 
                         {/* Description */}
-                        <p className="font-poppins font-normal text-[16px] leading-[24px] text-white max-w-[300px]">
+                        <p className="font-poppins font-normal text-[16px] leading-[24px] text-white max-w-[300px]" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>
                             Let's take a closer look at our gallery and explore the visual story behind our company’s journey
                         </p>
                     </div>
@@ -64,6 +65,7 @@ export default function GalleryHeroSection() {
                     style={{
                         height: '753px',
                         borderRadius: '0 0 160px 160px',
+                        boxShadow: '0 30px 80px rgba(0, 0, 0, 0.4)',
                     }}
                 >
                     {/* b. Background Image */}
@@ -95,6 +97,7 @@ export default function GalleryHeroSection() {
                         style={{
                             left: '7%',
                             bottom: '269px',
+                            textShadow: '0 4px 20px rgba(0,0,0,0.5)',
                         }}
                     >
                         <span style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -109,6 +112,7 @@ export default function GalleryHeroSection() {
                         style={{
                             left: '7%',
                             bottom: '140px',
+                            textShadow: '0 2px 10px rgba(0,0,0,0.4)',
                         }}
                     >
                         Let’s take a closer look at our gallery and explore the visual story behind our company’s journey
