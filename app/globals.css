@@ -50,7 +50,7 @@ body {
 }
 
 /* Custom Skeleton Glowing Effect */
-@keyframes shimmer {
+@keyframes skeleton-shimmer-sweep {
   0% {
     background-position: -1000px 0;
   }
@@ -61,7 +61,7 @@ body {
 }
 
 .skeleton-shimmer {
-  animation: shimmer 5.5s infinite linear;
+  animation: skeleton-shimmer-sweep 4.5s infinite linear;
   background: #e2e8f0;
   /* warna dasar abu-abu (slate-200) */
   background: linear-gradient(to right, #e2e8f0 8%, #cbd5e1 25%, #e2e8f0 33%);

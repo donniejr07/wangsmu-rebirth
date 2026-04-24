@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useRef } from 'react'
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
 
 export default function PageTransition({ children }: { children: React.ReactNode }) {
     const pathname = usePathname()
@@ -25,7 +24,7 @@ export default function PageTransition({ children }: { children: React.ReactNode
             const timer = setTimeout(() => {
                 setDisplayChildren(children)
                 setIsLoading(false)
-            }, 800)
+            }, 2500)
 
             return () => clearTimeout(timer)
         } else {

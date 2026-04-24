@@ -6,34 +6,29 @@ import { AnimateOnScroll } from '@/components/animations/scroll-animations'
 
 const showcaseProducts = [
     {
-        src: 'https://placehold.co/600x400/E8EEF4/0055A4?text=Electronic+Housings',
-        alt: 'Electronic Housings',
-        caption: 'Electronic Housings',
+        src: '/images/products/electronics/frontPanel.png',
+        alt: 'Electronic Front Panel',
+        caption: 'Electronic Front Panel',
     },
     {
-        src: 'https://placehold.co/600x400/E8EEF4/0055A4?text=PCB+Design+%26+Engineering',
-        alt: 'PCB Design',
-        caption: 'PCB Design & Engineering',
+        src: '/images/products/electronics/Knob.png',
+        alt: 'Control Knob',
+        caption: 'Control Knob',
     },
     {
-        src: 'https://placehold.co/600x400/E8EEF4/0055A4?text=Connector+Parts',
-        alt: 'Connector Parts',
-        caption: 'Connector Parts',
+        src: '/images/products/electronics/pianoPart.png',
+        alt: 'Piano Electronic Part',
+        caption: 'Piano Electronic Part',
     },
     {
-        src: 'https://placehold.co/600x400/E8EEF4/0055A4?text=Printed+Components',
-        alt: 'Printed Components',
-        caption: 'Printed Components',
+        src: '/images/products/electronics/saxophonePart.png',
+        alt: 'Saxophone Electronic Part',
+        caption: 'Saxophone Electronic Part',
     },
     {
-        src: 'https://placehold.co/600x400/E8EEF4/0055A4?text=Sub-Assembly',
-        alt: 'Sub-Assembly Electronics',
-        caption: 'Sub-Assembly',
-    },
-    {
-        src: 'https://placehold.co/600x400/E8EEF4/0055A4?text=Laser+Marked+Parts',
-        alt: 'Laser Marked Parts',
-        caption: 'Laser Marked Parts',
+        src: '/images/products/electronics/speakerPart.png',
+        alt: 'Speaker Component',
+        caption: 'Speaker Component',
     },
 ]
 
