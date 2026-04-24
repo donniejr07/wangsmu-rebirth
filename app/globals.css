@@ -48,3 +48,23 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-dark);
 }
+
+/* Custom Skeleton Glowing Effect */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.skeleton-shimmer {
+  animation: shimmer 5.5s infinite linear;
+  background: #e2e8f0;
+  /* warna dasar abu-abu (slate-200) */
+  background: linear-gradient(to right, #e2e8f0 8%, #cbd5e1 25%, #e2e8f0 33%);
+  /* gradient bergerak */
+  background-size: 1000px 100%;
+}

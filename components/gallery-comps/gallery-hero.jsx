@@ -13,7 +13,6 @@ export default function GalleryHeroSection() {
                         boxShadow: '0 20px 60px rgba(0, 0, 0, 0.35)',
                     }}
                 >
-                    {/* Background Image */}
                     <div className="absolute inset-0" style={{ paddingTop: '20px' }}>
                         <Image
                             src="/images/lobby.png"
@@ -22,14 +21,11 @@ export default function GalleryHeroSection() {
                             className="object-cover"
                             priority
                         />
-                        {/* overlay */}
                         <div className="absolute inset-0 bg-[#0055A4]/60" />
                     </div>
 
-                    {/* Content */}
                     <div className="relative z-10 flex flex-col items-center px-6 pb-12 text-center" style={{ paddingTop: '20px' }}>
 
-                        {/* Logo */}
                         <Image
                             src="/images/logo-putih.png"
                             alt="Logo PT"
@@ -38,12 +34,10 @@ export default function GalleryHeroSection() {
                             className="mb-6"
                         />
 
-                        {/* Title */}
                         <h1 className="font-poppins font-semibold text-[32px] leading-[36px] text-white" style={{ marginBottom: '10px', textShadow: '0 2px 12px rgba(0,0,0,0.45)' }}>
                             Wang SMU<br />Gallery
                         </h1>
 
-                        {/* Description */}
                         <p className="font-poppins font-normal text-[16px] leading-[24px] text-white max-w-[300px]" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>
                             Let's take a closer look at our gallery and explore the visual story behind our company’s journey
                         </p>
@@ -59,7 +53,6 @@ export default function GalleryHeroSection() {
                     paddingRight: '6%',
                 }}
             >
-                {/* a. Rectangle 1 - Blue background */}
                 <div
                     className="relative overflow-hidden bg-[#0055A1] w-full"
                     style={{
@@ -68,7 +61,6 @@ export default function GalleryHeroSection() {
                         boxShadow: '0 30px 80px rgba(0, 0, 0, 0.4)',
                     }}
                 >
-                    {/* b. Background Image */}
                     <div
                         className="absolute left-0 w-full overflow-hidden"
                         style={{
@@ -84,14 +76,12 @@ export default function GalleryHeroSection() {
                             style={{ objectFit: 'cover' }}
                             priority
                         />
-                        {/* overlay for better text visibility */}
                         <div
                             className="absolute inset-0"
                             style={{ backgroundColor: 'rgba(0, 85, 164, 0.6)' }}
                         />
                     </div>
 
-                    {/* c. Title Text - Wang SMU Story */}
                     <h1
                         className="absolute font-poppins font-semibold text-[60px] leading-[63px] text-white"
                         style={{
@@ -106,7 +96,6 @@ export default function GalleryHeroSection() {
                         </span>
                     </h1>
 
-                    {/* d. Description Text */}
                     <p
                         className="absolute font-poppins font-normal text-[28px] leading-[42px] text-white max-w-[75%]"
                         style={{
@@ -118,7 +107,6 @@ export default function GalleryHeroSection() {
                         Let’s take a closer look at our gallery and explore the visual story behind our company’s journey
                     </p>
 
-                    {/* e. Logo PT */}
                     <Image
                         src="/images/logo-putih.png"
                         alt="Logo PT"

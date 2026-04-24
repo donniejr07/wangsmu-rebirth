@@ -13,7 +13,6 @@ export default function ServiceHeroSection() {
                         boxShadow: '0 20px 60px rgba(0, 0, 0, 0.35)',
                     }}
                 >
-                    {/* Background Image */}
                     <div className="absolute inset-0" style={{ paddingTop: '20px' }}>
                         <Image
                             src="/images/production.png"
@@ -22,14 +21,11 @@ export default function ServiceHeroSection() {
                             className="object-cover"
                             priority
                         />
-                        {/* overlay */}
                         <div className="absolute inset-0 bg-[#0055A4]/60" />
                     </div>
 
-                    {/* Content */}
                     <div className="relative z-10 flex flex-col items-center px-6 pb-12 text-center" style={{ paddingTop: '20px' }}>
 
-                        {/* Logo */}
                         <Image
                             src="/images/logo-putih.png"
                             alt="Logo PT"
@@ -38,26 +34,21 @@ export default function ServiceHeroSection() {
                             className="mb-6"
                         />
 
-                        {/* Title */}
                         <h1 className="font-poppins font-semibold text-[28px] leading-[32px] text-white" style={{ marginBottom: '20px', textShadow: '0 2px 12px rgba(0,0,0,0.45)' }}>
                             Our<br />Services
                         </h1>
 
-                        {/* New Text Mobile */}
                         <div className="flex gap-2 w-full max-w-[50%]">
-                            {/* Stat 1 */}
                             <div className="flex flex-col items-center text-center">
                                 <span className="font-poppins font-normal text-white text-[18px] leading-[28px]">25+</span>
                                 <span className="font-poppins font-normal text-white text-[12px] leading-[24px]">Years Experiences</span>
                             </div>
 
-                            {/* Stat 2 */}
                             <div className="flex flex-col items-center text-center">
                                 <span className="font-poppins font-normal text-white text-[18px] leading-[28px]">1000+</span>
                                 <span className="font-poppins font-normal text-white text-[12px] leading-[24px]">Projects Finished</span>
                             </div>
 
-                            {/* Stat 3 */}
                             <div className="flex flex-col items-center text-center">
                                 <span className="font-poppins font-normal text-white text-[18px] leading-[28px]">90%</span>
                                 <span className="font-poppins font-normal text-white text-[12px] leading-[24px]">Happy Customers</span>
@@ -75,7 +66,6 @@ export default function ServiceHeroSection() {
                     paddingRight: '6%',
                 }}
             >
-                {/* a. Rectangle 1 - Blue background */}
                 <div
                     className="relative overflow-hidden bg-[#0055A4] w-full"
                     style={{
@@ -84,7 +74,6 @@ export default function ServiceHeroSection() {
                         boxShadow: '0 30px 80px rgba(0, 0, 0, 0.4)',
                     }}
                 >
-                    {/* b. Background Image */}
                     <div
                         className="absolute left-0 w-full overflow-hidden"
                         style={{
@@ -100,14 +89,12 @@ export default function ServiceHeroSection() {
                             style={{ objectFit: 'cover' }}
                             priority
                         />
-                        {/* overlay for better text visibility */}
                         <div
                             className="absolute inset-0"
                             style={{ backgroundColor: 'rgba(0, 85, 164, 0.6)' }}
                         />
                     </div>
 
-                    {/* c. Title Text - Our Products */}
                     <h1
                         className="absolute font-poppins font-semibold text-[60px] leading-[63px] text-white"
                         style={{
@@ -122,7 +109,6 @@ export default function ServiceHeroSection() {
                         </span>
                     </h1>
 
-                    {/* d. Stats Blocks */}
                     <div
                         className="absolute flex justify-between text-white font-poppins font-normal"
                         style={{
@@ -147,7 +133,6 @@ export default function ServiceHeroSection() {
                         </div>
                     </div>
 
-                    {/* e. Logo PT */}
                     <Image
                         src="/images/logo-putih.png"
                         alt="Logo PT"

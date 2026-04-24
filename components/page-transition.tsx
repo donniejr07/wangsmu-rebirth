@@ -12,14 +12,12 @@ export default function PageTransition({ children }: { children: React.ReactNode
     const prevPathname = useRef(pathname)
 
     useEffect(() => {
-        // First load - skip
         if (isFirstLoad.current) {
             isFirstLoad.current = false
             setDisplayChildren(children)
             return
         }
 
-        // Navigation
         if (prevPathname.current !== pathname) {
             prevPathname.current = pathname
             setIsLoading(true)
@@ -44,36 +42,69 @@ export default function PageTransition({ children }: { children: React.ReactNode
                     inset: 0,
                     zIndex: 9999,
                     display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    backgroundColor: '#0055A4',
+                    flexDirection: 'column',
+                    backgroundColor: '#FFFFFF',
                     opacity: isLoading ? 1 : 0,
                     visibility: isLoading ? 'visible' : 'hidden',
                     transition: isLoading ? 'none' : 'opacity 500ms, visibility 500ms',
                 }}
             >
-                <div className="flex flex-col items-center gap-8">
-                    <div className="relative w-[260px] h-[160px] animate-pulse">
-                        <Image
-                            src="/images/logo-putih.png"
-                            alt="Wait a Sec..."
-                            fill
-                            className="object-contain"
-                            priority
-                        />
-                    </div>
+                {/* Mobile Skeleton */}
+                <section className="lg:hidden relative mx-4 mt-4">
+                    <div
+                        className="w-full bg-slate-100 flex flex-col items-center justify-center text-center pt-5 pb-12 px-6"
+                        style={{
+                            minHeight: '400px',
+                            borderRadius: '0 0 60px 60px',
+                        }}
+                    >
+                        <div className="w-16 h-16 rounded-full skeleton-shimmer mb-6"></div>
 
-                    <div className="flex items-center gap-1">
-                        <span className="text-white font-poppins font-semibold text-lg tracking-wider">
-                            Wait a sec
-                        </span>
-                        <span className="flex gap-1">
-                            <span className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></span>
-                            <span className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></span>
-                            <span className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></span>
-                        </span>
+                        {/* Skeleton Title */}
+                        <div className="flex flex-col items-center gap-2 mb-5">
+                            <div className="w-40 h-9 rounded-md skeleton-shimmer"></div>
+                            <div className="w-32 h-9 rounded-md skeleton-shimmer"></div>
+                        </div>
+
+                        {/* Skeleton Description */}
+                        <div className="flex flex-col items-center gap-2">
+                            <div className="w-64 h-4 rounded-md skeleton-shimmer"></div>
+                            <div className="w-56 h-4 rounded-md skeleton-shimmer"></div>
+                        </div>
                     </div>
-                </div>
+                </section>
+
+                {/* Desktop Skeleton */}
+                <section
+                    className="hidden lg:flex justify-center relative w-full"
+                    style={{
+                        paddingLeft: '6%',
+                        paddingRight: '6%',
+                    }}
+                >
+                    <div
+                        className="w-full bg-slate-100 relative"
+                        style={{
+                            height: '753px',
+                            borderRadius: '0 0 160px 160px',
+                        }}
+                    >
+                        {/* Skeleton Title */}
+                        <div className="absolute flex flex-col gap-4" style={{ left: '7%', bottom: '269px' }}>
+                            <div className="w-80 h-16 rounded-lg skeleton-shimmer"></div>
+                            <div className="w-64 h-16 rounded-lg skeleton-shimmer"></div>
+                        </div>
+
+                        {/* Skeleton Description */}
+                        <div className="absolute flex flex-col gap-3 w-full max-w-3xl" style={{ left: '7%', bottom: '140px' }}>
+                            <div className="w-11/12 h-7 rounded-md skeleton-shimmer"></div>
+                            <div className="w-3/4 h-7 rounded-md skeleton-shimmer"></div>
+                        </div>
+
+                        {/* Skeleton Logo */}
+                        <div className="absolute w-28 h-28 rounded-full skeleton-shimmer" style={{ top: '30px', right: '48px' }}></div>
+                    </div>
+                </section>
             </div>
 
             {/* Page Content */}
