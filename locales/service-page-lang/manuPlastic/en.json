@@ -1,0 +1,49 @@
+{
+  "manuPlasticDefinition": {
+    "label": "What We Do",
+    "title1": "Manufacture ",
+    "title2": "Plastic Injection",
+    "description": "Our Plastic Injection Molding services deliver precision-engineered components at scale. Utilizing advanced machinery and proven processes, we produce high-quality plastic parts that meet international standards for consistency, durability, and performance.",
+    "stat1MobileLabel": "Machines",
+    "stat2MobileLabel": "Parts/Month",
+    "stat3MobileLabel": "Accuracy",
+    "stat1DesktopLabel": "Injection Machines",
+    "stat2DesktopLabel": "Parts per Month",
+    "stat3DesktopLabel": "Dimensional Accuracy"
+  },
+  "manuPlasticSuperiority": {
+    "title1": "Our ",
+    "title2": "Superiority",
+    "subtitle": "What makes our plastic injection molding stand above the rest.",
+    "items": [
+      {
+        "title": "Precision and Consistency",
+        "description": "Delivering micron-level accuracy and repeatability across millions of molded parts."
+      },
+      {
+        "title": "Flexibility in Design",
+        "description": "Accommodating complex geometries and custom requirements with agile production adaptations."
+      },
+      {
+        "title": "Efficient Production",
+        "description": "Optimized injection cycles and automated workflows for faster turnaround times."
+      },
+      {
+        "title": "Material Expertise",
+        "description": "Deep knowledge of engineering plastics and specialty resins for optimal performance."
+      }
+    ]
+  },
+  "manuPlasticGallery": {
+    "label": "Gallery",
+    "title1": "Our ",
+    "title2": "Facility",
+    "subtitle": "Explore our plastic injection molding facility and production capabilities.",
+    "captions": [
+      "Zhafir",
+      "Mitsubishi",
+      "Sumitomo",
+      "Operator Area"
+    ]
+  }
+}

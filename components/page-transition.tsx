@@ -34,7 +34,6 @@ export default function PageTransition({ children }: { children: React.ReactNode
 
     return (
         <>
-            {/* Loading Overlay */}
             <div
                 style={{
                     position: 'fixed',
@@ -60,13 +59,13 @@ export default function PageTransition({ children }: { children: React.ReactNode
                         <div className="w-16 h-16 rounded-full skeleton-shimmer mb-6"></div>
 
                         {/* Skeleton Title */}
-                        <div className="flex flex-col items-center gap-2 mb-5">
+                        <div className="flex flex-col items-center gap-4 mb-5" style={{ marginBottom: '1rem', marginTop: '1rem' }}>
                             <div className="w-40 h-9 rounded-md skeleton-shimmer"></div>
                             <div className="w-32 h-9 rounded-md skeleton-shimmer"></div>
                         </div>
 
                         {/* Skeleton Description */}
-                        <div className="flex flex-col items-center gap-2">
+                        <div className="flex flex-col items-center gap-4">
                             <div className="w-64 h-4 rounded-md skeleton-shimmer"></div>
                             <div className="w-56 h-4 rounded-md skeleton-shimmer"></div>
                         </div>

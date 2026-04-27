@@ -7,12 +7,30 @@ import landingEn from '@/locales/landing-page-lang/en.json'
 import landingId from '@/locales/landing-page-lang/id.json'
 import aboutEn from '@/locales/about-page-lang/en.json'
 import aboutId from '@/locales/about-page-lang/id.json'
+import hseEn from '@/locales/hse-page-lang/en.json'
+import hseId from '@/locales/hse-page-lang/id.json'
+import serviceEn from '@/locales/service-page-lang/en.json'
+import serviceId from '@/locales/service-page-lang/id.json'
+import manuToolEn from '@/locales/service-page-lang/manuTool/en.json'
+import manuToolId from '@/locales/service-page-lang/manuTool/id.json'
+import manuPlasticEn from '@/locales/service-page-lang/manuPlastic/en.json'
+import manuPlasticId from '@/locales/service-page-lang/manuPlastic/id.json'
+import secProcEn from '@/locales/service-page-lang/secProc/en.json'
+import secProcId from '@/locales/service-page-lang/secProc/id.json'
+import productEn from '@/locales/product-page-lang/en.json'
+import productId from '@/locales/product-page-lang/id.json'
+import autoEn from '@/locales/product-page-lang/auto/en.json'
+import autoId from '@/locales/product-page-lang/auto/id.json'
+import elecEn from '@/locales/product-page-lang/electronics/en.json'
+import elecId from '@/locales/product-page-lang/electronics/id.json'
+import galleryEn from '@/locales/gallery-page-lang/en.json'
+import galleryId from '@/locales/gallery-page-lang/id.json'
 
 type Language = 'en' | 'id'
 
 // Merge translations
-const en = { ...landingEn, ...aboutEn }
-const id = { ...landingId, ...aboutId }
+const en = { ...landingEn, ...aboutEn, ...hseEn, ...serviceEn, ...manuToolEn, ...manuPlasticEn, ...secProcEn, ...productEn, ...autoEn, ...elecEn, ...galleryEn }
+const id = { ...landingId, ...aboutId, ...hseId, ...serviceId, ...manuToolId, ...manuPlasticId, ...secProcId, ...productId, ...autoId, ...elecId, ...galleryId }
 
 type Translations = typeof en
 

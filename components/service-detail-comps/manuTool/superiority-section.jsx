@@ -1,6 +1,7 @@
 'use client'
 
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
 
 // ===== SVG ICON COMPONENTS =====
 
@@ -174,6 +175,8 @@ function MobileSuperiorityItem({ icon, title, description, delay = 0 }) {
 
 // ===== MAIN COMPONENT =====
 export default function SuperioritySection() {
+    const { t } = useLanguage()
+
     return (
         <>
             {/* ===== MOBILE LAYOUT ===== */}
@@ -204,8 +207,8 @@ export default function SuperioritySection() {
                             className="font-poppins font-bold text-[24px] leading-[32px] text-center"
                             style={{ marginBottom: '8px' }}
                         >
-                            <span style={{ color: '#1a1a2e' }}>Our </span>
-                            <span style={{ color: '#0055A4' }}>Superiority</span>
+                            <span style={{ color: '#1a1a2e' }}>{t('manuToolSuperiority.title1')}</span>
+                            <span style={{ color: '#0055A4' }}>{t('manuToolSuperiority.title2')}</span>
                         </h2>
                     </AnimateOnScroll>
 
@@ -215,7 +218,7 @@ export default function SuperioritySection() {
                             className="font-poppins font-normal text-[14px] leading-[20px] text-center"
                             style={{ marginBottom: '32px', color: '#6B7280' }}
                         >
-                            What sets our manufacturing tooling apart from the competition.
+                            {t('manuToolSuperiority.subtitle')}
                         </p>
                     </AnimateOnScroll>
 
@@ -225,8 +228,8 @@ export default function SuperioritySection() {
                             <MobileSuperiorityItem
                                 key={index}
                                 icon={item.mobileIcon}
-                                title={item.title}
-                                description={item.description}
+                                title={t(`manuToolSuperiority.items.${index}.title`)}
+                                description={t(`manuToolSuperiority.items.${index}.description`)}
                                 delay={index * 50}
                             />
                         ))}
@@ -289,14 +292,14 @@ export default function SuperioritySection() {
                                 marginBottom: '8px',
                             }}
                         >
-                            <span style={{ color: '#1a1a2e' }}>Our </span>
+                            <span style={{ color: '#1a1a2e' }}>{t('manuToolSuperiority.title1')}</span>
                             <span
                                 style={{
                                     color: '#0055A4',
                                     position: 'relative',
                                 }}
                             >
-                                Superiority
+                                {t('manuToolSuperiority.title2')}
                                 <span
                                     style={{
                                         position: 'absolute',
@@ -324,7 +327,7 @@ export default function SuperioritySection() {
                                 margin: '0 auto',
                             }}
                         >
-                            What sets our manufacturing tooling apart from the competition.
+                            {t('manuToolSuperiority.subtitle')}
                         </p>
                     </AnimateOnScroll>
 
@@ -337,8 +340,8 @@ export default function SuperioritySection() {
                             <SuperiorityItem
                                 key={index}
                                 icon={item.icon}
-                                title={item.title}
-                                description={item.description}
+                                title={t(`manuToolSuperiority.items.${index}.title`)}
+                                description={t(`manuToolSuperiority.items.${index}.description`)}
                                 delay={150 + index * 100}
                             />
                         ))}

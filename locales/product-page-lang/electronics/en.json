@@ -1,0 +1,35 @@
+{
+  "elecDefinition": {
+    "label": "Product Category",
+    "title1": "Electronic ",
+    "title2": "Products",
+    "description": "We produce precision-molded electronic components designed for reliability in demanding technological environments. Our capabilities span housings, connectors, switch panels, remote control casings, and other critical parts used in consumer electronics, industrial devices, and home appliances.",
+    "stats": [
+      {
+        "labelMobile": "Part Types",
+        "labelDesktop": "Electronic Part Types"
+      },
+      {
+        "labelMobile": "Clients",
+        "labelDesktop": "Global Clients"
+      },
+      {
+        "labelMobile": "Accuracy",
+        "labelDesktop": "Dimensional Accuracy"
+      }
+    ]
+  },
+  "elecShowcase": {
+    "label": "Showcase",
+    "title1": "Product ",
+    "title2": "Showcase",
+    "subtitle": "Explore our range of precision electronic components.",
+    "captions": [
+      "Electronic Front Panel",
+      "Control Knob",
+      "Piano Electronic Part",
+      "Saxophone Electronic Part",
+      "Speaker Component"
+    ]
+  }
+}

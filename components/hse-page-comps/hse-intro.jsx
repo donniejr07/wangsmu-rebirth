@@ -1,6 +1,11 @@
+'use client'
+
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
 
 export default function HSEIntroSection() {
+    const { t } = useLanguage()
+
     return (
         <section>
             {/* desktop layout */}
@@ -8,13 +13,13 @@ export default function HSEIntroSection() {
                 <div className="row">
                     <div className="justify-center text-center font-poppins font-semibold text-[32px] leading-[36px] text-[#0055A1]"
                         style={{ marginBottom: "12px" }}>
-                        <h2>Environmental Impact Dashboard</h2>
+                        <h2>{t('hseIntro.dashboardTitle')}</h2>
                     </div>
                 </div>
                 <div className="row">
                     <div className="justify-center text-center font-poppins font-normal text-[16px] leading-[24px] text-black"
                         style={{ marginBottom: "12px" }}>
-                        <p>Scope 1 & Scope 2 Emissions Monitoring (2023–2025)</p>
+                        <p>{t('hseIntro.dashboardSubtitle')}</p>
                     </div>
                 </div>
                 <AnimateOnScroll animation="fade-in-up" delay={400} duration={600}>
@@ -23,24 +28,24 @@ export default function HSEIntroSection() {
                             <h1 className="text-white font-poppins font-semibold text-[18px] leading-[36px]"
                                 style={{ paddingLeft: '20px', paddingTop: '10px' }}
                             >
-                                Scope 1
+                                {t('hseIntro.scope1Title')}
                             </h1>
                             <p className="text-white font-poppins font-normal text-[14px] leading-[36px]"
                                 style={{ paddingLeft: '20px' }}
                             >
-                                Direct emissions from fuel combustion and mobile sources
+                                {t('hseIntro.scope1Desc')}
                             </p>
                         </div>
                         <div className="w-[450px] h-[100px] bg-[#0055A1] rounded-[15px] hover:-translate-y-2 hover:shadow-2xl">
                             <h1 className="text-white font-poppins font-semibold text-[18px] leading-[36px]"
                                 style={{ paddingLeft: '20px', paddingTop: '10px' }}
                             >
-                                Scope 2
+                                {t('hseIntro.scope2Title')}
                             </h1>
                             <p className="text-white font-poppins font-normal text-[14px] leading-[36px]"
                                 style={{ paddingLeft: '20px' }}
                             >
-                                Indirect emissions from purchased electricity consumption
+                                {t('hseIntro.scope2Desc')}
                             </p>
                         </div>
                     </div>
@@ -52,11 +57,11 @@ export default function HSEIntroSection() {
                 <div className="row">
                     <div className="justify-center text-center font-poppins font-semibold text-[24px] leading-[30px] text-[#0055A1]"
                         style={{ marginBottom: "12px" }}>
-                        <h2>Environmental Impact Dashboard</h2>
+                        <h2>{t('hseIntro.dashboardTitle')}</h2>
                     </div>
                     <div className="justify-center text-center font-poppins font-normal text-[14px] leading-[20px] text-black"
                         style={{ marginBottom: "30px" }}>
-                        <p>Scope 1 & Scope 2 Emissions Monitoring (2023–2025)</p>
+                        <p>{t('hseIntro.dashboardSubtitle')}</p>
                     </div>
                 </div>
                 <AnimateOnScroll animation="fadeUp" delay={200}>
@@ -70,12 +75,12 @@ export default function HSEIntroSection() {
                             <h1 className="relative text-white font-poppins font-semibold text-[18px] leading-[36px]"
                                 style={{ paddingLeft: '20px', paddingTop: '10px' }}
                             >
-                                Scope 1
+                                {t('hseIntro.scope1Title')}
                             </h1>
                             <p className="relative text-white font-poppins font-normal text-[14px] leading-[24px]"
                                 style={{ paddingLeft: '20px', paddingRight: '20px', paddingBottom: '12px' }}
                             >
-                                Direct emissions from fuel combustion and mobile sources
+                                {t('hseIntro.scope1Desc')}
                             </p>
                         </div>
                         <div className="relative w-full max-w-[300px] min-h-[100px] h-auto bg-[#0055A1] rounded-[15px] overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-transform duration-300">
@@ -87,12 +92,12 @@ export default function HSEIntroSection() {
                             <h1 className="relative text-white font-poppins font-semibold text-[18px] leading-[36px]"
                                 style={{ paddingLeft: '20px', paddingTop: '10px' }}
                             >
-                                Scope 2
+                                {t('hseIntro.scope2Title')}
                             </h1>
                             <p className="relative text-white font-poppins font-normal text-[14px] leading-[24px]"
                                 style={{ paddingLeft: '20px', paddingRight: '20px', paddingBottom: '12px' }}
                             >
-                                Indirect emissions from purchased electricity consumption
+                                {t('hseIntro.scope2Desc')}
                             </p>
                         </div>
                     </div>

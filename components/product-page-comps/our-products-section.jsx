@@ -1,11 +1,14 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
 
 
 
 // Product Card Component for Desktop
-function ProductCard({ imageSrc, title, description, href, delay = 0 }) {
+function ProductCard({ imageSrc, title, description, href, buttonText, delay = 0 }) {
     return (
         <AnimateOnScroll animation="fadeUp" delay={delay}>
             <div
@@ -90,7 +93,7 @@ function ProductCard({ imageSrc, title, description, href, delay = 0 }) {
                         textDecoration: 'none',
                     }}
                 >
-                    More Details
+                    {buttonText}
                 </Link>
             </div>
         </AnimateOnScroll>
@@ -98,7 +101,7 @@ function ProductCard({ imageSrc, title, description, href, delay = 0 }) {
 }
 
 // Product Card Component for Mobile
-function MobileProductCard({ imageSrc, title, description, href, delay = 0 }) {
+function MobileProductCard({ imageSrc, title, description, href, buttonText, delay = 0 }) {
     return (
         <AnimateOnScroll animation="fadeUp" delay={delay}>
             <div
@@ -186,6 +189,8 @@ const productsData = [
 ]
 
 export default function OurProductsSection() {
+    const { t } = useLanguage()
+
     return (
         <>
             {/* Mobile */}
@@ -196,8 +201,8 @@ export default function OurProductsSection() {
                         className="font-poppins font-semibold text-[28px] leading-[36px] text-center"
                         style={{ marginBottom: '8px' }}
                     >
-                        <span className="text-black">Our </span>
-                        <span className="text-[#0055A4]">Products</span>
+                        <span className="text-black">{t('ourProducts.title1')}</span>
+                        <span className="text-[#0055A4]">{t('ourProducts.title2')}</span>
                     </h2>
                 </AnimateOnScroll>
 
@@ -207,7 +212,7 @@ export default function OurProductsSection() {
                         className="font-poppins font-normal text-[14px] leading-[20px] text-black text-center"
                         style={{ marginBottom: '24px' }}
                     >
-                        Comprehensive range of precision-engineered components designed to meet the highest industry standards.
+                        {t('ourProducts.subtitle')}
                     </p>
                 </AnimateOnScroll>
 
@@ -217,9 +222,10 @@ export default function OurProductsSection() {
                         <MobileProductCard
                             key={index}
                             imageSrc={product.imageSrc}
-                            title={product.title}
-                            description={product.description}
+                            title={t(`ourProducts.items.${index}.title`)}
+                            description={t(`ourProducts.items.${index}.description`)}
                             href={product.href}
+                            buttonText={t('ourProducts.button')}
                             delay={index * 50}
                         />
                     ))}
@@ -239,8 +245,8 @@ export default function OurProductsSection() {
                     <h2
                         className="text-center font-poppins font-semibold text-[56px] leading-[84px]"
                     >
-                        <span className="text-black">Our </span>
-                        <span className="text-[#0055A4]">Products</span>
+                        <span className="text-black">{t('ourProducts.title1')}</span>
+                        <span className="text-[#0055A4]">{t('ourProducts.title2')}</span>
                     </h2>
                     {/* <AnimateOnScroll animation="fadeUp" delay={0}>
                     </AnimateOnScroll> */}
@@ -255,7 +261,7 @@ export default function OurProductsSection() {
                             marginRight: 'auto',
                         }}
                     >
-                        Comprehensive range of precision-engineered components designed to meet the highest industry standards.
+                        {t('ourProducts.subtitle')}
                     </p>
                     {/* <AnimateOnScroll animation="fadeUp" delay={100}>
                     </AnimateOnScroll> */}
@@ -272,9 +278,10 @@ export default function OurProductsSection() {
                         <ProductCard
                             key={index}
                             imageSrc={product.imageSrc}
-                            title={product.title}
-                            description={product.description}
+                            title={t(`ourProducts.items.${index}.title`)}
+                            description={t(`ourProducts.items.${index}.description`)}
                             href={product.href}
+                            buttonText={t('ourProducts.button')}
                             delay={index * 100}
                         />
                     ))}

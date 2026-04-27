@@ -212,7 +212,8 @@ export default function CareerPositionSection() {
 
                         {/* Button Search */}
                         <button
-                            className="w-full flex items-center justify-center gap-2 py-2.5 bg-[#0055A4] hover:bg-[#004080] active:scale-95 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md mt-1"
+                            className="w-full flex items-center justify-center gap-2 bg-[#0055A4] hover:bg-[#004080] active:scale-95 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md mt-1"
+                            style={{ padding: '0.25rem' }}
                         >
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="white" />
@@ -222,14 +223,14 @@ export default function CareerPositionSection() {
                     </div>
 
                     {/* Job Cards */}
-                    <div className="flex flex-col gap-3 w-72" style={{ marginTop: '1rem' }}>
+                    <div className="flex flex-col gap-4 w-72" style={{ marginTop: '1.5rem' }}>
                         {paginatedJobs.map((job) => (
-                            <div key={job.id} className="bg-white rounded-xl" style={{ padding: '1rem' }}>
-                                <h3 className="font-poppins font-semibold text-sm text-[#0055A4] mb-2">
+                            <div key={job.id} className="bg-white rounded-xl" style={{ padding: '1.25rem' }}>
+                                <h3 className="font-poppins font-semibold text-sm text-[#0055A4]" style={{ marginBottom: '0.25rem' }}>
                                     {job.title}
                                 </h3>
 
-                                <div className="flex flex-wrap gap-x-4 gap-y-1 mb-2">
+                                <div className="flex flex-wrap gap-x-4 gap-y-2" style={{ marginBottom: '0.25rem' }}>
                                     <div className="flex items-center gap-1 text-[11px] text-gray-500">
                                         <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h5v5H2V2zm7 0h5v5H9V2zM2 9h5v5H2V9zm7 3.5a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0z" /></svg>
                                         <span>{job.department}</span>
@@ -244,15 +245,15 @@ export default function CareerPositionSection() {
                                     </div>
                                 </div>
 
-                                <p className="font-poppins text-xs text-gray-500 mb-3 leading-relaxed">
+                                <p className="font-poppins text-xs text-gray-500 leading-relaxed" style={{ marginBottom: '0.5rem' }}>
                                     {job.description}
                                 </p>
 
                                 <div className="flex gap-2">
-                                    <button className="flex-1 py-1.5 rounded-lg border border-gray-300 text-xs font-poppins font-medium text-gray-700 hover:bg-gray-50 transition-colors">
+                                    <button className="flex-1 rounded-lg border border-gray-300 text-xs font-poppins font-medium text-gray-700 hover:bg-[#0055A4]/50 transition-colors" style={{ padding: '0.25rem' }}>
                                         Detail
                                     </button>
-                                    <button className="flex-1 py-1.5 rounded-lg bg-[#0055A4] text-white text-xs font-poppins font-medium hover:bg-[#004080] transition-colors">
+                                    <button className="flex-1 rounded-lg bg-[#0055A4] text-white text-xs font-poppins font-medium hover:bg-[#004080] transition-colors" style={{ padding: '0.25rem' }}>
                                         Apply Now
                                     </button>
                                 </div>

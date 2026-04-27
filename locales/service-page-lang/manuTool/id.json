@@ -1,0 +1,51 @@
+{
+  "manuToolDefinition": {
+    "label": "Apa Yang Kami Lakukan",
+    "title1": "Manufacture ",
+    "title2": "Tooling",
+    "description": "Layanan Pembuatan Tooling kami dirancang untuk mewujudkan konsep Anda menjadi kenyataan. Dengan teknologi mutakhir dan tim yang ahli, kami menciptakan cetakan dan tooling berkualitas tinggi yang penting untuk produksi yang efisien dan presisi.",
+    "stat1MobileLabel": "Tahun",
+    "stat2MobileLabel": "Cetakan Dibuat",
+    "stat1DesktopLabel": "Tahun Pengalaman",
+    "stat2DesktopLabel": "Cetakan Diproduksi"
+  },
+  "manuToolSuperiority": {
+    "title1": "Keunggulan ",
+    "title2": "Kami",
+    "subtitle": "Apa yang membedakan pembuatan tooling kami dari kompetitor.",
+    "items": [
+      {
+        "title": "Rekayasa Presisi",
+        "description": "Teknologi CNC dan EDM canggih yang memberikan akurasi tingkat mikron untuk geometri cetakan yang kompleks."
+      },
+      {
+        "title": "Efisiensi & Kecepatan",
+        "description": "Alur kerja yang optimal dan peralatan mutakhir memastikan penyelesaian yang cepat tanpa mengorbankan kualitas."
+      },
+      {
+        "title": "Jaminan Mutu",
+        "description": "Protokol inspeksi yang ketat dan proses bersertifikasi ISO mempertahankan keunggulan manufaktur yang konsisten."
+      },
+      {
+        "title": "Nilai Jangka Panjang",
+        "description": "Solusi tooling yang tahan lama dibuat untuk siklus pakai yang lebih panjang, memaksimalkan pengembalian investasi Anda."
+      }
+    ]
+  },
+  "manuToolGallery": {
+    "label": "Galeri",
+    "title1": "Fasilitas ",
+    "title2": "Kami",
+    "subtitle": "Sekilas tentang fasilitas manufaktur kami yang canggih.",
+    "captions": [
+      "Desain Mold",
+      "CNC EDM",
+      "CNC Milling",
+      "CNC Wirecut",
+      "Mesin Grinding",
+      "Mesin Lathe",
+      "Polishing",
+      "Super Drill"
+    ]
+  }
+}

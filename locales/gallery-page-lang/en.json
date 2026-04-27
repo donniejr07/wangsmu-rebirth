@@ -1,0 +1,34 @@
+{
+  "galleryHero": {
+    "title1": "Wang SMU",
+    "title2": "Gallery",
+    "description": "Let's take a closer look at our gallery and explore the visual story behind our company’s journey"
+  },
+  "gallerySection": {
+    "categories": {
+      "all": "All",
+      "tooling": "Tooling & Mold Manufacturing",
+      "injection": "Injection Molding",
+      "painting": "Painting & Coating",
+      "subassembly": "Sub Assembly"
+    },
+    "items": {
+      "laserCutting": "Laser Cutting",
+      "toolingProcess": "Tooling Process",
+      "injectionMachine": "Injection Machine",
+      "plattingProcess": "Platting Process",
+      "paintingLine": "Painting Line",
+      "subAssemblyLine": "Sub Assembly Line",
+      "printingProcess": "Printing Process",
+      "3dPrinting": "3D Printing",
+      "laserProcess": "Laser Process",
+      "factoryOverview": "Factory Overview",
+      "designProcess": "Design Process",
+      "designWorkshop": "Design Workshop",
+      "shifterProduct": "Shifter Product",
+      "factoryNews": "Factory News",
+      "wangFactory": "Wang Factory",
+      "ourStory": "Our Story"
+    }
+  }
+}

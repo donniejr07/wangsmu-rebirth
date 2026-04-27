@@ -1,0 +1,34 @@
+{
+  "galleryHero": {
+    "title1": "Galeri",
+    "title2": "Wang SMU",
+    "description": "Mari lihat lebih dekat galeri kami dan jelajahi cerita visual di balik perjalanan perusahaan kami"
+  },
+  "gallerySection": {
+    "categories": {
+      "all": "Semua",
+      "tooling": "Pembuatan Cetakan & Peralatan",
+      "injection": "Cetakan Injeksi",
+      "painting": "Pengecatan & Pelapisan",
+      "subassembly": "Perakitan"
+    },
+    "items": {
+      "laserCutting": "Pemotongan Laser",
+      "toolingProcess": "Proses Pembuatan Cetakan",
+      "injectionMachine": "Mesin Injeksi",
+      "plattingProcess": "Proses Pelapisan",
+      "paintingLine": "Jalur Pengecatan",
+      "subAssemblyLine": "Jalur Perakitan",
+      "printingProcess": "Proses Pencetakan",
+      "3dPrinting": "Pencetakan 3D",
+      "laserProcess": "Proses Laser",
+      "factoryOverview": "Gambaran Pabrik",
+      "designProcess": "Proses Desain",
+      "designWorkshop": "Ruang Desain",
+      "shifterProduct": "Produk Shifter",
+      "factoryNews": "Berita Pabrik",
+      "wangFactory": "Pabrik Wang",
+      "ourStory": "Cerita Kami"
+    }
+  }
+}

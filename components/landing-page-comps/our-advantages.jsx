@@ -6,7 +6,6 @@ import { useLanguage } from '@/context/language-context'
 export default function OurAdvantages() {
     const { t } = useLanguage()
 
-    // Card data with translation keys
     const cardsData = [
         { title: t('ourAdvantages.quality'), description: t('ourAdvantages.qualityDesc') },
         { title: t('ourAdvantages.team'), description: t('ourAdvantages.teamDesc') },
@@ -18,10 +17,10 @@ export default function OurAdvantages() {
         <>
             {/* MOBILE LAYOUT */}
             <section className="lg:hidden relative w-full bg-white overflow-hidden" style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '16px', paddingBottom: '20px' }}>
-                {/* Header */}
+
                 <AnimateOnScroll animation="fadeUp" duration={800}>
                     <h2 className="flex items-center font-poppins font-semibold text-[28px] leading-[36px]" style={{ marginBottom: '20px' }}>
-                        <span className="text-black">{t('ourAdvantages.titleOur')} </span>
+                        <span className="text-black" style={{ marginRight: '8px' }}>{t('ourAdvantages.titleOur')}</span>
                         <span className="text-[#0055A4]">{t('ourAdvantages.titleAdvantages')}</span>
                         <div
                             className="bg-[#0055A4] flex-1"
@@ -30,7 +29,6 @@ export default function OurAdvantages() {
                     </h2>
                 </AnimateOnScroll>
 
-                {/* Cards - Stacked */}
                 <div className="flex flex-col" style={{ gap: '16px' }}>
                     {cardsData.map((card, index) => (
                         <AnimateOnScroll key={index} animation="fadeUp" delay={index * 50}>
@@ -63,7 +61,7 @@ export default function OurAdvantages() {
                     style={{ paddingLeft: '2.5%', paddingRight: '2.5%' }}
                 >
                     <h2 className="font-poppins font-semibold text-[48px] leading-[72px] whitespace-nowrap">
-                        <span className="text-black">{t('ourAdvantages.titleOur')} </span>
+                        <span className="text-black">{t('ourAdvantages.titleOur')}</span>{' '}
                         <span className="text-[#0055A4]">{t('ourAdvantages.titleAdvantages')}</span>
                     </h2>
                     <div
@@ -71,18 +69,14 @@ export default function OurAdvantages() {
                         style={{ height: '12px' }}
                     />
                 </div>
-                {/* <AnimateOnScroll animation="fadeLeft" duration={800}>
 
-                </AnimateOnScroll> */}
-
-                {/* kolom cards */}
                 <div
                     className="flex flex-row justify-center items-start"
                     style={{ paddingBottom: '49px', marginTop: '60px', gap: '60px' }}
                 >
-                    {/* kolom kiri */}
+
                     <div className="flex flex-col" style={{ gap: '32px' }}>
-                        {/* Quality Guarantee Card */}
+
                         <div className="group relative w-[420px] h-[200px] bg-[#0055A4] rounded-[16px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                             <div className="absolute inset-0 w-full h-full">
                                 <img
@@ -103,11 +97,7 @@ export default function OurAdvantages() {
                                 </p>
                             </div>
                         </div>
-                        {/* <AnimateOnScroll animation="fadeUp" delay={150}>
-                            
-                        </AnimateOnScroll> */}
 
-                        {/* Experienced Team Card */}
                         <AnimateOnScroll animation="fadeUp" delay={150}>
                             <div className="group relative w-[420px] h-[200px] bg-[#0055A4] rounded-[16px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                                 <div className="absolute inset-0 w-full h-full">
@@ -132,9 +122,8 @@ export default function OurAdvantages() {
                         </AnimateOnScroll>
                     </div>
 
-                    {/* kolom kanan */}
                     <div className="flex flex-col" style={{ gap: '32px' }}>
-                        {/* Innovation Card */}
+
                         <div className="group relative w-[420px] h-[200px] bg-[#0055A4] rounded-[16px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                             <div className="absolute inset-0 w-full h-full">
                                 <img
@@ -155,11 +144,7 @@ export default function OurAdvantages() {
                                 </p>
                             </div>
                         </div>
-                        {/* <AnimateOnScroll animation="fadeUp" delay={100}>
-                            
-                        </AnimateOnScroll> */}
 
-                        {/* Integrated Service Card */}
                         <AnimateOnScroll animation="fadeUp" delay={250}>
                             <div className="group relative w-[420px] h-[200px] bg-[#0055A4] rounded-[16px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                                 <div className="absolute inset-0 w-full h-full">

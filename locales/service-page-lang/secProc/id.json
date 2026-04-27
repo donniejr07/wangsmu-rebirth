@@ -1,0 +1,47 @@
+{
+  "secProcDefinition": {
+    "label": "Apa Yang Kami Lakukan",
+    "title1": "Secondary ",
+    "title2": "Process",
+    "description": "Layanan Secondary Process kami melengkapi perjalanan produk Anda — mulai dari pengecatan, pencetakan, dan pelapisan hingga perakitan dan pengemasan. Kami memastikan setiap bagian memenuhi standar kosmetik dan fungsional tertinggi sebelum sampai ke tangan pelanggan Anda."
+  },
+  "secProcSuperiority": {
+    "title1": "Keunggulan ",
+    "title2": "Kami",
+    "subtitle": "Apa yang membuat layanan secondary process kami lebih unggul dari yang lain.",
+    "items": [
+      {
+        "title": "Berbagai Pilihan Warna",
+        "description": "Pilihan warna khusus yang ekstensif untuk mencocokkan persyaratan estetika dan branding Anda."
+      },
+      {
+        "title": "Akurat dan Jelas",
+        "description": "Pencetakan dan penandaan resolusi tinggi untuk teks yang tajam, mudah dibaca, dan grafik rumit."
+      },
+      {
+        "title": "Produksi yang Efisien",
+        "description": "Proses sekunder yang dioptimalkan memastikan waktu pengerjaan yang cepat tanpa mengorbankan detail."
+      },
+      {
+        "title": "Presisi dan Konsistensi",
+        "description": "Teknik canggih memberikan hasil akhir yang seragam dan kepatuhan yang tepat pada spesifikasi di seluruh komponen."
+      }
+    ]
+  },
+  "secProcGallery": {
+    "label": "Layanan",
+    "title1": "Layanan ",
+    "title2": "Kami",
+    "subtitle": "Jelajahi kemampuan secondary process dan teknik finishing kami.",
+    "captions": [
+      "Painting Robot",
+      "Painting Semi Spindle",
+      "Painting Semi XY",
+      "Painting Manual",
+      "Laser Marking",
+      "Silk Screen",
+      "Tampo",
+      "Sub Assembly"
+    ]
+  }
+}

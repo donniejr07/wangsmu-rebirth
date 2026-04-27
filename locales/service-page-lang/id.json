@@ -1,0 +1,20 @@
+{
+  "serviceHero": {
+    "titleMobile": "Layanan Kami",
+    "titleDesktop1": "Layanan",
+    "titleDesktop2": "Wang SMU",
+    "stat1Label": "Tahun Pengalaman",
+    "stat2Label": "Proyek Selesai",
+    "stat3Label": "Pelanggan Puas"
+  },
+  "serviceSection": {
+    "title1": "Layanan",
+    "title2": "Kami",
+    "subtitleMobile": "Teknik presisi dipadukan dengan manufaktur inovatif. Dari desain cetakan hingga perakitan akhir, kami memberikan solusi kelas dunia.",
+    "subtitleDesktop": "Teknik presisi dipadukan dengan manufaktur inovatif. Dari desain cetakan hingga perakitan akhir, kami memberikan solusi kelas dunia untuk tantangan produksi yang kompleks.",
+    "manuToolDesc": "Pembuatan tooling dan cetakan presisi untuk mendukung produksi massal.",
+    "manuPlasticDesc": "Produksi komponen plastik injection molding dengan standar kualitas internasional.",
+    "secondaryProcessDesc": "Solusi cetak berkualitas tinggi untuk packaging dan kebutuhan branding produk.",
+    "moreDetails": "Selengkapnya"
+  }
+}

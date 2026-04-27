@@ -1,0 +1,37 @@
+{
+  "autoDefinition": {
+    "label": "Kategori Produk",
+    "title1": "Produk ",
+    "title2": "Otomotif",
+    "description": "Kami memproduksi komponen otomotif presisi tinggi yang memenuhi standar industri paling ketat. Mulai dari suku cadang trim interior dan rakitan dasbor hingga klip fungsional, housing, dan komponen di bawah kap mesin — produk kami direkayasa untuk ketahanan, keselamatan, dan integrasi mulus ke dalam sistem kendaraan.",
+    "stats": [
+      {
+        "labelMobile": "Suku Cadang",
+        "labelDesktop": "Suku Cadang Otomotif"
+      },
+      {
+        "labelMobile": "Mitra OEM",
+        "labelDesktop": "Mitra OEM"
+      },
+      {
+        "labelMobile": "Tingkat Lulus",
+        "labelDesktop": "Tingkat Lulus Kualitas"
+      }
+    ]
+  },
+  "autoShowcase": {
+    "label": "Etalase",
+    "title1": "Etalase ",
+    "title2": "Produk",
+    "subtitle": "Jelajahi berbagai komponen dan rakitan otomotif kami.",
+    "captions": [
+      "Velg TRD",
+      "Emblem",
+      "Handle",
+      "Head Lamp",
+      "Shifter Bezel",
+      "Steer Frame",
+      "Reflector Head Light"
+    ]
+  }
+}

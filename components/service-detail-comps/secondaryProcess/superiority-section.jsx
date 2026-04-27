@@ -1,6 +1,7 @@
 'use client'
 
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
 
 // ===== SVG ICONS =====
 
@@ -132,6 +133,8 @@ function MobileSuperiorityItem({ icon, title, description, delay = 0 }) {
 
 // ===== MAIN =====
 export default function SuperioritySection() {
+    const { t } = useLanguage()
+
     return (
         <>
             {/* MOBILE LAYOUT */}
@@ -140,18 +143,18 @@ export default function SuperioritySection() {
                 <div className="relative z-10">
                     <AnimateOnScroll animation="fadeUp" delay={0}>
                         <h2 className="font-poppins font-bold text-[24px] leading-[32px] text-center" style={{ marginBottom: '8px' }}>
-                            <span style={{ color: '#1a1a2e' }}>Our </span>
-                            <span style={{ color: '#0055A4' }}>Superiority</span>
+                            <span style={{ color: '#1a1a2e' }}>{t('secProcSuperiority.title1')}</span>
+                            <span style={{ color: '#0055A4' }}>{t('secProcSuperiority.title2')}</span>
                         </h2>
                     </AnimateOnScroll>
                     <AnimateOnScroll animation="fadeUp" delay={50}>
                         <p className="font-poppins font-normal text-[14px] leading-[20px] text-center" style={{ marginBottom: '32px', color: '#6B7280' }}>
-                            What makes our secondary process services stand above the rest.
+                            {t('secProcSuperiority.subtitle')}
                         </p>
                     </AnimateOnScroll>
                     <div className="grid grid-cols-2 gap-6">
                         {superiorityData.map((item, index) => (
-                            <MobileSuperiorityItem key={index} icon={item.mobileIcon} title={item.title} description={item.description} delay={index * 50} />
+                            <MobileSuperiorityItem key={index} icon={item.mobileIcon} title={t(`secProcSuperiority.items.${index}.title`)} description={t(`secProcSuperiority.items.${index}.description`)} delay={index * 50} />
                         ))}
                     </div>
                 </div>
@@ -166,21 +169,21 @@ export default function SuperioritySection() {
                 <div className="relative z-10">
                     <AnimateOnScroll animation="fadeUp" delay={0}>
                         <h2 className="font-poppins font-bold text-center" style={{ fontSize: '52px', lineHeight: '64px', marginBottom: '8px' }}>
-                            <span style={{ color: '#1a1a2e' }}>Our </span>
+                            <span style={{ color: '#1a1a2e' }}>{t('secProcSuperiority.title1')}</span>
                             <span style={{ color: '#0055A4', position: 'relative' }}>
-                                Superiority
+                                {t('secProcSuperiority.title2')}
                                 <span style={{ position: 'absolute', bottom: '-4px', left: 0, right: 0, height: '4px', background: 'linear-gradient(90deg, #0055A4, #3B82F6, transparent)', borderRadius: '2px' }} />
                             </span>
                         </h2>
                     </AnimateOnScroll>
                     <AnimateOnScroll animation="fadeUp" delay={100}>
                         <p className="font-poppins font-normal text-center" style={{ fontSize: '24px', lineHeight: '38px', color: '#6B7280', maxWidth: '700px', margin: '0 auto' }}>
-                            What makes our secondary process services stand above the rest.
+                            {t('secProcSuperiority.subtitle')}
                         </p>
                     </AnimateOnScroll>
                     <div className="flex justify-center gap-0" style={{ marginTop: '80px' }}>
                         {superiorityData.map((item, index) => (
-                            <SuperiorityItem key={index} icon={item.icon} title={item.title} description={item.description} delay={150 + index * 100} />
+                            <SuperiorityItem key={index} icon={item.icon} title={t(`secProcSuperiority.items.${index}.title`)} description={t(`secProcSuperiority.items.${index}.description`)} delay={150 + index * 100} />
                         ))}
                     </div>
                 </div>

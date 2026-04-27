@@ -118,20 +118,20 @@ export default function Gallery() {
                                     borderRadius: '12px',
                                 }}
                             >
-                                <Image
-                                    src={image.src}
-                                    alt={image.alt}
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                />
-                                {/* overlay */}
-                                <div className="absolute inset-0 bg-[#0055A4]/0 group-hover:bg-[#0055A4]/40 transition-all duration-300 flex items-end">
-                                    <p
-                                        className="text-white font-poppins font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                                        style={{ padding: '8px 10px', fontSize: '12px' }}
-                                    >
-                                        {image.alt}
-                                    </p>
+                                    <Image
+                                        src={image.src}
+                                        alt={image.alt}
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                    />
+                                    {/* overlay */}
+                                    <div className="absolute inset-0 bg-[#0055A4]/0 group-hover:bg-[#0055A4]/40 transition-all duration-300 flex items-end">
+                                        <p
+                                            className="text-white font-poppins font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                            style={{ padding: '8px 10px', fontSize: '12px' }}
+                                        >
+                                            {image.alt}
+                                        </p>
                                 </div>
                             </div>
                         ))

@@ -1,0 +1,50 @@
+{
+  "productHero": {
+    "mobileTitle1": "Produk",
+    "mobileTitle2": "Kami",
+    "mobileSubtitle": "Jelajahi berbagai produk berkualitas kami",
+    "desktopTitle1": "Produk",
+    "desktopTitle2": "Wang SMU",
+    "desktopSubtitle": "Komponen industri mutakhir yang direkayasa untuk keandalan, ketahanan, dan performa luar biasa di berbagai aplikasi."
+  },
+  "productBenefit": {
+    "title1": "Mengapa Produk ",
+    "title2": "Kami",
+    "title3": " Lebih Unggul",
+    "subtitle": "Keunggulan manufaktur selama puluhan tahun yang memberikan kualitas dan performa superior.",
+    "items": [
+      {
+        "title": "Daya Tahan Luar Biasa",
+        "description": "Dibangun untuk menahan kondisi ekstrem dan siklus operasional yang lebih panjang."
+      },
+      {
+        "title": "Perkakas Presisi",
+        "description": "Teknologi CNC mutakhir memastikan akurasi dan konsistensi tingkat mikron."
+      },
+      {
+        "title": "Kualitas Stabil",
+        "description": "Proses kontrol kualitas yang ketat mempertahankan keunggulan yang konsisten."
+      },
+      {
+        "title": "Kustomisasi Penuh",
+        "description": "Solusi khusus yang dirancang untuk memenuhi persyaratan aplikasi tertentu."
+      }
+    ]
+  },
+  "ourProducts": {
+    "title1": "Produk ",
+    "title2": "Kami",
+    "subtitle": "Beragam komponen rekayasa presisi yang komprehensif yang dirancang untuk memenuhi standar industri tertinggi.",
+    "button": "Lebih Detail",
+    "items": [
+      {
+        "title": "Komponen Otomotif",
+        "description": "Komponen otomotif presisi tinggi yang diproduksi sesuai spesifikasi yang tepat untuk performa dan keselamatan optimal."
+      },
+      {
+        "title": "Suku Cadang Elektronik",
+        "description": "Komponen elektronik mutakhir yang direkayasa untuk keandalan dalam aplikasi teknologi yang menuntut."
+      }
+    ]
+  }
+}

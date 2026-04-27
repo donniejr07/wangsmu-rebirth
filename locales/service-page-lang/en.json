@@ -1,0 +1,20 @@
+{
+  "serviceHero": {
+    "titleMobile": "Our Services",
+    "titleDesktop1": "Wang SMU",
+    "titleDesktop2": "Services",
+    "stat1Label": "Years Experiences",
+    "stat2Label": "Projects Finished",
+    "stat3Label": "Happy Customers"
+  },
+  "serviceSection": {
+    "title1": "Our",
+    "title2": "Services",
+    "subtitleMobile": "Precision engineering meets innovative manufacturing. From mold design to final assembly, we deliver world-class solutions.",
+    "subtitleDesktop": "Precision engineering meets innovative manufacturing. From mold design to final assembly, we deliver world-class solutions for complex production challenges.",
+    "manuToolDesc": "Precision tooling and mold making to support mass production.",
+    "manuPlasticDesc": "Production of plastic injection molding components with international quality standards.",
+    "secondaryProcessDesc": "High-quality printing solutions for packaging and product branding needs.",
+    "moreDetails": "More Details"
+  }
+}

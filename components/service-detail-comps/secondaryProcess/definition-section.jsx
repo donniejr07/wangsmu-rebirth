@@ -1,8 +1,11 @@
 'use client'
 
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
 
 export default function DefinitionSection() {
+    const { t } = useLanguage()
+
     return (
         <>
             {/* MOBILE LAYOUT */}
@@ -31,14 +34,14 @@ export default function DefinitionSection() {
                     <div className="flex items-center justify-center gap-2" style={{ marginBottom: '16px' }}>
                         <div style={{ width: '8px', height: '8px', backgroundColor: '#0055A4', borderRadius: '50%' }} />
                         <span className="font-poppins font-medium text-[12px] tracking-[3px] uppercase" style={{ color: '#0055A4' }}>
-                            What We Do
+                            {t('secProcDefinition.label')}
                         </span>
                         <div style={{ width: '8px', height: '8px', backgroundColor: '#0055A4', borderRadius: '50%' }} />
                     </div>
 
                     <h2 className="font-poppins font-bold text-center" style={{ fontSize: '26px', lineHeight: '34px', marginBottom: '20px' }}>
-                        <span style={{ color: '#1a1a2e' }}>Secondary </span>
-                        <span style={{ color: '#0055A4' }}>Process</span>
+                        <span style={{ color: '#1a1a2e' }}>{t('secProcDefinition.title1')}</span>
+                        <span style={{ color: '#0055A4' }}>{t('secProcDefinition.title2')}</span>
                     </h2>
                 </AnimateOnScroll>
 
@@ -51,9 +54,7 @@ export default function DefinitionSection() {
                         className="font-poppins font-normal text-center"
                         style={{ fontSize: '15px', lineHeight: '26px', color: '#4A5568', maxWidth: '340px', margin: '0 auto' }}
                     >
-                        Our Secondary Process services complete your product journey — from painting,
-                        printing, and plating to assembly and packaging. We ensure every part
-                        meets the highest cosmetic and functional standards before reaching your customers.
+                        {t('secProcDefinition.description')}
                     </p>
                 </AnimateOnScroll>
 
@@ -98,7 +99,7 @@ export default function DefinitionSection() {
                         <div className="flex items-center justify-center gap-3" style={{ marginBottom: '24px' }}>
                             <div style={{ width: '40px', height: '2px', background: 'linear-gradient(90deg, transparent, #0055A4)' }} />
                             <span className="font-poppins font-medium text-[14px] tracking-[4px] uppercase" style={{ color: '#0055A4' }}>
-                                What We Do
+                                {t('secProcDefinition.label')}
                             </span>
                             <div style={{ width: '40px', height: '2px', background: 'linear-gradient(90deg, #0055A4, transparent)' }} />
                         </div>
@@ -106,9 +107,9 @@ export default function DefinitionSection() {
 
                     <AnimateOnScroll animation="fadeUp" delay={100}>
                         <h2 className="font-poppins font-bold text-center" style={{ fontSize: '52px', lineHeight: '64px', marginBottom: '16px' }}>
-                            <span style={{ color: '#1a1a2e' }}>Secondary </span>
+                            <span style={{ color: '#1a1a2e' }}>{t('secProcDefinition.title1')}</span>
                             <span style={{ color: '#0055A4', position: 'relative' }}>
-                                Process
+                                {t('secProcDefinition.title2')}
                                 <span style={{ position: 'absolute', bottom: '-4px', left: 0, right: 0, height: '4px', background: 'linear-gradient(90deg, #0055A4, #3B82F6, transparent)', borderRadius: '2px' }} />
                             </span>
                         </h2>
@@ -119,9 +120,7 @@ export default function DefinitionSection() {
                             className="font-poppins font-normal text-center"
                             style={{ fontSize: '22px', lineHeight: '38px', color: '#4A5568', maxWidth: '820px', margin: '0 auto' }}
                         >
-                            Our Secondary Process services complete your product journey — from painting,
-                            printing, and plating to assembly and packaging. We ensure every part
-                            meets the highest cosmetic and functional standards before reaching your customers.
+                            {t('secProcDefinition.description')}
                         </p>
                     </AnimateOnScroll>
 

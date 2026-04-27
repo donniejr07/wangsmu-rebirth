@@ -12,20 +12,18 @@ export default function ServicesSingkat() {
         <>
             {/* Mobile Layout */}
             <section className="lg:hidden relative w-full bg-white overflow-hidden" style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '16px', paddingBottom: '20px' }}>
-                {/* Deskripsi */}
+
                 <AnimateOnScroll animation="fadeUp" duration={800}>
                     <p className="font-poppins font-bold text-[22px] leading-[2rem] text-black text-center" style={{ marginBottom: '30px' }}>
                         {t('servicesSingkat.descMobile')}
                     </p>
                 </AnimateOnScroll>
 
-                {/* Cards */}
                 <div className="flex flex-col items-center" style={{ gap: '16px' }}>
-                    {/* Card Tooling */}
                     <AnimateOnScroll animation="fadeUp" delay={0}>
-                        <Link href="/services/#" className="block">
+                        <Link href="/service-detail/manuTool" className="block">
                             <div className="group bg-white rounded-[16px] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#0055A4]" style={{ width: '280px' }}>
-                                {/* Image */}
+
                                 <div className="relative w-full h-[100px]">
                                     <Image
                                         src="/images/services/tooling.png"
@@ -35,7 +33,7 @@ export default function ServicesSingkat() {
                                     />
                                 </div>
 
-                                {/* Content */}
+
                                 <div className="text-center" style={{ padding: '12px', paddingBottom: '10px' }}>
                                     <h3 className="font-poppins font-semibold text-[16px] text-[#0055A4]" style={{ marginBottom: '10px' }}>
                                         Manufacture Tooling
@@ -48,11 +46,10 @@ export default function ServicesSingkat() {
                         </Link>
                     </AnimateOnScroll>
 
-                    {/* Card Injection */}
                     <AnimateOnScroll animation="fadeUp" delay={50}>
-                        <Link href="/services/printing" className="block">
+                        <Link href="/service-detail/manuPlastic" className="block">
                             <div className="group bg-white rounded-[16px] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#0055A4]" style={{ width: '280px' }}>
-                                {/* Image */}
+
                                 <div className="relative w-full h-[100px]">
                                     <Image
                                         src="/images/services/injection.png"
@@ -62,7 +59,6 @@ export default function ServicesSingkat() {
                                     />
                                 </div>
 
-                                {/* Content */}
                                 <div className="text-center" style={{ padding: '12px', paddingBottom: '10px' }}>
                                     <h3 className="font-poppins font-semibold text-[16px] text-[#0055A4]" style={{ marginBottom: '10px' }}>
                                         Manufacture Plastic Injection
@@ -75,7 +71,6 @@ export default function ServicesSingkat() {
                         </Link>
                     </AnimateOnScroll>
 
-                    {/* More Services */}
                     <AnimateOnScroll animation="fadeUp" delay={100}>
                         <Link href="/services" className="block">
                             <div className="bg-[#0055A4] rounded-[16px] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative" style={{ width: '280px', height: '120px' }}>
@@ -103,7 +98,6 @@ export default function ServicesSingkat() {
 
             {/* Desktop Layout */}
             <section className="hidden lg:block relative w-full bg-white py-12 overflow-hidden">
-                {/* Deskripsi */}
                 <p
                     className="font-poppins font-bold text-[30px] leading-[51px] text-black"
                     style={{ paddingLeft: '12%', paddingRight: '12%', marginBottom: '67px' }}
@@ -113,9 +107,7 @@ export default function ServicesSingkat() {
                 <AnimateOnScroll animation="fadeRight" duration={800}>
                 </AnimateOnScroll>
 
-                {/* Cards */}
                 <div className="flex justify-center items-center gap-8">
-                    {/* Card ManuTooling */}
                     <AnimateOnScroll animation="fadeUp" delay={0}>
                         <div
                             className="group relative w-[350px] h-[450px] bg-white rounded-[20px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
@@ -130,21 +122,18 @@ export default function ServicesSingkat() {
                                     style={{ borderRadius: '20px 20px 0 0' }}
                                 />
                             </div>
-
                             <h3
                                 className="absolute font-poppins font-semibold text-[26px] leading-[39px] text-[#0055A4]"
                                 style={{ left: '32px', top: '142px' }}
                             >
                                 Manufacture Tooling
                             </h3>
-
                             <p
                                 className="absolute font-poppins font-semibold text-[17px] leading-[26px] text-black"
                                 style={{ left: '32px', top: '215px', right: '40px' }}
                             >
                                 {t('servicesSingkat.cardDesc')}
                             </p>
-
                             <div className="absolute" style={{ bottom: '22px', right: '28px' }}>
                                 <Link href="/service-detail/manuTool">
                                     <button className="bg-[#0055A4] rounded-[20px] w-[170px] h-[40px] flex items-center justify-center hover:bg-[#004080] transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg">
@@ -157,7 +146,6 @@ export default function ServicesSingkat() {
                         </div>
                     </AnimateOnScroll>
 
-                    {/* Card ManuPlastic */}
                     <AnimateOnScroll animation="scaleUp" delay={150}>
                         <div
                             className="group relative w-[350px] h-[450px] bg-white rounded-[20px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
@@ -199,7 +187,7 @@ export default function ServicesSingkat() {
                         </div>
                     </AnimateOnScroll>
 
-                    {/* Card More Services */}
+
                     <AnimateOnScroll animation="fadeLeft" delay={300}>
                         <div className="group relative w-[350px] h-[450px] bg-[#0055A4] rounded-[20px] overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                             <div className="absolute inset-0 w-full h-full">

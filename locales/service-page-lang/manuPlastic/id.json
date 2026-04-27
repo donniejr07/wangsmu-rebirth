@@ -1,0 +1,49 @@
+{
+  "manuPlasticDefinition": {
+    "label": "Apa Yang Kami Lakukan",
+    "title1": "Manufacture ",
+    "title2": "Plastic Injection",
+    "description": "Kami memberikan komponen yang direkayasa secara presisi dalam skala besar. Dengan menggunakan mesin canggih dan proses yang teruji, kami memproduksi suku cadang plastik berkualitas tinggi yang memenuhi standar internasional untuk konsistensi, daya tahan, dan performa.",
+    "stat1MobileLabel": "Mesin",
+    "stat2MobileLabel": "Part/Bulan",
+    "stat3MobileLabel": "Akurasi",
+    "stat1DesktopLabel": "Mesin Injeksi",
+    "stat2DesktopLabel": "Part per Bulan",
+    "stat3DesktopLabel": "Akurasi Dimensi"
+  },
+  "manuPlasticSuperiority": {
+    "title1": "Keunggulan ",
+    "title2": "Kami",
+    "subtitle": "Apa yang membuat proses injeksi plastik kami lebih unggul.",
+    "items": [
+      {
+        "title": "Presisi dan Konsistensi",
+        "description": "Memberikan akurasi tingkat mikron dan pengulangan yang konsisten pada jutaan cetakan bagian."
+      },
+      {
+        "title": "Fleksibilitas Desain",
+        "description": "Mengakomodasi geometri kompleks dan kebutuhan khusus dengan adaptasi produksi yang tangkas."
+      },
+      {
+        "title": "Produksi yang Efisien",
+        "description": "Siklus injeksi yang dioptimalkan dan alur kerja otomatis untuk waktu penyelesaian yang lebih cepat."
+      },
+      {
+        "title": "Keahlian Material",
+        "description": "Pengetahuan mendalam mengenai plastik teknik dan resin khusus untuk performa optimal."
+      }
+    ]
+  },
+  "manuPlasticGallery": {
+    "label": "Galeri",
+    "title1": "Fasilitas ",
+    "title2": "Kami",
+    "subtitle": "Jelajahi fasilitas cetak injeksi plastik dan kemampuan produksi kami.",
+    "captions": [
+      "Zhafir",
+      "Mitsubishi",
+      "Sumitomo",
+      "Area Operator"
+    ]
+  }
+}

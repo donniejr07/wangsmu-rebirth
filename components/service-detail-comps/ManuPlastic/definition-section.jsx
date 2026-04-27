@@ -1,8 +1,11 @@
 'use client'
 
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
 
 export default function DefinitionSection() {
+    const { t } = useLanguage()
+
     return (
         <>
             {/* MOBILE LAYOUT */}
@@ -48,7 +51,7 @@ export default function DefinitionSection() {
                             className="font-poppins font-medium text-[12px] tracking-[3px] uppercase"
                             style={{ color: '#0055A4' }}
                         >
-                            What We Do
+                            {t('manuPlasticDefinition.label')}
                         </span>
                         <div style={{ width: '8px', height: '8px', backgroundColor: '#0055A4', borderRadius: '50%' }} />
                     </div>
@@ -58,8 +61,8 @@ export default function DefinitionSection() {
                         className="font-poppins font-bold text-center"
                         style={{ fontSize: '26px', lineHeight: '34px', marginBottom: '20px' }}
                     >
-                        <span style={{ color: '#1a1a2e' }}>Manufacture </span>
-                        <span style={{ color: '#0055A4' }}>Plastic Injection</span>
+                        <span style={{ color: '#1a1a2e' }}>{t('manuPlasticDefinition.title1')}</span>
+                        <span style={{ color: '#0055A4' }}>{t('manuPlasticDefinition.title2')}</span>
                     </h2>
                 </AnimateOnScroll>
 
@@ -87,10 +90,7 @@ export default function DefinitionSection() {
                             margin: '0 auto',
                         }}
                     >
-                        Our Plastic Injection Molding services deliver precision-engineered components
-                        at scale. Utilizing advanced machinery and proven processes, we produce
-                        high-quality plastic parts that meet international standards for consistency,
-                        durability, and performance.
+                        {t('manuPlasticDefinition.description')}
                     </p>
                 </AnimateOnScroll>
 
@@ -107,9 +107,9 @@ export default function DefinitionSection() {
                         }}
                     >
                         {[
-                            { number: '20+', label: 'Machines' },
-                            { number: '100K+', label: 'Parts/Month' },
-                            { number: '95.8%', label: 'Accuracy' },
+                            { number: '20+', label: t('manuPlasticDefinition.stat1MobileLabel') },
+                            { number: '100K+', label: t('manuPlasticDefinition.stat2MobileLabel') },
+                            { number: '95.8%', label: t('manuPlasticDefinition.stat3MobileLabel') },
                         ].map((stat, i) => (
                             <div key={i} className="flex flex-col items-center text-center">
                                 <span
@@ -185,7 +185,7 @@ export default function DefinitionSection() {
                                 className="font-poppins font-medium text-[14px] tracking-[4px] uppercase"
                                 style={{ color: '#0055A4' }}
                             >
-                                What We Do
+                                {t('manuPlasticDefinition.label')}
                             </span>
                             <div style={{ width: '40px', height: '2px', background: 'linear-gradient(90deg, #0055A4, transparent)' }} />
                         </div>
@@ -197,9 +197,9 @@ export default function DefinitionSection() {
                             className="font-poppins font-bold text-center"
                             style={{ fontSize: '52px', lineHeight: '64px', marginBottom: '16px' }}
                         >
-                            <span style={{ color: '#1a1a2e' }}>Manufacture </span>
+                            <span style={{ color: '#1a1a2e' }}>{t('manuPlasticDefinition.title1')}</span>
                             <span style={{ color: '#0055A4', position: 'relative' }}>
-                                Plastic Injection
+                                {t('manuPlasticDefinition.title2')}
                                 <span
                                     style={{
                                         position: 'absolute',
@@ -227,10 +227,7 @@ export default function DefinitionSection() {
                                 margin: '0 auto',
                             }}
                         >
-                            Our Plastic Injection Molding services deliver precision-engineered components
-                            at scale. Utilizing advanced machinery and proven processes, we produce
-                            high-quality plastic parts that meet international standards for consistency,
-                            durability, and performance.
+                            {t('manuPlasticDefinition.description')}
                         </p>
                     </AnimateOnScroll>
 
@@ -241,9 +238,9 @@ export default function DefinitionSection() {
                             style={{ marginTop: '60px', maxWidth: '750px', margin: '60px auto 0' }}
                         >
                             {[
-                                { number: '20+', label: 'Injection Machines' },
-                                { number: '100K+', label: 'Parts per Month' },
-                                { number: '98.9%', label: 'Dimensional Accuracy' },
+                                { number: '20+', label: t('manuPlasticDefinition.stat1DesktopLabel') },
+                                { number: '100K+', label: t('manuPlasticDefinition.stat2DesktopLabel') },
+                                { number: '98.9%', label: t('manuPlasticDefinition.stat3DesktopLabel') },
                             ].map((stat, i) => (
                                 <div
                                     key={i}

@@ -1,13 +1,16 @@
-import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+'use client'
 
-// Shield Icon Component (for Durability)
+import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
+
+
 const ShieldIcon = () => (
     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M25 4.167L8.333 12.5V22.917C8.333 33.021 15.521 42.396 25 45.833C34.479 42.396 41.667 33.021 41.667 22.917V12.5L25 4.167ZM25 24.979H37.5C36.458 32.292 31.771 38.771 25 41.375V25H12.5V14.583L25 8.792V24.979Z" fill="white" />
     </svg>
 )
 
-// Goal/Target Icon Component (for Precision Tooling)
+
 const GoalIcon = () => (
     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="25" cy="25" r="20" stroke="white" strokeWidth="3" fill="none" />
@@ -16,7 +19,7 @@ const GoalIcon = () => (
     </svg>
 )
 
-// Check Icon Component (for Stable Quality)
+
 const CheckIcon = () => (
     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="25" cy="25" r="20" stroke="white" strokeWidth="3" fill="none" />
@@ -24,7 +27,7 @@ const CheckIcon = () => (
     </svg>
 )
 
-// Customize Icon Component (for Full Customization)
+
 const CustomizeIcon = () => (
     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="25" cy="25" r="8" stroke="white" strokeWidth="3" fill="none" />
@@ -32,7 +35,7 @@ const CustomizeIcon = () => (
     </svg>
 )
 
-// Mobile Icons
+
 const MobileShieldIcon = () => (
     <svg width="32" height="32" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M25 4.167L8.333 12.5V22.917C8.333 33.021 15.521 42.396 25 45.833C34.479 42.396 41.667 33.021 41.667 22.917V12.5L25 4.167ZM25 24.979H37.5C36.458 32.292 31.771 38.771 25 41.375V25H12.5V14.583L25 8.792V24.979Z" fill="white" />
@@ -61,12 +64,12 @@ const MobileCustomizeIcon = () => (
     </svg>
 )
 
-// Benefit Item Component for Desktop
+
 function BenefitItem({ icon, title, description, delay = 0 }) {
     return (
         <AnimateOnScroll animation="fadeUp" delay={delay}>
             <div className="flex flex-col items-center text-center">
-                {/* Eclipse with Icon */}
+
                 <div
                     className="flex items-center justify-center"
                     style={{
@@ -79,7 +82,7 @@ function BenefitItem({ icon, title, description, delay = 0 }) {
                     {icon}
                 </div>
 
-                {/* Benefit Title */}
+
                 <h3
                     className="font-poppins font-medium text-[20px] leading-[36px] text-black"
                     style={{
@@ -91,7 +94,7 @@ function BenefitItem({ icon, title, description, delay = 0 }) {
                     {title}
                 </h3>
 
-                {/* Benefit Description */}
+
                 <p
                     className="font-poppins font-normal text-[18px] leading-[30px] text-black"
                     style={{
@@ -107,12 +110,12 @@ function BenefitItem({ icon, title, description, delay = 0 }) {
     )
 }
 
-// Benefit Item Component for Mobile
+
 function MobileBenefitItem({ icon, title, description, delay = 0 }) {
     return (
         <AnimateOnScroll animation="fadeUp" delay={delay}>
             <div className="flex flex-col items-center text-center">
-                {/* Eclipse with Icon */}
+
                 <div
                     className="flex items-center justify-center"
                     style={{
@@ -125,7 +128,7 @@ function MobileBenefitItem({ icon, title, description, delay = 0 }) {
                     {icon}
                 </div>
 
-                {/* Benefit Title */}
+
                 <h3
                     className="font-poppins font-medium text-[16px] leading-[24px] text-black"
                     style={{ marginTop: '8px' }}
@@ -133,7 +136,7 @@ function MobileBenefitItem({ icon, title, description, delay = 0 }) {
                     {title}
                 </h3>
 
-                {/* Benefit Description */}
+
                 <p
                     className="font-poppins font-normal text-[14px] leading-[20px] text-black"
                     style={{ marginTop: '6px', maxWidth: '200px' }}
@@ -145,7 +148,7 @@ function MobileBenefitItem({ icon, title, description, delay = 0 }) {
     )
 }
 
-// Benefits data with icons
+
 const benefitsData = [
     {
         title: "Exceptional Durability",
@@ -174,9 +177,11 @@ const benefitsData = [
 ]
 
 export default function BenefitSection() {
+    const { t } = useLanguage()
+
     return (
         <>
-            {/* ===== MOBILE LAYOUT ===== */}
+            {/* MOBILE LAYOUT  */}
             <section
                 className="lg:hidden relative"
                 style={{
@@ -186,7 +191,7 @@ export default function BenefitSection() {
                     paddingBottom: '40px',
                 }}
             >
-                {/* Blurry Background */}
+
                 <div
                     className="absolute inset-0 bg-[#D9D9D9] z-0"
                     style={{
@@ -195,39 +200,39 @@ export default function BenefitSection() {
                     }}
                 />
 
-                {/* Content Wrapper */}
+
                 <div className="relative z-10">
-                    {/* Title */}
+
                     <AnimateOnScroll animation="fadeUp" delay={0}>
                         <h2
                             className="font-poppins font-semibold text-[24px] leading-[32px] text-center"
                             style={{ marginBottom: '8px' }}
                         >
-                            <span className="text-black">Why Our </span>
-                            <span className="text-[#0055A4]">Products</span>
-                            <span className="text-black"> Stand Out</span>
+                            <span className="text-black">{t('productBenefit.title1')}</span>
+                            <span className="text-[#0055A4]">{t('productBenefit.title2')}</span>
+                            <span className="text-black">{t('productBenefit.title3')}</span>
                         </h2>
                     </AnimateOnScroll>
 
-                    {/* Subtitle */}
+
                     <AnimateOnScroll animation="fadeUp" delay={50}>
                         <p
                             className="font-poppins font-normal text-[14px] leading-[20px] text-black text-center"
                             style={{ marginBottom: '32px' }}
                         >
-                            Decades of manufacturing excellence delivering superior quality and performance.
+                            {t('productBenefit.subtitle')}
 
                         </p>
                     </AnimateOnScroll>
 
-                    {/* Benefits Grid */}
+
                     <div className="grid grid-cols-2 gap-6">
                         {benefitsData.map((benefit, index) => (
                             <MobileBenefitItem
                                 key={index}
                                 icon={benefit.mobileIcon}
-                                title={benefit.title}
-                                description={benefit.description}
+                                title={t(`productBenefit.items.${index}.title`)}
+                                description={t(`productBenefit.items.${index}.description`)}
                                 delay={index * 50}
                             />
                         ))}
@@ -235,7 +240,7 @@ export default function BenefitSection() {
                 </div>
             </section>
 
-            {/* ===== DESKTOP LAYOUT ===== */}
+            {/* DESKTOP LAYOUT */}
             <section
                 className="hidden lg:block relative"
                 style={{
@@ -244,7 +249,7 @@ export default function BenefitSection() {
                     paddingTop: '60px',
                 }}
             >
-                {/* Blurry Background */}
+
                 <div
                     className="absolute inset-0 bg-[#D9D9D9] z-0"
                     style={{
@@ -253,26 +258,25 @@ export default function BenefitSection() {
                     }}
                 />
 
-                {/* Content Wrapper */}
+
                 <div className="relative z-10">
-                    {/* Title */}
+
                     <h2
                         className="font-poppins font-semibold text-[56px] leading-[84px] text-center"
                         style={{
                             marginLeft: 'auto',
                             marginRight: 'auto',
-                            width: '818px',
+                            width: '1050px',
                             height: '84px',
                         }}
                     >
-                        <span className="text-black">Why Our </span>
-                        <span className="text-[#0055A4]">Products</span>
-                        <span className="text-black"> Stand Out</span>
+                        <span className="text-black">{t('productBenefit.title1')}</span>
+                        <span className="text-[#0055A4]">{t('productBenefit.title2')}</span>
+                        <span className="text-black">{t('productBenefit.title3')}</span>
                     </h2>
-                    {/* <AnimateOnScroll animation="fadeUp" delay={0}>
-                    </AnimateOnScroll> */}
 
-                    {/* Subtitle */}
+
+
                     <p
                         className="font-poppins font-normal text-[32px] leading-[48px] text-black text-center"
                         style={{
@@ -283,12 +287,11 @@ export default function BenefitSection() {
                             height: '87px',
                         }}
                     >
-                        Decades of manufacturing excellence delivering superior quality and performance.
+                        {t('productBenefit.subtitle')}
                     </p>
-                    {/* <AnimateOnScroll animation="fadeUp" delay={100}>
-                    </AnimateOnScroll> */}
 
-                    {/* Benefits Container */}
+
+
                     <div
                         className="flex justify-center gap-0"
                         style={{
@@ -299,8 +302,8 @@ export default function BenefitSection() {
                             <BenefitItem
                                 key={index}
                                 icon={benefit.icon}
-                                title={benefit.title}
-                                description={benefit.description}
+                                title={t(`productBenefit.items.${index}.title`)}
+                                description={t(`productBenefit.items.${index}.description`)}
                                 delay={index * 100}
                             />
                         ))}

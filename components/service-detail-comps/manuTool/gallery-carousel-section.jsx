@@ -3,6 +3,7 @@
 import { useRef, useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
 
 const galleryImages = [
     {
@@ -55,6 +56,7 @@ export default function GalleryCarouselSection() {
     const [scrollLeft, setScrollLeft] = useState(0)
     const [isAutoPlaying, setIsAutoPlaying] = useState(true)
     const autoPlayRef = useRef(null)
+    const { t } = useLanguage()
 
     // Card dimensions
     const DESKTOP_CARD_W = 420
@@ -162,8 +164,8 @@ export default function GalleryCarouselSection() {
                         <h2
                             className="font-poppins font-bold text-[24px] leading-[32px] text-center"
                         >
-                            <span style={{ color: '#1a1a2e' }}>Our </span>
-                            <span style={{ color: '#0055A4' }}>Facility</span>
+                            <span style={{ color: '#1a1a2e' }}>{t('manuToolGallery.title1')}</span>
+                            <span style={{ color: '#0055A4' }}>{t('manuToolGallery.title2')}</span>
                         </h2>
                     </div>
                 </AnimateOnScroll>
@@ -173,7 +175,7 @@ export default function GalleryCarouselSection() {
                         className="font-poppins font-normal text-[14px] leading-[20px] text-center"
                         style={{ color: '#6B7280', marginBottom: '28px', padding: '0 24px' }}
                     >
-                        A glimpse into our state-of-the-art manufacturing facility.
+                        {t('manuToolGallery.subtitle')}
                     </p>
                 </AnimateOnScroll>
 
@@ -247,7 +249,7 @@ export default function GalleryCarouselSection() {
                                         textShadow: '0 1px 3px rgba(0,0,0,0.5)',
                                     }}
                                 >
-                                    {img.caption}
+                                    {t(`manuToolGallery.captions.${index}`)}
                                 </span>
 
                                 {/* Image number badge */}
@@ -322,7 +324,7 @@ export default function GalleryCarouselSection() {
                                 className="font-poppins font-medium text-[14px] tracking-[4px] uppercase"
                                 style={{ color: '#0055A4' }}
                             >
-                                Gallery
+                                {t('manuToolGallery.label')}
                             </span>
                             <div
                                 style={{
@@ -343,9 +345,9 @@ export default function GalleryCarouselSection() {
                                 marginBottom: '12px',
                             }}
                         >
-                            <span style={{ color: '#1a1a2e' }}>Our </span>
+                            <span style={{ color: '#1a1a2e' }}>{t('manuToolGallery.title1')}</span>
                             <span style={{ color: '#0055A4', position: 'relative' }}>
-                                Facility
+                                {t('manuToolGallery.title2')}
                                 <span
                                     style={{
                                         position: 'absolute',
@@ -372,7 +374,7 @@ export default function GalleryCarouselSection() {
                                 margin: '0 auto',
                             }}
                         >
-                            A glimpse into our state-of-the-art manufacturing facility.
+                            {t('manuToolGallery.subtitle')}
                         </p>
                     </AnimateOnScroll>
                 </div>
@@ -522,7 +524,7 @@ export default function GalleryCarouselSection() {
                                                 textShadow: '0 2px 6px rgba(0,0,0,0.4)',
                                             }}
                                         >
-                                            {img.caption}
+                                            {t(`manuToolGallery.captions.${index}`)}
                                         </span>
 
                                         {/* Image counter */}

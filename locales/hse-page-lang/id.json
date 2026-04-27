@@ -1,0 +1,19 @@
+{
+  "hseHero": {
+    "title": "Wang SMU HSE",
+    "description": "Mari kita lihat lebih dekat komitmen HSE kami untuk memahami standar dan praktik yang memastikan lingkungan kerja yang aman, sehat, dan berkelanjutan"
+  },
+  "hseIntro": {
+    "dashboardTitle": "Dasbor Dampak Lingkungan",
+    "dashboardSubtitle": "Pemantauan Emisi Scope 1 & Scope 2 (2023–2025)",
+    "scope1Title": "Scope 1",
+    "scope1Desc": "Emisi langsung dari pembakaran bahan bakar",
+    "scope2Title": "Scope 2",
+    "scope2Desc": "Emisi tidak langsung dari konsumsi listrik yang dibeli"
+  },
+  "hseGraph": {
+    "title": "Tren Bulanan",
+    "scope1Title": "CO₂ Bulanan Scope 1",
+    "scope2Title": "CO₂ Bulanan Scope 2"
+  }
+}

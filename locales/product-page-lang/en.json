@@ -1,0 +1,50 @@
+{
+  "productHero": {
+    "mobileTitle1": "Our",
+    "mobileTitle2": "Products",
+    "mobileSubtitle": "Explore our wide range of quality products",
+    "desktopTitle1": "Wang SMU",
+    "desktopTitle2": "Products",
+    "desktopSubtitle": "Advanced industrial components engineered for reliability, durability, and exceptional performance across diverse applications."
+  },
+  "productBenefit": {
+    "title1": "Why Our ",
+    "title2": "Products",
+    "title3": " Stand Out",
+    "subtitle": "Decades of manufacturing excellence delivering superior quality and performance.",
+    "items": [
+      {
+        "title": "Exceptional Durability",
+        "description": "Built to withstand extreme conditions and extended operational lifecycles."
+      },
+      {
+        "title": "Precision Tooling",
+        "description": "Advanced CNC technology ensuring micron-level accuracy and consistency."
+      },
+      {
+        "title": "Stable Quality",
+        "description": "Rigorous quality control processes maintaining consistent excellence."
+      },
+      {
+        "title": "Full Customization",
+        "description": "Tailored solutions designed to meet specific application requirements."
+      }
+    ]
+  },
+  "ourProducts": {
+    "title1": "Our ",
+    "title2": "Products",
+    "subtitle": "Comprehensive range of precision-engineered components designed to meet the highest industry standards.",
+    "button": "More Details",
+    "items": [
+      {
+        "title": "Automotive Components",
+        "description": "High-precision automotive parts manufactured to exact specifications for optimal performance and safety."
+      },
+      {
+        "title": "Electronics Part",
+        "description": "Advanced electronic components engineered for reliability in demanding technological applications."
+      }
+    ]
+  }
+}

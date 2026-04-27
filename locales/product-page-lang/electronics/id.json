@@ -1,0 +1,35 @@
+{
+  "elecDefinition": {
+    "label": "Kategori Produk",
+    "title1": "Produk ",
+    "title2": "Elektronik",
+    "description": "Kami memproduksi komponen elektronik cetakan presisi yang dirancang untuk keandalan dalam lingkungan teknologi yang menuntut. Kemampuan kami mencakup rumah (housing), konektor, panel sakelar, selubung remote control, dan komponen penting lainnya yang digunakan dalam elektronik konsumen, perangkat industri, dan peralatan rumah tangga.",
+    "stats": [
+      {
+        "labelMobile": "Jenis Suku Cadang",
+        "labelDesktop": "Jenis Suku Cadang Elektronik"
+      },
+      {
+        "labelMobile": "Klien",
+        "labelDesktop": "Klien Global"
+      },
+      {
+        "labelMobile": "Akurasi",
+        "labelDesktop": "Akurasi Dimensi"
+      }
+    ]
+  },
+  "elecShowcase": {
+    "label": "Etalase",
+    "title1": "Etalase ",
+    "title2": "Produk",
+    "subtitle": "Jelajahi berbagai komponen elektronik presisi kami.",
+    "captions": [
+      "Panel Depan Elektronik",
+      "Tombol Kontrol (Knob)",
+      "Bagian Elektronik Piano",
+      "Bagian Elektronik Saksofon",
+      "Komponen Speaker"
+    ]
+  }
+}

@@ -1,8 +1,11 @@
 'use client'
 
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
 
 export default function DefinitionSection() {
+    const { t } = useLanguage()
+
     return (
         <>
             {/* MOBILE LAYOUT */}
@@ -20,14 +23,14 @@ export default function DefinitionSection() {
                     <div className="flex items-center justify-center gap-2" style={{ marginBottom: '16px' }}>
                         <div style={{ width: '8px', height: '8px', backgroundColor: '#0055A4', borderRadius: '50%' }} />
                         <span className="font-poppins font-medium text-[12px] tracking-[3px] uppercase" style={{ color: '#0055A4' }}>
-                            Product Category
+                            {t('elecDefinition.label')}
                         </span>
                         <div style={{ width: '8px', height: '8px', backgroundColor: '#0055A4', borderRadius: '50%' }} />
                     </div>
 
                     <h2 className="font-poppins font-bold text-center" style={{ fontSize: '26px', lineHeight: '34px', marginBottom: '20px' }}>
-                        <span style={{ color: '#1a1a2e' }}>Electronic </span>
-                        <span style={{ color: '#0055A4' }}>Products</span>
+                        <span style={{ color: '#1a1a2e' }}>{t('elecDefinition.title1')}</span>
+                        <span style={{ color: '#0055A4' }}>{t('elecDefinition.title2')}</span>
                     </h2>
                 </AnimateOnScroll>
 
@@ -37,10 +40,7 @@ export default function DefinitionSection() {
                     </div>
 
                     <p className="font-poppins font-normal text-center" style={{ fontSize: '15px', lineHeight: '26px', color: '#4A5568', maxWidth: '340px', margin: '0 auto' }}>
-                        We produce precision-molded electronic components designed for reliability
-                        in demanding technological environments. Our capabilities span housings,
-                        connectors, switch panels, remote control casings, and other critical parts
-                        used in consumer electronics, industrial devices, and home appliances.
+                        {t('elecDefinition.description')}
                     </p>
                 </AnimateOnScroll>
 
@@ -54,9 +54,9 @@ export default function DefinitionSection() {
                         }}
                     >
                         {[
-                            { number: '30+', label: 'Part Types' },
-                            { number: '10+', label: 'Clients' },
-                            { number: '99.5%', label: 'Accuracy' },
+                            { number: '30+', label: t('elecDefinition.stats.0.labelMobile') },
+                            { number: '10+', label: t('elecDefinition.stats.1.labelMobile') },
+                            { number: '99.5%', label: t('elecDefinition.stats.2.labelMobile') },
                         ].map((stat, i) => (
                             <div key={i} className="flex flex-col items-center text-center">
                                 <span className="font-poppins font-bold text-white" style={{ fontSize: '22px', lineHeight: '28px' }}>
@@ -85,7 +85,7 @@ export default function DefinitionSection() {
                         <div className="flex items-center justify-center gap-3" style={{ marginBottom: '24px' }}>
                             <div style={{ width: '40px', height: '2px', background: 'linear-gradient(90deg, transparent, #0055A4)' }} />
                             <span className="font-poppins font-medium text-[14px] tracking-[4px] uppercase" style={{ color: '#0055A4' }}>
-                                Product Category
+                                {t('elecDefinition.label')}
                             </span>
                             <div style={{ width: '40px', height: '2px', background: 'linear-gradient(90deg, #0055A4, transparent)' }} />
                         </div>
@@ -93,9 +93,9 @@ export default function DefinitionSection() {
 
                     <AnimateOnScroll animation="fadeUp" delay={100}>
                         <h2 className="font-poppins font-bold text-center" style={{ fontSize: '52px', lineHeight: '64px', marginBottom: '16px' }}>
-                            <span style={{ color: '#1a1a2e' }}>Electronic </span>
+                            <span style={{ color: '#1a1a2e' }}>{t('elecDefinition.title1')}</span>
                             <span style={{ color: '#0055A4', position: 'relative' }}>
-                                Products
+                                {t('elecDefinition.title2')}
                                 <span style={{ position: 'absolute', bottom: '-4px', left: 0, right: 0, height: '4px', background: 'linear-gradient(90deg, #0055A4, #3B82F6, transparent)', borderRadius: '2px' }} />
                             </span>
                         </h2>
@@ -103,19 +103,16 @@ export default function DefinitionSection() {
 
                     <AnimateOnScroll animation="fadeUp" delay={200}>
                         <p className="font-poppins font-normal text-center" style={{ fontSize: '22px', lineHeight: '38px', color: '#4A5568', maxWidth: '820px', margin: '0 auto' }}>
-                            We produce precision-molded electronic components designed for reliability
-                            in demanding technological environments. Our capabilities span housings,
-                            connectors, switch panels, remote control casings, and other critical parts
-                            used in consumer electronics, industrial devices, and home appliances.
+                            {t('elecDefinition.description')}
                         </p>
                     </AnimateOnScroll>
 
                     <AnimateOnScroll animation="fadeUp" delay={300}>
                         <div className="flex justify-center gap-0" style={{ marginTop: '60px', maxWidth: '750px', margin: '60px auto 0' }}>
                             {[
-                                { number: '30+', label: 'Electronic Part Types' },
-                                { number: '10+', label: 'Global Clients' },
-                                { number: '99.5%', label: 'Dimensional Accuracy' },
+                                { number: '30+', label: t('elecDefinition.stats.0.labelDesktop') },
+                                { number: '10+', label: t('elecDefinition.stats.1.labelDesktop') },
+                                { number: '99.5%', label: t('elecDefinition.stats.2.labelDesktop') },
                             ].map((stat, i) => (
                                 <div key={i} className="flex flex-col items-center text-center flex-1" style={{ position: 'relative', padding: '30px 20px' }}>
                                     {i > 0 && (

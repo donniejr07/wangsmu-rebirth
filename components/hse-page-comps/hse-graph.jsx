@@ -3,6 +3,7 @@
 import chartData from './hse-chart-data.json'
 import { useState, useEffect } from 'react'
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
 import {
     BarChart,
     Bar,
@@ -54,6 +55,7 @@ function CustomTooltip({ active, payload, label, unit }) {
 }
 
 export default function HseGraph() {
+    const { t } = useLanguage()
     const [activeYear, setActiveYear] = useState(2023)
     const [isMounted, setIsMounted] = useState(false)
     const data = chartData[activeYear]
@@ -87,7 +89,7 @@ export default function HseGraph() {
                                 margin: 0,
                             }}
                         >
-                            Monthly Trends
+                            {t('hseGraph.title')}
                         </h2>
 
                         {/* Year Toggle */}
@@ -151,7 +153,7 @@ export default function HseGraph() {
                                     margin: '0 0 24px 0',
                                 }}
                             >
-                                Scope 1 Monthly CO₂
+                                {t('hseGraph.scope1Title')}
                             </h3>
                             <div style={{ width: '100%', height: '300px' }}>
                                 {isMounted && (
@@ -210,7 +212,7 @@ export default function HseGraph() {
                                     margin: '0 0 24px 0',
                                 }}
                             >
-                                Scope 2 Monthly CO₂
+                                {t('hseGraph.scope2Title')}
                             </h3>
                             <div style={{ width: '100%', height: '300px' }}>
                                 {isMounted && (

@@ -1,6 +1,10 @@
+'use client'
+
 import Image from 'next/image'
+import { useLanguage } from '@/context/language-context'
 
 export default function GalleryHeroSection() {
+    const { t } = useLanguage()
     return (
         <>
             {/* Mobile Layout */}
@@ -39,7 +43,7 @@ export default function GalleryHeroSection() {
                         </h1>
 
                         <p className="font-poppins font-normal text-[16px] leading-[24px] text-white max-w-[300px]" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>
-                            Let's take a closer look at our gallery and explore the visual story behind our company’s journey
+                            {t('galleryHero.description')}
                         </p>
                     </div>
                 </div>
@@ -104,7 +108,7 @@ export default function GalleryHeroSection() {
                             textShadow: '0 2px 10px rgba(0,0,0,0.4)',
                         }}
                     >
-                        Let’s take a closer look at our gallery and explore the visual story behind our company’s journey
+                        {t('galleryHero.description')}
                     </p>
 
                     <Image

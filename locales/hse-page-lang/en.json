@@ -1,0 +1,19 @@
+{
+  "hseHero": {
+    "title": "Wang SMU HSE",
+    "description": "Let’s take a closer look at our HSE commitment to understand the standards and practices that ensure a safe, healthy, and sustainable working environment"
+  },
+  "hseIntro": {
+    "dashboardTitle": "Environmental Impact Dashboard",
+    "dashboardSubtitle": "Scope 1 & Scope 2 Emissions Monitoring (2023–2025)",
+    "scope1Title": "Scope 1",
+    "scope1Desc": "Direct emissions from fuel combustion and mobile sources",
+    "scope2Title": "Scope 2",
+    "scope2Desc": "Indirect emissions from purchased electricity consumption"
+  },
+  "hseGraph": {
+    "title": "Monthly Trends",
+    "scope1Title": "Scope 1 Monthly CO₂",
+    "scope2Title": "Scope 2 Monthly CO₂"
+  }
+}

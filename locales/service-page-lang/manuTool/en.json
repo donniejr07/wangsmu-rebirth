@@ -1,0 +1,51 @@
+{
+  "manuToolDefinition": {
+    "label": "What We Do",
+    "title1": "Manufacture ",
+    "title2": "Tooling",
+    "description": "Our Manufacturing Tooling services are designed to turn your concepts into reality. With state-of-the-art technology and a skilled team, we create high-quality molds and tooling essential for efficient and precise production.",
+    "stat1MobileLabel": "Years",
+    "stat2MobileLabel": "Molds Made",
+    "stat1DesktopLabel": "Years of Experience",
+    "stat2DesktopLabel": "Molds Manufactured"
+  },
+  "manuToolSuperiority": {
+    "title1": "Our ",
+    "title2": "Superiority",
+    "subtitle": "What sets our manufacturing tooling apart from the competition.",
+    "items": [
+      {
+        "title": "Precision Engineering",
+        "description": "Advanced CNC and EDM technology delivering micron-level accuracy for complex mold geometries."
+      },
+      {
+        "title": "Efficiency & Speed",
+        "description": "Optimized workflows and cutting-edge equipment ensuring rapid turnaround without compromising quality."
+      },
+      {
+        "title": "Quality Assurance",
+        "description": "Rigorous inspection protocols and ISO-certified processes maintaining consistent manufacturing excellence."
+      },
+      {
+        "title": "Long-term Value",
+        "description": "Durable tooling solutions built for extended lifecycles, maximizing your return on investment."
+      }
+    ]
+  },
+  "manuToolGallery": {
+    "label": "Gallery",
+    "title1": "Our ",
+    "title2": "Facility",
+    "subtitle": "A glimpse into our state-of-the-art manufacturing facility.",
+    "captions": [
+      "Mold Design",
+      "CNC EDM",
+      "CNC Milling",
+      "CNC Wirecut",
+      "Grinding Machine",
+      "Lathe Machine",
+      "Polishing",
+      "Super Drill"
+    ]
+  }
+}

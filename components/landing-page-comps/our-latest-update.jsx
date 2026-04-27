@@ -23,19 +23,19 @@ function NewsCard({ news, delay = 0 }) {
 
     return (
         <AnimateOnScroll animation="fadeUp" delay={delay}>
-            <div className="group w-[350px] cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl rounded-[10px] mt-10">
+            <div className="w-[350px] rounded-[10px] mt-10">
                 <div className="relative w-[350px] h-[180px] rounded-[10px] overflow-hidden">
                     <Image
                         src={photoUrl}
                         alt={news.title}
                         fill
                         unoptimized
-                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        className="object-cover"
                     />
                 </div>
 
                 <h3
-                    className="font-poppins font-semibold text-[16px] leading-[23px] text-black transition-colors duration-300 group-hover:text-[#0055A4] line-clamp-2"
+                    className="font-poppins font-semibold text-[16px] leading-[23px] text-black line-clamp-2"
                     style={{ marginTop: '9px' }}
                 >
                     {news.title}
@@ -51,7 +51,7 @@ function NewsCard({ news, delay = 0 }) {
                 <div className="flex justify-center" style={{ marginTop: '8px' }}>
                     <Link href={`/news/${news.id}`}>
                         <button
-                            className="bg-[#0055A4] rounded-[20px] w-[125px] h-[30px] flex items-center justify-center hover:bg-[#004080] transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg"
+                            className="bg-[#0055A4] rounded-[20px] w-[125px] h-[30px] flex items-center justify-center hover:bg-[#004080] transition-all duration-300"
                         >
                             <span className="text-white font-poppins font-semibold text-[13px]">
                                 {t('ourUpdates.detail')}
@@ -87,7 +87,7 @@ export default function OurLatestUpdate() {
     return (
         <section className="relative w-full bg-white px-4 lg:px-0 overflow-hidden">
 
-            {/* mobile header */}
+            {/* mobile layout */}
             <div className="lg:hidden flex flex-col items-center">
                 <h2 className="font-poppins font-semibold text-[28px] leading-[36px] text-center">
                     <span className="text-black">{t('ourUpdates.titleOur')} </span>
@@ -95,12 +95,10 @@ export default function OurLatestUpdate() {
                 </h2>
                 <div
                     className="bg-[#0055A4] mt-2"
-                    style={{ width: '200px', height: '8px' }}
+                    style={{ width: '200px', height: '5px' }}
                 />
             </div>
 
-
-            {/* mobile cards - vertical */}
             <div
                 className="lg:hidden flex flex-col items-center gap-8"
                 style={{ paddingTop: '24px' }}
@@ -127,7 +125,7 @@ export default function OurLatestUpdate() {
                 )}
             </div>
 
-            {/* desktop header */}
+            {/* desktop layout */}
             <div
                 className="hidden lg:flex items-center"
                 style={{ paddingLeft: '2.5%', paddingRight: '2.5%', gap: '19px' }}
@@ -142,7 +140,6 @@ export default function OurLatestUpdate() {
                 />
             </div>
 
-            {/* desktop cards - horizontal */}
             <div
                 className="hidden lg:flex justify-center"
                 style={{ paddingTop: '30px', gap: '30px' }}

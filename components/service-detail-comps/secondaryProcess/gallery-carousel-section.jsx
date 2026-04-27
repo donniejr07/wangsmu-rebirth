@@ -3,6 +3,7 @@
 import { useRef, useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
 
 const galleryImages = [
     {
@@ -55,6 +56,7 @@ export default function GalleryCarouselSection() {
     const [scrollLeft, setScrollLeft] = useState(0)
     const [isAutoPlaying, setIsAutoPlaying] = useState(true)
     const autoPlayRef = useRef(null)
+    const { t } = useLanguage()
 
     const DESKTOP_CARD_W = 420
     const DESKTOP_GAP = 24
@@ -130,14 +132,14 @@ export default function GalleryCarouselSection() {
             >
                 <AnimateOnScroll animation="fadeUp" delay={0}>
                     <h2 className="font-poppins font-bold text-[24px] leading-[32px] text-center" style={{ paddingLeft: '24px', paddingRight: '24px', marginBottom: '8px' }}>
-                        <span style={{ color: '#1a1a2e' }}>Our </span>
-                        <span style={{ color: '#0055A4' }}>Service</span>
+                        <span style={{ color: '#1a1a2e' }}>{t('secProcGallery.title1')}</span>
+                        <span style={{ color: '#0055A4' }}>{t('secProcGallery.title2')}</span>
                     </h2>
                 </AnimateOnScroll>
 
                 <AnimateOnScroll animation="fadeUp" delay={50}>
                     <p className="font-poppins font-normal text-[14px] leading-[20px] text-center" style={{ color: '#6B7280', marginBottom: '28px', padding: '0 24px' }}>
-                        Explore our secondary process capabilities and finishing techniques.
+                        {t('secProcGallery.subtitle')}
                     </p>
                 </AnimateOnScroll>
 
@@ -179,7 +181,7 @@ export default function GalleryCarouselSection() {
                                 />
                                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '80px', background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%)' }} />
                                 <span className="font-poppins font-medium" style={{ position: 'absolute', bottom: '14px', left: '16px', fontSize: '14px', color: '#FFFFFF', textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>
-                                    {img.caption}
+                                    {t(`secProcGallery.captions.${index}`)}
                                 </span>
                                 <div style={{ position: 'absolute', top: '12px', right: '12px', width: '28px', height: '28px', borderRadius: '50%', backgroundColor: 'rgba(0, 85, 164, 0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                     <span className="font-poppins font-semibold text-[11px] text-white">{String(index + 1).padStart(2, '0')}</span>
@@ -207,16 +209,16 @@ export default function GalleryCarouselSection() {
                     <AnimateOnScroll animation="fadeUp" delay={0}>
                         <div className="flex items-center justify-center gap-3" style={{ marginBottom: '20px' }}>
                             <div style={{ width: '40px', height: '2px', background: 'linear-gradient(90deg, transparent, #0055A4)' }} />
-                            <span className="font-poppins font-medium text-[14px] tracking-[4px] uppercase" style={{ color: '#0055A4' }}>Service</span>
+                            <span className="font-poppins font-medium text-[14px] tracking-[4px] uppercase" style={{ color: '#0055A4' }}>{t('secProcGallery.label')}</span>
                             <div style={{ width: '40px', height: '2px', background: 'linear-gradient(90deg, #0055A4, transparent)' }} />
                         </div>
                     </AnimateOnScroll>
 
                     <AnimateOnScroll animation="fadeUp" delay={100}>
                         <h2 className="font-poppins font-bold text-center" style={{ fontSize: '48px', lineHeight: '60px', marginBottom: '12px' }}>
-                            <span style={{ color: '#1a1a2e' }}>Our </span>
+                            <span style={{ color: '#1a1a2e' }}>{t('secProcGallery.title1')}</span>
                             <span style={{ color: '#0055A4', position: 'relative' }}>
-                                Service
+                                {t('secProcGallery.title2')}
                                 <span style={{ position: 'absolute', bottom: '-4px', left: 0, right: 0, height: '4px', background: 'linear-gradient(90deg, #0055A4, #3B82F6, transparent)', borderRadius: '2px' }} />
                             </span>
                         </h2>
@@ -224,7 +226,7 @@ export default function GalleryCarouselSection() {
 
                     <AnimateOnScroll animation="fadeUp" delay={150}>
                         <p className="font-poppins font-normal text-center" style={{ fontSize: '20px', lineHeight: '32px', color: '#6B7280', maxWidth: '650px', margin: '0 auto' }}>
-                            Explore our secondary process capabilities and finishing techniques.
+                            {t('secProcGallery.subtitle')}
                         </p>
                     </AnimateOnScroll>
                 </div>
@@ -305,7 +307,7 @@ export default function GalleryCarouselSection() {
                                     />
                                     <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '100px', background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%)', opacity: activeIndex === index ? 1 : 0.5, transition: 'opacity 0.4s ease' }} />
                                     <div style={{ position: 'absolute', bottom: '18px', left: '22px', right: '22px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                        <span className="font-poppins font-semibold" style={{ fontSize: '18px', color: '#FFFFFF', textShadow: '0 2px 6px rgba(0,0,0,0.4)' }}>{img.caption}</span>
+                                        <span className="font-poppins font-semibold" style={{ fontSize: '18px', color: '#FFFFFF', textShadow: '0 2px 6px rgba(0,0,0,0.4)' }}>{t(`secProcGallery.captions.${index}`)}</span>
                                         <div style={{ padding: '4px 12px', borderRadius: '20px', backgroundColor: 'rgba(0, 85, 164, 0.85)', backdropFilter: 'blur(4px)' }}>
                                             <span className="font-poppins font-medium text-[13px] text-white">{String(index + 1).padStart(2, '0')}/{String(galleryImages.length).padStart(2, '0')}</span>
                                         </div>

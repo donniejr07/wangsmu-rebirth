@@ -26,22 +26,18 @@ export default function OurPartner() {
                     <div className="flex items-center justify-center px-4"
                         style={{ marginBottom: '30px' }}
                     >
-                        {/* Garis kiri */}
                         <div
                             className="bg-black flex-1"
-                            style={{ height: '6px', maxWidth: '80px', marginRight: '12px' }}
+                            style={{ height: '5px', maxWidth: '80px', marginRight: '12px' }}
                         />
 
-                        {/* Judul */}
                         <h2 className="font-poppins font-semibold text-[28px] leading-[34px] whitespace-nowrap mx-3">
                             <span className="text-black">Our </span>
                             <span className="text-[#0055A4]">Partner</span>
                         </h2>
-
-                        {/* Garis kanan */}
                         <div
                             className="bg-[#0055A4] flex-1"
-                            style={{ height: '6px', maxWidth: '80px', marginLeft: '12px' }}
+                            style={{ height: '5px', maxWidth: '80px', marginLeft: '12px' }}
                         />
                     </div>
                 </AnimateOnScroll>

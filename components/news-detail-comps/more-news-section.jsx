@@ -24,7 +24,7 @@ function NewsCard({ news, delay = 0 }) {
 
     return (
         <AnimateOnScroll animation="fadeUp" delay={delay}>
-            <div className="group w-[350px] cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl rounded-[10px]">
+            <div className="w-[350px] rounded-[10px]">
                 {/* Thumbnail */}
                 <div className="relative w-[350px] h-[180px] rounded-[10px] overflow-hidden">
                     <Image
@@ -32,13 +32,13 @@ function NewsCard({ news, delay = 0 }) {
                         alt={news.title}
                         fill
                         unoptimized
-                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        className="object-cover"
                     />
                 </div>
 
                 {/* Judul */}
                 <h3
-                    className="font-poppins font-semibold text-[16px] leading-[23px] text-black transition-colors duration-300 group-hover:text-[#0055A4] line-clamp-2"
+                    className="font-poppins font-semibold text-[16px] leading-[23px] text-black line-clamp-2"
                     style={{ marginTop: '9px' }}
                 >
                     {news.title}
@@ -56,7 +56,7 @@ function NewsCard({ news, delay = 0 }) {
                 <div className="flex justify-center" style={{ marginTop: '8px' }}>
                     <Link href={`/news/${news.id}`}>
                         <button
-                            className="bg-[#0055A4] rounded-[20px] w-[125px] h-[30px] flex items-center justify-center hover:bg-[#004080] transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg"
+                            className="bg-[#0055A4] rounded-[20px] w-[125px] h-[30px] flex items-center justify-center hover:bg-[#004080] transition-all duration-300"
                         >
                             <span className="text-white font-poppins font-semibold text-[13px]">
                                 {t('ourUpdates.detail')}

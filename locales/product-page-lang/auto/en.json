@@ -1,0 +1,37 @@
+{
+  "autoDefinition": {
+    "label": "Product Category",
+    "title1": "Automotive ",
+    "title2": "Products",
+    "description": "We manufacture high-precision automotive components that meet the strictest industry standards. From interior trim parts and dashboard assemblies to functional clips, housings, and under-hood components — our products are engineered for durability, safety, and seamless integration into vehicle systems.",
+    "stats": [
+      {
+        "labelMobile": "Auto Parts",
+        "labelDesktop": "Automotive Parts"
+      },
+      {
+        "labelMobile": "OEM Partners",
+        "labelDesktop": "OEM Partners"
+      },
+      {
+        "labelMobile": "Pass Rate",
+        "labelDesktop": "Quality Pass Rate"
+      }
+    ]
+  },
+  "autoShowcase": {
+    "label": "Showcase",
+    "title1": "Product ",
+    "title2": "Showcase",
+    "subtitle": "Explore our range of automotive components and assemblies.",
+    "captions": [
+      "Velg TRD",
+      "Emblem",
+      "Handle",
+      "Head Lamp",
+      "Shifter Bezel",
+      "Steer Frame",
+      "Reflector Head Light"
+    ]
+  }
+}

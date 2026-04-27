@@ -1,0 +1,47 @@
+{
+  "secProcDefinition": {
+    "label": "What We Do",
+    "title1": "Secondary ",
+    "title2": "Process",
+    "description": "Our Secondary Process services complete your product journey — from painting, printing, and plating to assembly and packaging. We ensure every part meets the highest cosmetic and functional standards before reaching your customers."
+  },
+  "secProcSuperiority": {
+    "title1": "Our ",
+    "title2": "Superiority",
+    "subtitle": "What makes our secondary process services stand above the rest.",
+    "items": [
+      {
+        "title": "Variety of Color",
+        "description": "Extensive options for custom colors to match your exact branding and aesthetic requirements."
+      },
+      {
+        "title": "Accurate and Clear",
+        "description": "High-resolution printing and marking for crisp, legible text and intricate graphics."
+      },
+      {
+        "title": "Efficient Production",
+        "description": "Optimized secondary processes ensuring fast turnaround without compromising detail."
+      },
+      {
+        "title": "Precision and Consistency",
+        "description": "Advanced techniques delivering uniform finish and exact adherence to specifications across all parts."
+      }
+    ]
+  },
+  "secProcGallery": {
+    "label": "Service",
+    "title1": "Our ",
+    "title2": "Service",
+    "subtitle": "Explore our secondary process capabilities and finishing techniques.",
+    "captions": [
+      "Robotic Painting",
+      "Painting Semi Spindle",
+      "Painting Semi XY",
+      "Manual Painting",
+      "Laser Marking",
+      "Silk Screen",
+      "Tampo",
+      "Sub Assembly"
+    ]
+  }
+}

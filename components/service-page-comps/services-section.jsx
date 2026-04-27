@@ -3,13 +3,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
 
 export default function ServicesSection() {
+    const { t } = useLanguage()
+
     return (
         <>
             {/* Mobile Layout */}
             <section className="lg:hidden relative" style={{ paddingLeft: '16px', paddingRight: '16px', paddingTop: '28px', paddingBottom: '28px' }}>
-                {/* Background */}
+
                 <div
                     className="absolute inset-0 bg-[#D9D9D9] z-0"
                     style={{
@@ -19,33 +22,33 @@ export default function ServicesSection() {
                 />
 
                 <div className="relative z-10">
-                    {/* Title */}
+
                     <h2 className="font-poppins font-semibold text-2xl text-center mb-3">
-                        <span className="text-black">Our </span>
-                        <span style={{ color: '#0055A4' }}>Services</span>
+                        <span className="text-black">{t('serviceSection.title1')} </span>
+                        <span style={{ color: '#0055A4' }}>{t('serviceSection.title2')}</span>
                     </h2>
 
-                    {/* Subtitle */}
+
                     <p className="font-poppins font-normal text-sm leading-5 text-black text-center"
                         style={{ marginBottom: '20px' }}>
-                        Precision engineering meets innovative manufacturing. From mold design to final assembly, we deliver world-class solutions.
+                        {t('serviceSection.subtitleMobile')}
                     </p>
 
-                    {/* Mobile Cards */}
+
                     <div className="flex flex-col gap-4 items-center">
                         {[
                             {
-                                id: 1, title: 'Manufacture Tooling', col: 0, row: 0, desc: 'Pembuatan tooling dan cetakan presisi untuk mendukung produksi massal.',
+                                id: 1, title: 'Manufacture Tooling', col: 0, row: 0, desc: t('serviceSection.manuToolDesc'),
                                 image: '/images/services/tooling.png',
                                 href: '/service-detail/manuTool',
                             },
                             {
-                                id: 2, title: 'Manufacture Plastic Injection', col: 1, row: 0, desc: 'Produksi komponen plastik injection molding dengan standar kualitas internasional.',
+                                id: 2, title: 'Manufacture Plastic Injection', col: 1, row: 0, desc: t('serviceSection.manuPlasticDesc'),
                                 image: '/images/services/injection.png',
                                 href: '/service-detail/manuPlastic',
                             },
                             {
-                                id: 3, title: 'Secondary Process', col: 2, row: 0, desc: 'Solusi cetak berkualitas tinggi untuk packaging dan kebutuhan branding produk.',
+                                id: 3, title: 'Secondary Process', col: 2, row: 0, desc: t('serviceSection.secondaryProcessDesc'),
                                 image: '/images/services/printing.png',
                                 href: '/service-detail/secondaryProcess',
                             },
@@ -61,7 +64,7 @@ export default function ServicesSection() {
                                     overflow: 'hidden',
                                 }}
                             >
-                                {/* Card Image */}
+
                                 <div
                                     style={{
                                         position: 'relative',
@@ -79,9 +82,9 @@ export default function ServicesSection() {
                                     />
                                 </div>
 
-                                {/* Card Content */}
+
                                 <div style={{ padding: '16px' }}>
-                                    {/* Title */}
+
                                     <span
                                         style={{
                                             fontFamily: 'Poppins, sans-serif',
@@ -95,7 +98,7 @@ export default function ServicesSection() {
                                         {service.title}
                                     </span>
 
-                                    {/* Description */}
+
                                     <p
                                         style={{
                                             fontFamily: 'Poppins, sans-serif',
@@ -109,7 +112,7 @@ export default function ServicesSection() {
                                         {service.desc}
                                     </p>
 
-                                    {/* Button */}
+
                                     <Link href={service.href}>
                                         <button
                                             style={{
@@ -125,7 +128,7 @@ export default function ServicesSection() {
                                                 color: '#FFFFFF',
                                             }}
                                         >
-                                            More Details
+                                            {t('serviceSection.moreDetails')}
                                         </button>
                                     </Link>
                                 </div>
@@ -138,7 +141,6 @@ export default function ServicesSection() {
             {/* Desktop Layout */}
             <section className="hidden lg:block relative w-full min-h-[810px]">
 
-                {/* Background */}
                 <div
                     className="absolute inset-0 bg-[#D9D9D9] z-0"
                     style={{
@@ -147,10 +149,9 @@ export default function ServicesSection() {
                     }}
                 />
 
-                {/* Content Container */}
                 <div className="relative z-10 w-full h-full">
 
-                    {/* Title */}
+
                     <AnimateOnScroll animation="fadeUp" delay={0}>
                         <h2
                             className="absolute font-poppins font-semibold text-center"
@@ -158,18 +159,18 @@ export default function ServicesSection() {
                                 top: '27px',
                                 left: '50%',
                                 transform: 'translateX(-50%)',
-                                width: '359px',
+                                width: '380px',
                                 height: '126px',
                                 fontSize: '56px',
                                 lineHeight: '63px',
                             }}
                         >
-                            <span className="text-black">Our </span>
-                            <span style={{ color: '#0055A4' }}>Services</span>
+                            <span className="text-black">{t('serviceSection.title1')} </span>
+                            <span style={{ color: '#0055A4' }}>{t('serviceSection.title2')}</span>
                         </h2>
                     </AnimateOnScroll>
 
-                    {/* Subtitle */}
+
                     <AnimateOnScroll animation="fadeUp" delay={100}>
                         <p
                             className="absolute font-poppins font-normal text-black text-center"
@@ -183,11 +184,11 @@ export default function ServicesSection() {
                                 lineHeight: '49px',
                             }}
                         >
-                            Precision engineering meets innovative manufacturing. From mold design to final assembly, we deliver world-class solutions for complex production challenges.
+                            {t('serviceSection.subtitleDesktop')}
                         </p>
                     </AnimateOnScroll>
 
-                    {/* Service Cards Grid */}
+
                     <div
                         style={{
                             position: 'absolute',
@@ -197,20 +198,20 @@ export default function ServicesSection() {
                             width: '1184px',
                         }}
                     >
-                        {/* Cards Data */}
+
                         {[
                             {
-                                id: 1, title: 'Manufacture Tooling', col: 0, row: 0, desc: 'Pembuatan tooling dan cetakan presisi untuk mendukung produksi massal.',
+                                id: 1, title: 'Manufacture Tooling', col: 0, row: 0, desc: t('serviceSection.manuToolDesc'),
                                 image: '/images/services/tooling.png',
                                 href: '/service-detail/manuTool',
                             },
                             {
-                                id: 2, title: 'Manufacture Plastic Injection', col: 1, row: 0, desc: 'Produksi komponen plastik injection molding dengan standar kualitas internasional.',
+                                id: 2, title: 'Manufacture Plastic Injection', col: 1, row: 0, desc: t('serviceSection.manuPlasticDesc'),
                                 image: '/images/services/injection.png',
                                 href: '/service-detail/manuPlastic',
                             },
                             {
-                                id: 3, title: 'Secondary Process', col: 2, row: 0, desc: 'Solusi cetak berkualitas tinggi untuk packaging dan kebutuhan branding produk.',
+                                id: 3, title: 'Secondary Process', col: 2, row: 0, desc: t('serviceSection.secondaryProcessDesc'),
                                 image: '/images/services/printing.png',
                                 href: '/service-detail/secondaryProcess',
                             },
@@ -238,7 +239,7 @@ export default function ServicesSection() {
                                             overflow: 'hidden',
                                         }}
                                     >
-                                        {/* Card Image */}
+
                                         <div
                                             style={{
                                                 position: 'relative',
@@ -258,7 +259,7 @@ export default function ServicesSection() {
                                             />
                                         </div>
 
-                                        {/* Title */}
+
                                         <span
                                             style={{
                                                 position: 'absolute',
@@ -277,7 +278,7 @@ export default function ServicesSection() {
                                             {service.title}
                                         </span>
 
-                                        {/* Deskripsi */}
+
                                         <p
                                             style={{
                                                 position: 'absolute',
@@ -296,7 +297,7 @@ export default function ServicesSection() {
                                             {service.desc}
                                         </p>
 
-                                        {/* CTA Button */}
+
                                         <Link href={service.href}>
                                             <button
                                                 style={{
@@ -322,7 +323,7 @@ export default function ServicesSection() {
                                                         color: '#FFFFFF',
                                                     }}
                                                 >
-                                                    More Details
+                                                    {t('serviceSection.moreDetails')}
                                                 </span>
                                             </button>
                                         </Link>

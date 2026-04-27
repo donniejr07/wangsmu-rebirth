@@ -1,6 +1,11 @@
+'use client'
+
 import Image from 'next/image'
+import { useLanguage } from '@/context/language-context'
 
 export default function HseHeroSection() {
+    const { t } = useLanguage()
+
     return (
         <>
             {/* Mobile Layout */}
@@ -39,7 +44,7 @@ export default function HseHeroSection() {
                         </h1>
 
                         <p className="font-poppins font-normal text-[16px] leading-[24px] text-white max-w-[300px]" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>
-                            Let’s take a closer look at our HSE commitment to understand the standards and practices that ensure a safe, healthy, and sustainable working environment
+                            {t('hseHero.description')}
                         </p>
                     </div>
                 </div>
@@ -104,7 +109,7 @@ export default function HseHeroSection() {
                             textShadow: '0 2px 10px rgba(0,0,0,0.4)',
                         }}
                     >
-                        Let’s take a closer look at our HSE commitment to understand the standards and practices that ensure a safe, healthy, and sustainable working environment
+                        {t('hseHero.description')}
                     </p>
 
                     <Image

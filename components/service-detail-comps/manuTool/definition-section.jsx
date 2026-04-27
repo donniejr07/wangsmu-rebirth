@@ -1,8 +1,11 @@
 'use client'
 
 import { AnimateOnScroll } from '@/components/animations/scroll-animations'
+import { useLanguage } from '@/context/language-context'
 
 export default function DefinitionSection() {
+    const { t } = useLanguage()
+
     return (
         <>
             {/* MOBILE LAYOUT  */}
@@ -55,7 +58,7 @@ export default function DefinitionSection() {
                             className="font-poppins font-medium text-[12px] tracking-[3px] uppercase"
                             style={{ color: '#0055A4' }}
                         >
-                            What We Do
+                            {t('manuToolDefinition.label')}
                         </span>
                         <div
                             style={{
@@ -76,8 +79,8 @@ export default function DefinitionSection() {
                             marginBottom: '20px',
                         }}
                     >
-                        <span style={{ color: '#1a1a2e' }}>Manufacture </span>
-                        <span style={{ color: '#0055A4' }}>Tooling</span>
+                        <span style={{ color: '#1a1a2e' }}>{t('manuToolDefinition.title1')}</span>
+                        <span style={{ color: '#0055A4' }}>{t('manuToolDefinition.title2')}</span>
                     </h2>
                 </AnimateOnScroll>
 
@@ -105,7 +108,7 @@ export default function DefinitionSection() {
                             margin: '0 auto',
                         }}
                     >
-                        Our Manufacturing Tooling services are designed to turn your concepts into reality. With state-of-the-art technology and a skilled team, we create high-quality molds and tooling essential for efficient and precise production.
+                        {t('manuToolDefinition.description')}
                     </p>
                 </AnimateOnScroll>
 
@@ -122,8 +125,8 @@ export default function DefinitionSection() {
                         }}
                     >
                         {[
-                            { number: '25+', label: 'Years' },
-                            { number: '500+', label: 'Molds Made' },
+                            { number: '25+', label: t('manuToolDefinition.stat1MobileLabel') },
+                            { number: '500+', label: t('manuToolDefinition.stat2MobileLabel') },
                         ].map((stat, i) => (
                             <div key={i} className="flex flex-col items-center text-center">
                                 <span
@@ -205,7 +208,7 @@ export default function DefinitionSection() {
                                 className="font-poppins font-medium text-[14px] tracking-[4px] uppercase"
                                 style={{ color: '#0055A4' }}
                             >
-                                What We Do
+                                {t('manuToolDefinition.label')}
                             </span>
                             <div
                                 style={{
@@ -227,14 +230,14 @@ export default function DefinitionSection() {
                                 marginBottom: '16px',
                             }}
                         >
-                            <span style={{ color: '#1a1a2e' }}>Manufacture </span>
+                            <span style={{ color: '#1a1a2e' }}>{t('manuToolDefinition.title1')}</span>
                             <span
                                 style={{
                                     color: '#0055A4',
                                     position: 'relative',
                                 }}
                             >
-                                Tooling
+                                {t('manuToolDefinition.title2')}
                                 {/* Underline accent */}
                                 <span
                                     style={{
@@ -263,7 +266,7 @@ export default function DefinitionSection() {
                                 margin: '0 auto',
                             }}
                         >
-                            Our Manufacturing Tooling services are designed to turn your concepts into reality. With state-of-the-art technology and a skilled team, we create high-quality molds and tooling essential for efficient and precise production.
+                            {t('manuToolDefinition.description')}
                         </p>
                     </AnimateOnScroll>
 
@@ -278,8 +281,8 @@ export default function DefinitionSection() {
                             }}
                         >
                             {[
-                                { number: '25+', label: 'Years of Experience' },
-                                { number: '500+', label: 'Molds Manufactured' },
+                                { number: '25+', label: t('manuToolDefinition.stat1DesktopLabel') },
+                                { number: '500+', label: t('manuToolDefinition.stat2DesktopLabel') },
                             ].map((stat, i) => (
                                 <div
                                     key={i}
